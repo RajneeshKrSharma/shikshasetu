@@ -1,0 +1,11 @@
+facenet.tflite
+
+A TensorFlow Lite build of the FaceNet face-embedding model (160x160 RGB input,
+128-number output), taken from
+https://github.com/shubham0204/FaceRecognition_With_FaceNet_Android
+(Apache License 2.0), which converts the Keras FaceNet weights from
+https://github.com/nyoki-mtl/keras-facenet (MIT), based on
+https://github.com/davidsandberg/facenet (MIT).
+
+The weights were trained by others on a public face dataset. Check that the
+licence of the training data suits your use before shipping the app widely.

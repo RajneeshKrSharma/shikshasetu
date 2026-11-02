@@ -1,0 +1,4380 @@
+{
+  "@@locale": "en",
+  "appName": "Shiksha Setu",
+  "roleLabelPrincipal": "Principal",
+  "roleLabelTeacher": "Teacher",
+  "navDashboard": "Home",
+  "navAttendance": "Attendance",
+  "navProfile": "Profile",
+  "loginWelcome": "Welcome back",
+  "loginSubtitle": "Sign in to continue",
+  "fieldEmail": "Email",
+  "fieldPassword": "Password",
+  "actionSignIn": "Sign In",
+  "actionSignOut": "Sign Out",
+  "errorEmailInvalid": "Enter a valid email",
+  "errorPasswordRequired": "Enter your password",
+  "errorInvalidCredentials": "Invalid email or password",
+  "loginDemoTitle": "Demo accounts — tap to fill",
+  "greetingMorning": "Good morning, {name}",
+  "@greetingMorning": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "greetingAfternoon": "Good afternoon, {name}",
+  "@greetingAfternoon": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "greetingEvening": "Good evening, {name}",
+  "@greetingEvening": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "roleAndDate": "{role} · {date}",
+  "@roleAndDate": {
+    "placeholders": {
+      "role": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dayOpen": "School is open today",
+  "dayClosed": "School is closed today",
+  "dayPending": "Waiting for the Principal to approve",
+  "actionApprove": "Approve",
+  "actionKeepClosed": "Keep school closed",
+  "actionChangeDecision": "Change decision",
+  "sectionTodayAtGlance": "Today at a glance",
+  "sectionMyDay": "My day",
+  "statTeachersPresent": "Teachers present",
+  "statStudentsPresent": "Students present",
+  "statClassesMarked": "Classes marked",
+  "statTeachersNotIn": "Teachers not in",
+  "statCheckedIn": "Checked in",
+  "statNotCheckedIn": "Not checked in",
+  "statPresent": "Present",
+  "statNotInYet": "Not in yet",
+  "statClassAttendance": "Student attendance: Class {name}",
+  "@statClassAttendance": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "valueDone": "Done",
+  "valuePending": "Pending",
+  "valueOutOf": "{value}/{total}",
+  "@valueOutOf": {
+    "placeholders": {
+      "value": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "attendanceTitle": "Attendance",
+  "tabTeachers": "Teachers",
+  "tabStudents": "Students",
+  "tabMyAttendance": "My Attendance",
+  "sectionMyAttendanceToday": "My attendance today",
+  "sectionClasses": "Classes",
+  "labelCheckIn": "Check-in",
+  "labelCheckOut": "Check-out",
+  "labelWorked": "Worked",
+  "actionCheckIn": "Check In",
+  "actionCheckOut": "Check Out",
+  "noticeCheckInLocked": "You can check in after the Principal says school is open today.",
+  "noticeCheckedOut": "You have checked out. See you tomorrow!",
+  "chipNotIn": "Not in",
+  "chipCheckedOut": "Checked out",
+  "chipInSchool": "In school",
+  "chipNotMarked": "Not marked",
+  "chipMarkNow": "Mark now",
+  "chipDone": "Done",
+  "timeInOut": "In {inTime}  ·  Out {outTime}",
+  "@timeInOut": {
+    "placeholders": {
+      "inTime": {
+        "type": "String"
+      },
+      "outTime": {
+        "type": "String"
+      }
+    }
+  },
+  "classTitle": "Class {name}",
+  "@classTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "classNotMarkedYet": "Not marked yet",
+  "classPresentOfTotal": "{present} of {total} present",
+  "@classPresentOfTotal": {
+    "placeholders": {
+      "present": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "classPresentAbsent": "{present} present · {absent} absent",
+  "@classPresentAbsent": {
+    "placeholders": {
+      "present": {
+        "type": "int"
+      },
+      "absent": {
+        "type": "int"
+      }
+    }
+  },
+  "durationHoursMinutes": "{hours}h {minutes}m",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "actionMarkAllPresent": "Mark all present",
+  "actionSaveAttendance": "Save Attendance",
+  "messageAttendanceSaved": "Attendance saved",
+  "statusPresent": "Present",
+  "statusAbsent": "Absent",
+  "statusLate": "Late",
+  "statusPresentShort": "P",
+  "statusAbsentShort": "A",
+  "statusLateShort": "L",
+  "verifyTitle": "Verifying",
+  "verifyLocation": "Checking school location",
+  "verifyFace": "Verifying face",
+  "profileTitle": "Profile",
+  "profileEmployeeId": "Employee ID",
+  "profileEmail": "Email",
+  "profilePhone": "Phone",
+  "profileJoined": "Joined",
+  "profileSubject": "Subject",
+  "profileClassTeacherOf": "Class teacher of",
+  "profileAdminNote": "As Principal, you can approve school days and see everyone's attendance.",
+  "profileLanguage": "Language",
+  "moduleExams": "Exams",
+  "moduleAnalytics": "Analytics",
+  "moduleFees": "Fees",
+  "moduleRegistration": "Add student or staff",
+  "moduleTeachers": "Teachers",
+  "moduleNotices": "Notices",
+  "sectionQuickAccess": "Quick access",
+  "examsTitle": "Exams",
+  "tabUpcoming": "Not held yet",
+  "tabPastPapers": "Past papers",
+  "actionCreatePaper": "Create paper",
+  "emptyUpcoming": "No upcoming or draft papers yet.\nTap \"Create paper\" to add one.",
+  "emptyPast": "No conducted papers yet.",
+  "paperStatusDraft": "Draft",
+  "paperStatusScheduled": "Scheduled",
+  "paperStatusConducted": "Exam held",
+  "paperSubjectClass": "{subject} · Class {cls}",
+  "@paperSubjectClass": {
+    "placeholders": {
+      "subject": {
+        "type": "String"
+      },
+      "cls": {
+        "type": "String"
+      }
+    }
+  },
+  "paperMarksDuration": "{marks} marks · {minutes} min",
+  "@paperMarksDuration": {
+    "placeholders": {
+      "marks": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "sectionQuestions": "Questions",
+  "questionNumber": "Q{n}",
+  "@questionNumber": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "marksShort": "{marks} marks",
+  "@marksShort": {
+    "placeholders": {
+      "marks": {
+        "type": "int"
+      }
+    }
+  },
+  "createPaperTitle": "New question paper",
+  "fieldPaperTitle": "Paper title",
+  "fieldSubject": "Subject",
+  "fieldClass": "Class",
+  "fieldDate": "Date",
+  "fieldDuration": "Duration",
+  "durationMinutes": "{minutes} min",
+  "@durationMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldQuestion": "Question",
+  "fieldMarks": "Marks",
+  "paperTotalMarks": "Total {marks} marks",
+  "@paperTotalMarks": {
+    "placeholders": {
+      "marks": {
+        "type": "int"
+      }
+    }
+  },
+  "actionAddQuestion": "Add question",
+  "actionSaveDraft": "Save draft",
+  "actionSchedule": "Schedule",
+  "actionRemove": "Remove",
+  "errorRequired": "Required",
+  "messagePaperSaved": "Paper saved",
+  "feesTitle": "Fees",
+  "tabOthers": "Others",
+  "feesCollected": "Collected",
+  "feesPending": "Pending",
+  "feesTotal": "Total",
+  "searchByName": "Search by name",
+  "filterAll": "All",
+  "feeStatusPaid": "Paid",
+  "feeStatusPartial": "Partial",
+  "feeStatusOverdue": "Overdue",
+  "feeStatusDue": "Due",
+  "feePaidOfTotal": "{paid} of {total} paid",
+  "@feePaidOfTotal": {
+    "placeholders": {
+      "paid": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "feeDueOn": "Due on {date}",
+  "@feeDueOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "fieldAmount": "Amount",
+  "errorAmountInvalid": "Enter a valid amount",
+  "errorAmountExceeds": "Cannot exceed the pending amount",
+  "actionRecordPayment": "Record payment",
+  "messagePaymentRecorded": "Payment recorded",
+  "emptyNoResults": "No matching records.",
+  "registrationTitle": "Add student or staff",
+  "personStudent": "Student",
+  "personTeacher": "Teacher",
+  "personOther": "Other",
+  "actionRegister": "Register",
+  "registerTitle": "Create your account",
+  "fieldFullName": "Full name",
+  "fieldAadhaar": "Aadhaar number",
+  "fieldPhone": "Mobile number",
+  "fieldGuardian": "Guardian name",
+  "fieldRole": "Role (e.g. Van driver)",
+  "aadhaarHelper": "We check the number but save only its last 4 digits.",
+  "fieldAadhaarReason": "Reason for no Aadhaar number",
+  "hintAadhaarReason": "e.g. Aadhaar not yet made, card lost, applied and awaited",
+  "errorAadhaarInvalid": "Enter a valid 12-digit Aadhaar number",
+  "errorPhoneInvalid": "Enter a 10-digit mobile number",
+  "messageRegistered": "Registration successful",
+  "registeredOnLabel": "Registered {date}",
+  "@registeredOnLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "emptyPeople": "No one registered yet.",
+  "staffTitle": "Teachers",
+  "emptyStaff": "No teachers found.",
+  "staffActive": "Active",
+  "staffInactive": "Inactive",
+  "staffNoClass": "No class assigned",
+  "staffClassTeacher": "Class teacher of {cls}",
+  "@staffClassTeacher": {
+    "placeholders": {
+      "cls": {
+        "type": "String"
+      }
+    }
+  },
+  "sheetAssignTitle": "Assign class to {name}",
+  "@sheetAssignTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "classTakenBy": "Already assigned to {name}",
+  "@classTakenBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "actionRemoveAssignment": "Remove class assignment",
+  "noticesTitle": "Notices",
+  "actionPostNotice": "Post notice",
+  "emptyNotices": "No notices yet.",
+  "fieldNoticeTitle": "Title",
+  "fieldNoticeBody": "Message",
+  "messageNoticePosted": "Notice posted",
+  "noticePostedBy": "Posted by {name} · {date}",
+  "@noticePostedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "analyticsTitle": "Analytics",
+  "sectionAttendanceTrend": "Attendance — last 7 days (%)",
+  "sectionSubjectAverages": "Average marks by subject (%)",
+  "sectionFeeCollection": "Fee collection",
+  "sectionTeacherReport": "Teacher report",
+  "avgCheckInLabel": "Average check-in {time}",
+  "@avgCheckInLabel": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "percentValue": "{percent}%",
+  "@percentValue": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "dialogUnsavedTitle": "Discard changes?",
+  "dialogUnsavedBody": "You have unsaved attendance changes.",
+  "actionKeepEditing": "Keep editing",
+  "actionDiscard": "Discard",
+  "moduleClasses": "Manage classes",
+  "classesTitle": "Manage classes",
+  "actionAddClass": "Add class",
+  "actionEditClass": "Edit class",
+  "fieldClassName": "Class name",
+  "hintClassName": "e.g. 9-A",
+  "errorClassExists": "This class already exists",
+  "classStudentCount": "{count, plural, =1{1 student} other{{count} students}}",
+  "@classStudentCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classNoTeacher": "No class teacher",
+  "dialogDeleteClassTitle": "Delete class {name}?",
+  "@dialogDeleteClassTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "dialogDeleteClassBody": "This will delete the class, its {count} students and their attendance. You cannot undo this.",
+  "@dialogDeleteClassBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "actionCancel": "Cancel",
+  "actionSave": "Save",
+  "feesFilters": "Filters",
+  "feesFilterStatus": "Status",
+  "feesFilterClass": "Class",
+  "feesFilterDueDate": "Due date",
+  "feesFilterSort": "Sort by",
+  "feesSortUrgency": "Most urgent",
+  "feesSortName": "Name (A to Z)",
+  "feesSortPending": "Highest pending",
+  "feesSortDue": "Earliest due date",
+  "feesClearAll": "Clear all",
+  "feesShowResults": "Show results",
+  "feesResultSummary": "{count} found · {pending} pending",
+  "@feesResultSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "pending": {
+        "type": "String"
+      }
+    }
+  },
+  "feeRollNo": "Roll {roll}",
+  "@feeRollNo": {
+    "placeholders": {
+      "roll": {
+        "type": "int"
+      }
+    }
+  },
+  "dateAnyTime": "Any date",
+  "datePickRange": "Pick dates",
+  "dateToday": "Today",
+  "dateThisWeek": "This week",
+  "dateThisMonth": "This month",
+  "paymentsFilterDate": "Paid on",
+  "paymentsSummary": "{count} payments · {amount}",
+  "@paymentsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentsNone": "No payments match these filters.",
+  "paymentsOf": "Payments: {name}",
+  "@paymentsOf": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "staffAddTeacher": "Add teacher",
+  "staffActionAssignClass": "Assign class",
+  "qtMcq": "Multiple choice",
+  "qtTrueFalse": "True / False",
+  "qtFillBlank": "Fill in the blank",
+  "qtMatch": "Match the following",
+  "qtShort": "Short answer",
+  "qtLong": "Long answer",
+  "qtMcqHint": "A question with several options",
+  "qtTrueFalseHint": "A statement to mark true or false",
+  "qtFillBlankHint": "A sentence with a blank to fill",
+  "qtMatchHint": "Join the items of two columns",
+  "qtShortHint": "Answered in a line or two",
+  "qtLongHint": "Answered in detail",
+  "paperChooseType": "Choose question type",
+  "paperInstructions": "General instructions",
+  "paperInstructionsHint": "e.g. All questions are compulsory.",
+  "paperAddQuestion": "Add question",
+  "paperScan": "Scan photo",
+  "paperPaste": "Paste text",
+  "paperFromMaster": "Question bank",
+  "paperSetMarksAll": "Set marks for all",
+  "paperMarksForAll": "Marks for every question",
+  "paperApply": "Apply",
+  "paperShuffle": "Shuffle",
+  "paperShuffleQuestions": "Shuffle questions",
+  "paperShuffleOptions": "Shuffle questions and MCQ options",
+  "paperShuffleNote": "Questions are mixed only within their own type. For example, MCQs stay with MCQs.",
+  "paperDuplicate": "Duplicate",
+  "paperSaveToMaster": "Save to question bank",
+  "paperSavedToMaster": "Saved to the question bank",
+  "paperCheckChip": "Check",
+  "paperFoundN": "{count, plural, =1{1 question added. Please check it.} other{{count} questions added. Please check them.}}",
+  "@paperFoundN": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "paperPasteTitle": "Paste questions",
+  "paperPasteHint": "Paste or type your questions here. Number each question. Write options as (a) (b) (c).",
+  "paperPasteAction": "Add questions",
+  "paperDragHint": "Hold and drag to reorder",
+  "optionLabel": "Option {letter}",
+  "@optionLabel": {
+    "placeholders": {
+      "letter": {
+        "type": "String"
+      }
+    }
+  },
+  "qAddOption": "Add option",
+  "qCorrectAnswer": "Correct answer",
+  "qTrue": "True",
+  "qFalse": "False",
+  "qBlankHint": "Type ____ where the blank goes.",
+  "qBlankAnswer": "Answer (for the answer key)",
+  "qColumnA": "Column A",
+  "qColumnB": "Column B",
+  "qAddPair": "Add pair",
+  "qCheckMatches": "Check that each pair is matched correctly.",
+  "qNeedBlank": "Add ____ where the blank goes",
+  "qNeedOptions": "Add at least two options",
+  "qNeedPairs": "Add at least two complete pairs",
+  "actionSendForApproval": "Send for approval",
+  "actionApproveSave": "Approve and save",
+  "paperStatusSubmitted": "Awaiting approval",
+  "paperStatusChanges": "Changes requested",
+  "paperStatusApproved": "Approved",
+  "paperTabToApprove": "To approve",
+  "paperTabReady": "Ready",
+  "paperTabDrafts": "Drafts",
+  "paperSetBy": "Set by {name}",
+  "@paperSetBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "paperAwaitingTitle": "Waiting for your approval",
+  "paperAwaitingBody": "Read the questions. You can change, delete or shuffle them, then approve.",
+  "paperYourStatusSubmitted": "Sent to the Principal. It will show here once approved.",
+  "paperSentBackTitle": "Sent back for changes",
+  "actionSendBack": "Send back",
+  "actionEditPaper": "Edit paper",
+  "actionDeletePaper": "Delete paper",
+  "sendBackTitle": "Send back for changes",
+  "sendBackHint": "What should be changed?",
+  "paperDeleteTitle": "Delete this paper?",
+  "paperDeleteBody": "The paper and its questions will be removed.",
+  "messagePaperSubmitted": "Sent to the Principal for approval",
+  "messagePaperApproved": "Paper approved",
+  "messagePaperSentBack": "Sent back to the teacher",
+  "messagePaperShuffled": "Questions shuffled",
+  "paperPreviewPrint": "Preview and print",
+  "masterTitle": "Question bank",
+  "masterEmpty": "Your question bank is empty. Save questions here to use them again in any paper.",
+  "masterAdd": "Add question",
+  "masterEdit": "Edit question",
+  "masterSubjectOptional": "Subject (optional)",
+  "masterSaved": "Saved to the question bank",
+  "masterRemoved": "Removed from the question bank",
+  "masterPickTitle": "Pick from question bank",
+  "masterAddSelected": "{count, plural, =0{Select questions} =1{Add 1 question} other{Add {count} questions}}",
+  "@masterAddSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "masterNoMatch": "Nothing in the question bank matches.",
+  "masterRemoveTitle": "Remove from the question bank?",
+  "emptyPapersHere": "No papers here.",
+  "categoryExamPaper": "Exams",
+  "approvalExamQuestion": "A question paper is waiting for your review.",
+  "actionReviewPaper": "Review paper",
+  "logoTitle": "School logo",
+  "logoHelp": "The logo is printed at the top of every question paper.",
+  "logoChoose": "Choose from gallery",
+  "logoChange": "Change logo",
+  "logoRemove": "Remove logo",
+  "logoNone": "No logo yet",
+  "printSecMcq": "Choose the correct answer",
+  "printSecTrueFalse": "State true or false",
+  "printSecFill": "Fill in the blanks",
+  "printSecMatch": "Match the following",
+  "printSecShort": "Short answer questions",
+  "printSecLong": "Long answer questions",
+  "printMarks": "{marks, plural, =1{[1 mark]} other{[{marks} marks]}}",
+  "@printMarks": {
+    "placeholders": {
+      "marks": {
+        "type": "int"
+      }
+    }
+  },
+  "printSection": "Section {letter}",
+  "@printSection": {
+    "placeholders": {
+      "letter": {
+        "type": "String"
+      }
+    }
+  },
+  "printTimeAllowed": "Time allowed",
+  "printMaxMarks": "Maximum marks",
+  "printName": "Name",
+  "printRollNo": "Roll no.",
+  "printAnswerKey": "Answer key",
+  "printEndOfPaper": "— End of paper —",
+  "printModeInk": "Ink / laser (A4)",
+  "printModeThermal": "Small Bluetooth printer",
+  "printIncludeKey": "Include answer key",
+  "printCopies": "Copies",
+  "printRoll": "Paper roll",
+  "printMm58": "58 mm",
+  "printMm80": "80 mm",
+  "printPrinters": "Paired printers",
+  "printRefresh": "Refresh",
+  "printNoPrinters": "No printer found. Pair your Bluetooth printer in the phone's Bluetooth settings, then tap Refresh.",
+  "printBluetoothOff": "Turn Bluetooth on to find printers.",
+  "printNeedPermission": "Allow Bluetooth access for this app in the phone's settings.",
+  "printUnsupported": "Thermal printing needs an Android or iPhone.",
+  "printTipInk": "Best for full papers: an A4 printer (inkjet or laser) on Wi-Fi. You choose the printer on the next screen.",
+  "printTipThermal": "Good for answer keys and small slips: a 58 mm or 80 mm Bluetooth printer. A full paper uses a lot of roll.",
+  "printAction": "Print",
+  "printShare": "Share PDF",
+  "printSent": "Sent to the printer",
+  "printCancelled": "Printing was cancelled",
+  "printPickPrinter": "Choose a printer first",
+  "printConnectFailed": "Could not connect. Check that the printer is on and in range.",
+  "printWriteFailed": "The printer stopped responding.",
+  "printFailed": "Could not print.",
+  "printBuilding": "Preparing the paper…",
+  "printOnlyApproved": "Printing is available once the paper is approved.",
+  "cloudTitle": "Cloud sync",
+  "cloudIntro": "Your data is saved on this phone and works without internet. When internet is on, it is also backed up online.",
+  "cloudNotConfigured": "Online backup is not set up in this app yet. Please contact support.",
+  "cloudConnectedAs": "Connected as {email}",
+  "@cloudConnectedAs": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudProject": "Cloud ID",
+  "cloudSchoolId": "School id in the cloud",
+  "cloudSyncNow": "Sync now",
+  "cloudSyncing": "Syncing…",
+  "cloudLastSync": "Last sync: {when}",
+  "@cloudLastSync": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudNeverSynced": "Not synced yet",
+  "cloudUpToDate": "Everything is already in the cloud.",
+  "cloudSentSummary": "{count, plural, =1{1 record sent} other{{count} records sent}}",
+  "@cloudSentSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudRemovedSummary": "{count, plural, =1{1 record removed} other{{count} records removed}}",
+  "@cloudRemovedSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudWhatIsSent": "What is sent",
+  "cloudWhatIsSentBody": "Students, teachers, staff, classes, attendance, exams, fees, notices and settings are backed up. Passwords, photos and selfies are never sent.",
+  "cloudSyncedNotice": "Synced to the cloud",
+  "cloudNeedSignIn": "Please sign in first. The Principal's login is used for online backup.",
+  "cloudNotOwner": "This school's online data belongs to another login.",
+  "cloudOffline": "Cannot connect. Check your internet. Your data is safe on this phone.",
+  "cloudFailed": "Sync did not finish. It will try again.",
+  "faceNudgeStarting": "Opening the camera…",
+  "faceNudgeShowFace": "Show your face to the camera",
+  "faceNudgeOnlyOne": "Only one face, please",
+  "faceNudgeCloser": "Move a little closer",
+  "faceNudgeBack": "Move back a little",
+  "faceNudgeCenter": "Keep your face inside the circle",
+  "faceNudgeStraight": "Look straight at the camera",
+  "faceNudgeOpenEyes": "Open your eyes",
+  "faceNudgeHold": "Hold still…",
+  "faceNudgeBlink": "Now blink once",
+  "faceNudgeCapturing": "Got it",
+  "faceCaptureEnrollTitle": "Set up Face ID",
+  "faceCaptureVerifyTitle": "Check it's you",
+  "faceCaptureStep": "Photo {current} of {total}",
+  "@faceCaptureStep": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "faceFlipCamera": "Switch camera",
+  "faceCameraDenied": "Allow camera access in the phone's settings to use Face ID.",
+  "faceCameraMissing": "No front camera could be opened on this phone.",
+  "faceTitle": "Face ID",
+  "faceIntro": "Check-in uses your face and the school location. Your face is saved on this phone as numbers only. No photo is kept and nothing goes online.",
+  "faceStatusOn": "Face ID is set up",
+  "faceStatusOff": "Face ID is not set up",
+  "faceSetUp": "Set up Face ID",
+  "faceReplace": "Set up again",
+  "faceRemove": "Remove Face ID",
+  "faceSetUpDone": "Face ID is set up",
+  "faceRemoved": "Face ID removed",
+  "faceEnrolledOn": "Set up on {date}",
+  "@faceEnrolledOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "faceErrNotFound": "No clear face was found. Try again in good light, facing the camera.",
+  "faceErrUnavailable": "Face ID could not run on this phone.",
+  "checkErrFaceMismatch": "Face did not match. Try again in good light, facing the camera.",
+  "checkErrFaceNotFound": "No clear face was found. Try again, facing the camera.",
+  "checkErrFaceUnavailable": "Face ID could not run on this phone. Ask the Principal for help.",
+  "faceNudgeSetUpPrompt": "Set up Face ID to check in with your face.",
+  "faceScore": "Face match {percent}%",
+  "@faceScore": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "aadhaarScan": "Scan Aadhaar card",
+  "aadhaarScanHint": "Take a clear, flat photo of the front of the card where the 12-digit number is printed. The photo is read on this phone and is not saved.",
+  "aadhaarScanFilled": "Aadhaar number filled in from the card",
+  "aadhaarScanNotFound": "No valid Aadhaar number found. Try a clearer photo of the front of the card.",
+  "aadhaarScanFailed": "Could not read the photo. Please try again.",
+  "aadhaarScanning": "Reading the card…",
+  "aadhaarProbTitleNoNumber": "We couldn't see the number",
+  "aadhaarProbNoNumber": "We could not find a 12-digit number. Hold the card flat so the number is sharp and big in the photo.",
+  "aadhaarProbTitleNoText": "The photo is too unclear",
+  "aadhaarProbNoText": "Nothing could be read. It may be blurry, dark or not a card. Retake it in good light.",
+  "aadhaarProbTitleMasked": "This card hides the number",
+  "aadhaarProbMasked": "Only the last four digits are shown (XXXX XXXX 1234). Use a card that shows all 12 digits.",
+  "aadhaarProbTitleVid": "This is a Virtual ID",
+  "aadhaarProbVid": "This is the 16-digit Virtual ID. Scan the 12-digit Aadhaar number on the card.",
+  "aadhaarProbTitleChecksum": "One digit may be misread",
+  "aadhaarProbChecksum": "We read {number}, but it looks wrong. Take a clearer photo or fix it by hand.",
+  "@aadhaarProbChecksum": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "aadhaarProbTitleError": "Could not read the photo",
+  "aadhaarProbError": "Something went wrong while reading the photo. Please try again.",
+  "aadhaarTipsTitle": "For a good photo",
+  "aadhaarTipLight": "Good light, no glare or shadow",
+  "aadhaarTipFlat": "Card flat, all four corners in view",
+  "aadhaarTipFront": "The side with the 12-digit number",
+  "aadhaarRetake": "Take another photo",
+  "aadhaarEditByHand": "Correct it by hand",
+  "aadhaarTypeInstead": "Type it instead",
+  "fieldDob": "Date of birth",
+  "bornOnLabel": "Born {date}",
+  "@bornOnLabel": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "aadhaarFilledFromCard": "Filled in from the card: {items}",
+  "@aadhaarFilledFromCard": {
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "aadhaarItemNumber": "Aadhaar number",
+  "aadhaarItemName": "name",
+  "aadhaarItemDob": "date of birth",
+  "fieldGender": "Gender",
+  "genderMale": "Male",
+  "genderFemale": "Female",
+  "genderOther": "Other",
+  "fieldAddress": "Address",
+  "aadhaarItemGender": "gender",
+  "aadhaarItemAddress": "address",
+  "aadhaarScanIntro": "Take photos of both sides of the card. The front has the name, date of birth and number. The back has the address. Photos are read on this phone and not saved.",
+  "aadhaarSideFront": "Front side",
+  "aadhaarSideFrontHint": "Name, gender, date of birth and Aadhaar number",
+  "aadhaarSideBack": "Back side",
+  "aadhaarSideBackHint": "Address",
+  "aadhaarRetakeSide": "Retake",
+  "aadhaarAddBack": "Add the back side too, to get the address.",
+  "aadhaarRead": "Read the card",
+  "aadhaarReading": "Reading the card…",
+  "aadhaarFound": "What we found",
+  "aadhaarNotFound": "Not found",
+  "aadhaarUse": "Fill the form",
+  "aadhaarRetakeBoth": "Take the photos again",
+  "aadhaarBackNoAddress": "No address was found on the back photo. You can type it in.",
+  "aadhaarMismatchTitle": "The two photos are of different numbers",
+  "aadhaarMismatchBody": "The front shows {front} but the back shows {back}. They may be two different cards, so the address from the back was not used. Take the back photo of the same card again.",
+  "@aadhaarMismatchBody": {
+    "placeholders": {
+      "front": {
+        "type": "String"
+      },
+      "back": {
+        "type": "String"
+      }
+    }
+  },
+  "aadhaarMismatchAddress": "Not used: the back photo shows a different Aadhaar number.",
+  "registrationListAll": "Everyone registered",
+  "drawerSectionProfiles": "Profiles",
+  "profileStudents": "Student profiles",
+  "profileTeachers": "Teacher profiles",
+  "profileClassTeachers": "Class teachers",
+  "profileNoOne": "No one matches these filters.",
+  "profileOverview": "Overview",
+  "profileAttendance": "Attendance",
+  "profileFees": "Fees",
+  "profileResults": "Results",
+  "profilePapers": "Papers set",
+  "profileDetails": "Details",
+  "profileJoinedOn": "Joined {date}",
+  "@profileJoinedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "profileClassLabel": "Class and roll no.",
+  "profileClassTeacherOfClass": "Class teacher of {cls}",
+  "@profileClassTeacherOfClass": {
+    "placeholders": {
+      "cls": {
+        "type": "String"
+      }
+    }
+  },
+  "profileDates": "Dates",
+  "profileAttended": "Attended {percent}%",
+  "@profileAttended": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "profileDaysRecorded": "{count, plural, =1{1 day recorded} other{{count} days recorded}}",
+  "@profileDaysRecorded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileDaysPresent": "{count, plural, =1{1 day present} other{{count} days present}}",
+  "@profileDaysPresent": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileNoAttendance": "No attendance recorded for these filters.",
+  "profileNoResults": "No exam marks recorded yet.",
+  "profileNoFees": "No fees on record.",
+  "profileNoPapers": "No papers set yet.",
+  "profileNoPayments": "No payments yet.",
+  "profileMarksOf": "{obtained} / {total}",
+  "@profileMarksOf": {
+    "placeholders": {
+      "obtained": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "profileTotalPaid": "Paid in all: {amount}",
+  "@profileTotalPaid": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "profilePaymentHistory": "Full payment history",
+  "profileNotFound": "This person could not be found.",
+  "profileStillIn": "Still checked in",
+  "dobErrFuture": "Date of birth cannot be in the future.",
+  "dobErrYoung": "Too young: the minimum age is {years} years.",
+  "@dobErrYoung": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "dobErrOld": "Too old: the maximum age is {years} years.",
+  "@dobErrOld": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarTitle": "School calendar",
+  "calendarToday": "Today",
+  "calendarOpen": "School was open",
+  "calendarClosed": "School closed",
+  "calendarNoRecord": "No record",
+  "calendarWeeklyOff": "Weekly off",
+  "calendarThisMonth": "This month",
+  "calendarYear": "Academic year since {date}",
+  "@calendarYear": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarDaysOpen": "Days school was open",
+  "calendarDaysClosed": "Days closed",
+  "calendarDaysNoRecord": "Days with no record",
+  "calendarNoRecordNote": "Sundays are the weekly off and are not counted.",
+  "calendarTapHint": "Tap a day to see its details.",
+  "calendarTapHintPrincipal": "Tap a day to see details or change it. You must give a reason for every change.",
+  "calendarMarkOpen": "Mark school open",
+  "calendarMarkClosed": "Mark school closed",
+  "calendarClearDay": "Clear this day",
+  "calendarReasonTitle": "Why are you changing this day?",
+  "calendarReasonHint": "e.g. Heavy rain, Diwali holiday, Exam day",
+  "calendarReasonRequired": "Please give a reason (at least 3 letters).",
+  "calendarSave": "Save change",
+  "calendarReason": "Reason: {reason}",
+  "@calendarReason": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarNoReason": "No reason recorded",
+  "calendarMarkedBy": "Marked by {name}, {when}",
+  "@calendarMarkedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarHistory": "History",
+  "calendarNoHistory": "No changes recorded for this day.",
+  "calendarSaved": "Calendar updated",
+  "calendarNotAllowed": "Only the Principal can change the calendar.",
+  "calendarFailed": "Could not save the change.",
+  "holidaysTitle": "Holidays",
+  "holidayAdd": "Add holiday",
+  "holidayFilterUpcoming": "Upcoming",
+  "holidayFilterPast": "Past",
+  "holidayFilterAll": "All",
+  "holidayListUpcoming": "Upcoming holidays",
+  "holidayListPast": "Past holidays",
+  "holidayListAll": "All holidays",
+  "holidayDays": "{count, plural, =1{1 day} other{{count} days}}",
+  "@holidayDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "holidaySummary": "{holidays, plural, =1{1 holiday} other{{holidays} holidays}} · {days, plural, =1{1 day} other{{days} days}}",
+  "@holidaySummary": {
+    "placeholders": {
+      "holidays": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "holidayOnNow": "On now",
+  "holidayInDays": "{count, plural, =1{Tomorrow} other{In {count} days}}",
+  "@holidayInDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "holidayPast": "Past",
+  "holidayEmpty": "No holidays added yet.",
+  "holidayEmptyPrincipal": "No holidays added yet. Tap \"Add holidays\" to enter the school's holiday list.",
+  "holidayEmptyFilter": "No holidays in this list.",
+  "holidayEntryTitle": "Holiday {number}",
+  "@holidayEntryTitle": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "holidayReason": "Reason",
+  "holidayReasonHint": "e.g. Diwali vacation, Republic Day",
+  "holidayPickDates": "Pick the date or dates",
+  "holidayDatesHelp": "For one day, pick the same date twice.",
+  "holidayDatesRequired": "Pick the date or dates",
+  "holidayAnother": "Add another holiday",
+  "holidaySaveAll": "{count, plural, =0{Save holidays} =1{Save 1 day} other{Save {count} days}}",
+  "@holidaySaveAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "holidayAddIntro": "Add holidays with their dates and a reason, then save them together. Everyone can see them in Holidays and the calendar.",
+  "holidaySaved": "{added, plural, =1{1 holiday day added} other{{added} holiday days added}}",
+  "@holidaySaved": {
+    "placeholders": {
+      "added": {
+        "type": "int"
+      }
+    }
+  },
+  "holidaySavedSkipped": "{added} days added. {skipped, plural, =1{1 day skipped, school was already marked open on it} other{{skipped} days skipped, school was already marked open on them}}.",
+  "@holidaySavedSkipped": {
+    "placeholders": {
+      "added": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "holidayInvalidDates": "Check the dates: each holiday needs its dates, and none can be longer than {max} days.",
+  "@holidayInvalidDates": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "holidayRemove": "Remove this holiday",
+  "holidayRemoved": "Holiday removed",
+  "calendarHoliday": "Holiday",
+  "holidaySuggestedPick": "Pick from India's holidays",
+  "holidaySuggested": "Holidays of India",
+  "holidaySuggestedNote": "Festival dates change every year. Please check the dates before saving. You can edit them later.",
+  "holidaySuggestedAdd": "{count, plural, =1{Add 1 holiday} other{Add {count} holidays}}",
+  "@holidaySuggestedAdd": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "scrollForMore": "Scroll to view more",
+  "moduleAttendance": "Attendance",
+  "moduleMarkAttendance": "Student attendance",
+  "modulePayments": "Payment history",
+  "notClassTeacherMessage": "You are not a class teacher yet, so there is no class to mark.",
+  "drawerSectionAcademics": "Academics",
+  "drawerSectionPeople": "People",
+  "drawerSectionMoney": "Money",
+  "drawerSectionSchool": "School",
+  "scrollForMoreCount": "Scroll to view more · {count} in all",
+  "@scrollForMoreCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sectionApprovals": "Approvals",
+  "sectionOverview": "Today at a glance",
+  "actionContinue": "Continue",
+  "actionDelete": "Delete",
+  "actionEdit": "Edit",
+  "actionMore": "More options",
+  "messageClassAdded": "Class added",
+  "messageClassUpdated": "Class updated",
+  "messageClassDeleted": "Class deleted",
+  "emptyClasses": "No classes yet.\nTap \"Add class\" to create one.",
+  "emptyStudents": "No students in this class yet.\nRegister students from the Register module.",
+  "actionScanQuestions": "Scan from photo",
+  "scanSourceTitle": "Scan questions",
+  "scanLanguage": "Language of the text",
+  "scanCamera": "Take a photo",
+  "scanGallery": "Choose from gallery",
+  "scanProcessing": "Reading the text…",
+  "scanNoText": "No text found. Try a clearer, well-lit photo.",
+  "scanFailed": "Could not read the photo. Please try again.",
+  "scanReviewTitle": "Review scanned questions",
+  "scanReviewHint": "Scanning can make mistakes. Check each question, correct the text, and untick anything that is not a question.",
+  "actionAddSelected": "Add {count} questions",
+  "@actionAddSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "setupTitle": "Set up your school",
+  "setupSubtitle": "Create the Principal login. You can add teachers later.",
+  "fieldSchoolName": "School name",
+  "fieldConfirmPassword": "Confirm password",
+  "actionCreateSchool": "Create school",
+  "errorPasswordShort": "Use at least {min} characters",
+  "@errorPasswordShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "errorPasswordMismatch": "Passwords do not match",
+  "errorInactiveAccount": "This account is inactive. Please contact the Principal.",
+  "errorWrongCurrentPassword": "Current password is incorrect",
+  "errorEmailTaken": "This email is already in use",
+  "fieldLoginEmail": "Login email",
+  "fieldTempPassword": "Temporary password",
+  "helperTempPassword": "Give this to the teacher. They can change it after signing in.",
+  "fieldCurrentPassword": "Current password",
+  "fieldNewPassword": "New password",
+  "actionEditProfile": "Edit profile",
+  "actionChangePassword": "Change password",
+  "actionChangeEmail": "Change email",
+  "actionSend": "Send",
+  "changeEmailHint": "A verification link will be sent to the new email. Your email changes after you open it.",
+  "fieldNewEmail": "New email",
+  "messageEmailChangeSent": "Verification link sent. Open it to finish changing your email.",
+  "messageProfileUpdated": "Profile updated",
+  "messagePasswordChanged": "Password changed",
+  "checkErrSchoolClosed": "The Principal has not marked today as a school day yet.",
+  "checkErrNotConfigured": "The school location is not set. Ask the Principal to set it in Profile → School settings.",
+  "checkErrServicesOff": "Turn on location (GPS) and try again.",
+  "checkErrPermissionDenied": "Location permission is needed to check in.",
+  "checkErrPermissionForever": "Location permission is blocked. Allow it from the phone settings.",
+  "checkErrUnavailable": "Could not read your location. Try again outdoors.",
+  "checkErrMockLocation": "A fake location app is on. Turn it off and try again.",
+  "checkErrOutside": "You are {meters} m from the school. Move closer to check in.",
+  "@checkErrOutside": {
+    "placeholders": {
+      "meters": {
+        "type": "int"
+      }
+    }
+  },
+  "checkErrSelfie": "A selfie is required to check in.",
+  "checkInHint": "We check your location and take a selfie as proof.",
+  "distanceFromSchool": "{meters} m from school",
+  "@distanceFromSchool": {
+    "placeholders": {
+      "meters": {
+        "type": "int"
+      }
+    }
+  },
+  "teacherReportWindow": "Last {days} days (school days only)",
+  "@teacherReportWindow": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "emptyTrend": "No student attendance marked in the last 7 days.",
+  "emptyMarks": "No exam marks entered for this class yet.",
+  "noCheckInsYet": "No check-ins in this period",
+  "schoolSettingsTitle": "School settings",
+  "sectionSchoolLocation": "School location",
+  "locationNotSet": "Not set yet",
+  "locationValue": "Lat {lat}, Lon {lon}",
+  "@locationValue": {
+    "placeholders": {
+      "lat": {
+        "type": "String"
+      },
+      "lon": {
+        "type": "String"
+      }
+    }
+  },
+  "locationHelp": "Stand at the school gate or in the middle of the campus, then tap the button.",
+  "actionUseCurrentLocation": "Use my current location",
+  "fieldRadius": "Allowed distance",
+  "helperRadius": "How close a teacher must be to check in.",
+  "unitMeters": "metres",
+  "errorRadiusInvalid": "Enter the distance in metres",
+  "errorLocationRequired": "Set the school location first",
+  "messageSettingsSaved": "Settings saved",
+  "backupTitle": "Backup & restore",
+  "backupNever": "No backup taken yet",
+  "backupLast": "Last backup: {when}",
+  "@backupLast": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "actionBackupShare": "Create backup & share",
+  "actionBackupSave": "Save backup to this phone",
+  "sectionRestore": "Restore",
+  "actionRestoreFromFile": "Restore from backup file",
+  "actionRestore": "Restore",
+  "messageBackupDone": "Backup created",
+  "messageBackupFailed": "Could not create the backup",
+  "messageRestoreDone": "Restored. Please sign in again.",
+  "messageRestoreFailed": "Restore failed. Nothing was changed.",
+  "errBackupNotBackup": "This file is not a Shiksha Setu backup.",
+  "errBackupNewer": "This backup was made with a newer app. Please update the app.",
+  "errBackupCorrupt": "This backup file is damaged.",
+  "dialogRestoreTitle": "Replace all data?",
+  "dialogRestoreBody": "Backup from {date}: {students} students, {users} accounts. All data in the app will be replaced and you will be signed out.",
+  "@dialogRestoreBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "students": {
+        "type": "int"
+      },
+      "users": {
+        "type": "int"
+      }
+    }
+  },
+  "actionEnterMarks": "Enter marks",
+  "actionMarkConducted": "Mark as conducted",
+  "marksEntryTitle": "Marks — {title}",
+  "@marksEntryTitle": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "outOfMarks": "/ {total}",
+  "@outOfMarks": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "errorMarksTooHigh": "Above total marks",
+  "messageMarksSaved": "Marks saved",
+  "actionAddFee": "Add fee",
+  "sectionPayments": "Payments",
+  "emptyPayments": "No payments yet.",
+  "actionShareReceipt": "Share receipt",
+  "emptyFeePeople": "Everyone here already has a fee, or no one is registered yet.",
+  "fieldPerson": "Person",
+  "fieldDueDate": "Due date",
+  "messageFeeAdded": "Fee added",
+  "dashSchoolAndDate": "{school} · {date}",
+  "@dashSchoolAndDate": {
+    "placeholders": {
+      "school": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "sectionNeedsAttention": "Needs your attention",
+  "allClearTitle": "All clear",
+  "allClearBody": "Nothing needs your attention right now.",
+  "attTeachersNotIn": "{count, plural, =1{1 teacher has not checked in} other{{count} teachers have not checked in}}",
+  "@attTeachersNotIn": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attClassesNotMarked": "{count, plural, =1{1 class has no attendance yet} other{{count} classes have no attendance yet}}",
+  "@attClassesNotMarked": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attOverdueFees": "{count, plural, =1{1 fee account overdue · {amount}} other{{count} fee accounts overdue · {amount}}}",
+  "@attOverdueFees": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "attLocationMissing": "School location is not set, so teachers cannot check in.",
+  "attNoBackup": "No backup yet. Your data is only on this phone.",
+  "actionReview": "Review",
+  "actionViewAll": "View all",
+  "kpiTeachersIn": "Teachers in",
+  "kpiStudentsPresent": "Students present",
+  "kpiFeesCollected": "Fees collected",
+  "kpiClassesMarked": "Classes marked",
+  "sectionClassAttendance": "Class attendance today",
+  "feesOverdueAmount": "Overdue {amount}",
+  "@feesOverdueAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "sectionUpcomingExams": "Upcoming exams",
+  "emptyUpcomingExams": "No exams scheduled.",
+  "sectionLatestNotice": "Latest notice",
+  "emptyLatestNotice": "No notices yet.",
+  "approvalsTitle": "Approvals",
+  "approvalsNeedsApproval": "Needs approval",
+  "approvalsNonePending": "No pending approvals",
+  "actionView": "View",
+  "actionReject": "Reject",
+  "sectionPendingApprovals": "Pending",
+  "sectionDecidedApprovals": "Decided",
+  "emptyApprovals": "Nothing to approve right now.",
+  "statusApproved": "Approved",
+  "statusRejected": "Rejected",
+  "themeTitle": "Theme color",
+  "themeHelp": "Choose two colors for the app: a main color and a second color. Everyone sees them.",
+  "themeCurrent": "Current color",
+  "themeDefault": "Black & white",
+  "themeBlue": "Blue",
+  "themeIndigo": "Indigo",
+  "themePurple": "Purple",
+  "themeTeal": "Teal",
+  "themeGreen": "Green",
+  "themeOrange": "Orange",
+  "themeRed": "Red",
+  "themeBrown": "Brown",
+  "themePreview": "Preview",
+  "themeMainTitle": "Main color",
+  "themeAccentTitle": "Accent color",
+  "themeAccentAuto": "Same as main",
+  "themeCustom": "Custom",
+  "themePickerTitle": "Pick any color",
+  "themeHue": "Shade",
+  "themeSaturation": "Strength",
+  "themeBrightness": "Brightness",
+  "themeApply": "Use this color",
+  "addressLoading": "Finding address…",
+  "addressUnavailable": "Address not available (needs internet)",
+  "welcomeTitle": "Welcome",
+  "welcomeSubtitle": "Who are you?",
+  "welcomePrincipal": "I am the Principal",
+  "welcomePrincipalHint": "Create a new school on this phone",
+  "welcomeAlreadyRegistered": "School already registered? Sign in",
+  "registeredSignInTitle": "Sign in to your school",
+  "registeredSignInSubtitle": "Use the email and password you registered with (Principal), or the ones your Principal gave you (Teacher). Your school data will be loaded.",
+  "registeredSignInBusy": "Restoring your school data. This can take a minute…",
+  "errorSchoolNotFound": "This account is not linked to a school. Please contact your administrator.",
+  "actionBack": "Back",
+  "errorPasswordWeak": "This password is too common or too simple. Use at least 8 characters with letters and numbers.",
+  "errorTooManyAttempts": "Too many attempts. Please try again later.",
+  "errorAuthOffline": "No internet connection. Please connect to the internet and try again.",
+  "errorProfileMissing": "Your account could not be loaded on this phone. Please try again with internet on.",
+  "errorAuthUnavailable": "This is not available right now. Please try again.",
+  "cloudSignedOutBanner": "Online backup needs the Principal's login. Sign out and sign in again with internet to start.",
+  "syncNotifChannel": "Data sync",
+  "syncNotifTitle": "Syncing data to server",
+  "syncNotifProgress": "{done} of {total} done",
+  "@syncNotifProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudAutoSyncTitle": "Automatic sync",
+  "cloudAutoSyncHelp": "Backs up your changes every few minutes while the app is open, and once more when you leave the app. Needs internet.",
+  "cloudAutoSyncOff": "Off",
+  "cloudAutoSyncHours": "{hours} hr",
+  "@cloudAutoSyncHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudSyncProgress": "{done} of {total}",
+  "@cloudSyncProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "cloudAutoSyncMinutes": "{minutes} min",
+  "@cloudAutoSyncMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "syncNotifDone": "Data saved to server",
+  "syncNotifDoneAt": "Last synced at {time}",
+  "@syncNotifDoneAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "syncFeatureSettings": "Settings",
+  "syncFeatureStaff": "Staff",
+  "syncFeatureClasses": "Classes",
+  "syncFeatureStudents": "Students",
+  "syncFeatureCalendar": "School calendar",
+  "syncFeatureAttendance": "Attendance",
+  "syncFeatureExams": "Exams",
+  "syncFeatureFees": "Fees",
+  "syncFeatureNotices": "Notices",
+  "syncFeatureQuestionBank": "Question bank",
+  "syncNotifChecking": "Checking {feature} · {done} of {total}",
+  "syncNotifUpToDate": "Everything was already up to date",
+  "syncNotifNext": "Next sync in {when}",
+  "@syncNotifChecking": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      },
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@syncNotifNext": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "syncFeaturesCount": "{count, plural, =1{1 feature} other{{count} features}}",
+  "syncNotifTapHint": "Tap for details",
+  "syncDetailsTitle": "Sync details",
+  "syncDetailsLastSync": "Last sync",
+  "syncDetailsLastData": "Last data sent",
+  "syncDetailsNothingSent": "No data has been sent yet.",
+  "syncDetailsAtTime": "{date}, {time}",
+  "syncDetailsRemoved": "{count} removed",
+  "@syncFeaturesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@syncDetailsAtTime": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@syncDetailsRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncStripLast": "Last synced {when}",
+  "syncStripNext": "Next sync {when}",
+  "syncStripOff": "Automatic sync is off",
+  "syncStripSyncing": "Syncing data to server…",
+  "@syncStripLast": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "@syncStripNext": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "approvalNotifChannel": "Approval requests",
+  "approvalNotifOneTitle": "New request to approve",
+  "approvalNotifOneBody": "{teacher} sent \"{title}\" for approval",
+  "@approvalNotifOneBody": {
+    "placeholders": {
+      "teacher": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "approvalNotifManyTitle": "{count} new requests to approve",
+  "@approvalNotifManyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "approvalNotifManyBody": "Open the app to review them",
+  "dashTodoWaiting": "{count, plural, =1{1 request is waiting for you} other{{count} requests are waiting for you}}",
+  "@dashTodoWaiting": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashTodoWaitingHint": "Teachers are waiting for your answer.",
+  "dashTodoReview": "Review now",
+  "dashTodoNone": "Nothing is waiting for you",
+  "dashTodoNoneHint": "New requests from teachers will appear here.",
+  "dashTodayTitle": "Today in school",
+  "dashTeachersHere": "Teachers in",
+  "dashStudentsHere": "Students in",
+  "dashClassesDone": "Classes marked",
+  "dashFeesLeft": "Fees due",
+  "dashQuickTitle": "Quick access",
+  "dashMore": "More",
+  "dashTeacherWaitTitle": "Waiting for the Principal",
+  "dashTeacherWaitBody": "The Principal has not opened school for today yet. This page updates by itself.",
+  "dashTeacherClosedTitle": "School is closed today",
+  "dashTeacherClosedBody": "No check-in is needed today.",
+  "dashTeacherOpenTitle": "School is open today",
+  "dashTeacherOpenBody": "Tap Check In when you reach school.",
+  "dashTeacherInTitle": "You are checked in",
+  "dashTeacherInBody": "Checked in at {time}. Tap Check Out when you leave.",
+  "@dashTeacherInBody": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "dashTeacherOutTitle": "You are done for today",
+  "dashPapersTitle": "My question papers",
+  "dashPapersNone": "You have not made any paper yet.",
+  "dashPapersWaiting": "{count, plural, =1{1 waiting for the Principal} other{{count} waiting for the Principal}}",
+  "@dashPapersWaiting": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashPapersSentBack": "{count, plural, =1{1 sent back, needs your changes} other{{count} sent back, need your changes}}",
+  "@dashPapersSentBack": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashPapersDrafts": "{count, plural, =1{1 draft not sent} other{{count} drafts not sent}}",
+  "@dashPapersDrafts": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashPapersApproved": "{count, plural, =1{1 approved} other{{count} approved}}",
+  "@dashPapersApproved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashRefreshed": "Updated",
+  "approvalsWaitingTitle": "{count, plural, =1{1 request waiting} other{{count} requests waiting}}",
+  "@approvalsWaitingTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "approvalsPullHint": "Pull down to check for new requests",
+  "approvalsDecidedApproved": "Approved",
+  "approvalsDecidedRejected": "Not approved",
+  "descAttendance": "See who came today: teachers and students",
+  "descMarkAttendance": "Mark your class's students present, absent or late",
+  "descExams": "Make question papers and send them for approval",
+  "descQuestionBank": "Questions you saved, to use again in any paper",
+  "descStudentProfiles": "Each student's details, attendance, fees and marks",
+  "descTeacherProfiles": "Each teacher's details, check-ins and papers",
+  "descClasses": "Add classes and see their students",
+  "descRegister": "Add a new student, teacher or staff member",
+  "descTeachers": "Class teachers, subjects, on or off",
+  "descFees": "See fees due and collect payments",
+  "descPayments": "Every payment received so far",
+  "descApprovals": "Requests waiting for your answer",
+  "descAnalytics": "Charts and reports for the school",
+  "descCalendar": "See which days school was open or closed",
+  "descHolidays": "The school's list of holidays",
+  "descNotices": "Messages for everyone in school",
+  "drawerMoreTitle": "More",
+  "moduleMyAttendance": "My attendance",
+  "descMyAttendance": "Your own check-in and check-out",
+  "myAttendanceTitle": "My attendance (check-in)",
+  "markingTitle": "Student attendance · Class {name}",
+  "@markingTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "categoryTeachingSubject": "Subjects",
+  "approvalSubjectQuestion": "{name} wants to teach this subject in this class.",
+  "@approvalSubjectQuestion": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "moduleMySubjects": "My subjects",
+  "descMySubjects": "Subjects and classes you teach. Ask for a new one.",
+  "subjectsTitleFor": "Subjects of {name}",
+  "@subjectsTitleFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "subjectAskButton": "Ask for a subject",
+  "subjectGiveButton": "Give a subject",
+  "subjectSheetAskTitle": "Ask the Principal for a subject",
+  "subjectSheetGiveTitle": "Give a subject to {name}",
+  "@subjectSheetGiveTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "subjectSheetHint": "Choose the class, then the subject.",
+  "subjectSend": "Send request",
+  "subjectGive": "Give subject",
+  "subjectStatusApproved": "Allowed",
+  "subjectStatusPending": "Waiting for the Principal",
+  "subjectStatusRejected": "Not approved",
+  "subjectRequestSent": "Request sent to the Principal",
+  "subjectGiven": "Subject given",
+  "subjectEmptyTeacher": "You have no subject yet. Tap the button below to ask the Principal.",
+  "subjectEmptyPrincipal": "No subject given yet. Tap the button below to give one.",
+  "subjectRegistered": "Registered subject: {subject} (all classes)",
+  "@subjectRegistered": {
+    "placeholders": {
+      "subject": {
+        "type": "String"
+      }
+    }
+  },
+  "subjectRemoveTitle": "Remove this subject?",
+  "subjectRemoveBody": "{subject} · {cls} will be removed.",
+  "@subjectRemoveBody": {
+    "placeholders": {
+      "subject": {
+        "type": "String"
+      },
+      "cls": {
+        "type": "String"
+      }
+    }
+  },
+  "subjectNoneForPaper": "You have no subject yet. Ask the Principal for one before making a paper.",
+  "subjectChooseClassFirst": "Choose the class first",
+  "subjectNoneInClass": "No subject allowed in this class",
+  "staffActionSubjects": "Subjects and classes",
+  "staffActionSubjectsHint": "What this teacher teaches, and where",
+  "paperDetailsTitle": "Paper details",
+  "paperMoreOptions": "More options",
+  "paperMoreOptionsHint": "Instructions for students (optional)",
+  "paperQuickAdd": "Or add many questions at once",
+  "paperQuestionsCount": "{count, plural, =1{1 question} other{{count} questions}} · {marks} marks",
+  "paperTools": "Tools",
+  "tabWaiting": "Waiting",
+  "tabReady": "Ready",
+  "tabDrafts": "Drafts",
+  "tabDone": "Done",
+  "@paperQuestionsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "marks": {
+        "type": "int"
+      }
+    }
+  },
+  "dialogSignOutTitle": "Sign out?",
+  "dialogSignOutBody": "You will need to sign in again.",
+  "actionRefresh": "Refresh",
+  "noticeAnnounceTitle": "Run it on everyone's Dashboard",
+  "noticeAnnounceHint": "It moves along the top until you stop it.",
+  "announceStop": "Stop announcement",
+  "dashSchoolToday": "School today",
+  "dashStateOpen": "Open",
+  "dashStateClosed": "Closed",
+  "dashStateWaiting": "Waiting",
+  "dashTeachersAbsent": "Teachers absent",
+  "dashStudentsAbsent": "Students absent",
+  "dashFeesCollected": "Fees collected",
+  "dashOverdueFees": "Overdue fee accounts",
+  "dashUpcomingExams": "Upcoming exams",
+  "dashRequestsTitle": "Teacher requests",
+  "dashRequestsNone": "No request is waiting for your answer.",
+  "dashRequestsWaiting": "{count, plural, =1{1 request needs your answer.} other{{count} requests need your answer.}} Tap to open Approvals.",
+  "dashRequestsClear": "None pending",
+  "dashRequestsCount": "{count} pending",
+  "@dashRequestsWaiting": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@dashRequestsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "greetingNight": "Good night, {name}",
+  "@greetingNight": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "actionSync": "Sync",
+  "actionSyncHint": "Saves your data to the cloud and checks for new requests",
+  "dashSyncing": "Syncing: saving your data and checking for new requests…",
+  "syncStripDetails": "Details",
+  "syncTable_app_settings": "School settings",
+  "syncTable_users": "Teacher and Principal profiles",
+  "syncTable_other_staff": "Other staff",
+  "syncTable_teacher_subjects": "Teacher subjects",
+  "syncTable_classes": "Classes",
+  "syncTable_students": "Students",
+  "syncTable_school_days": "School days",
+  "syncTable_school_day_changes": "School day edits",
+  "syncTable_teacher_attendance": "Teacher attendance",
+  "syncTable_student_attendance": "Student attendance",
+  "syncTable_exam_papers": "Question papers",
+  "syncTable_exam_questions": "Paper questions",
+  "syncTable_exam_marks": "Exam marks",
+  "syncTable_fee_accounts": "Fee accounts",
+  "syncTable_fee_payments": "Fee payments",
+  "syncTable_notices": "Notices",
+  "syncTable_master_questions": "Question bank",
+  "syncStripSent": "Sent {count}",
+  "@syncStripSent": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncStripReceived": "Received {count}",
+  "@syncStripReceived": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncStripNothingYet": "Nothing sent or received yet",
+  "syncStripLastData": "Last data {when}",
+  "@syncStripLastData": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "syncDetailsStatus": "Status",
+  "syncDetailsNextSync": "Next sync",
+  "syncDetailsChecksEvery": "Checks for new data every {seconds} seconds",
+  "@syncDetailsChecksEvery": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "syncDetailsSyncingNow": "Syncing now…",
+  "syncDetailsCloudUpload": "Saved to the cloud",
+  "syncDetailsLastCheck": "Last check for new data",
+  "syncDetailsSentTitle": "Sent from this phone",
+  "syncDetailsReceivedTitle": "Received on this phone",
+  "syncDetailsNothingReceived": "Nothing new has been received yet.",
+  "syncDetailsRecordsSent": "{count, plural, =1{1 record} other{{count} records}}",
+  "@syncDetailsRecordsSent": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncDetailsRecordsRemoved": "{count, plural, =1{1 record removed} other{{count} records removed}}",
+  "@syncDetailsRecordsRemoved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncDetailsOffline": "Could not reach the server on the last check.",
+  "syncDetailsNeverChecked": "Not checked yet",
+  "staffTapForMore": "Tap to do more: assign class, subjects and more",
+  "registerWho": "Who are you registering?",
+  "aadhaarMissingReason": "No Aadhaar: {reason}",
+  "@aadhaarMissingReason": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "syncKindAdded": "New",
+  "syncKindChanged": "Changed",
+  "syncKindRemoved": "Removed",
+  "syncDetailsEarlierUnknown": "The earlier value was not kept",
+  "syncDetailsMoreNotListed": "{count} more records not listed",
+  "@syncDetailsMoreNotListed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncValueEmpty": "(empty)",
+  "syncDetailsWas": "was",
+  "syncDetailsNow": "now",
+  "dashTeachersTitle": "Teachers",
+  "dashStudentsTitle": "Students",
+  "dashTotalCount": "Total {count}",
+  "@dashTotalCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attReportTitle": "Attendance report",
+  "attReportCardTitle": "Attendance status",
+  "attReportCardHint": "Students, teachers and others · tap to see the table",
+  "attGroupStudents": "Students",
+  "attGroupTeachers": "Teachers",
+  "attGroupOthers": "Others",
+  "attMarkNotMarked": "Not marked",
+  "attMarkNotTracked": "Not recorded",
+  "attColName": "Name",
+  "attColClassRole": "Class / role",
+  "attColStatus": "Status",
+  "attColTime": "Check-in",
+  "attFilterDetail": "Class / subject / role",
+  "attSearchName": "Search by name",
+  "attClearFilters": "Clear filters",
+  "attShowing": "Showing {shown} of {total}",
+  "@attShowing": {
+    "placeholders": {
+      "shown": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "attReportEmpty": "No one matches these filters.",
+  "attReportOthersNote": "Attendance of other staff is not recorded in the app.",
+  "attReportToday": "Today",
+  "attReportPickDay": "Pick a day",
+  "attReminderTitle": "You have not checked in yet",
+  "attReminderBody": "Check in now so that today's attendance is recorded.",
+  "demoDataTitle": "Demo data",
+  "demoDataBody": "Fill the school with made-up data to try every feature: classes Nursery to 8, students, male and female teachers, other staff, attendance, exams, fees, notices and more. Your own data is not changed, and \"Remove\" takes out only the demo data. You will be asked to sign in again.",
+  "demoDataLoad": "Load",
+  "demoDataRemove": "Remove",
+  "demoDataLoaded": "Demo data added. Please sign in again.",
+  "demoDataRemoved": "Demo data removed. Please sign in again.",
+  "demoDataFailed": "Could not change the demo data. Please try again.",
+  "featureFees": "Fees",
+  "featureAccessories": "Accessories",
+  "featurePerformance": "Performance",
+  "featureAttendance": "Attendance",
+  "featureClasses": "Classes",
+  "featureTeacherPayment": "Teacher payment",
+  "featureQuestionBank": "Question bank",
+  "featureExamPapers": "Exam papers",
+  "featureStaffPayment": "Payment",
+  "featureBills": "Bills",
+  "featureSubjects": "Subjects",
+  "addStudentTitle": "Add student",
+  "addTeacherTitle": "Add teacher",
+  "addStaffTitle": "Add staff",
+  "editStudentTitle": "Edit student",
+  "messageSaved": "Saved",
+  "searchStudentsHint": "Search name or roll no.",
+  "searchTeachersHint": "Search name or subject",
+  "searchStaffHint": "Search name or role",
+  "filterAllClasses": "All classes",
+  "summaryVan": "Van {van}",
+  "@summaryVan": {
+    "placeholders": {
+      "van": {
+        "type": "String"
+      }
+    }
+  },
+  "summaryClassTeacher": "Class teacher, {name}",
+  "@summaryClassTeacher": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "memberOpen": "Open",
+  "memberEdit": "Edit",
+  "memberMakeInactive": "Make inactive",
+  "memberMakeActive": "Make active",
+  "memberInactiveTag": "Inactive",
+  "memberShowInactive": "Show inactive ({count})",
+  "@memberShowInactive": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memberMadeInactive": "{name} is now inactive",
+  "@memberMadeInactive": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "memberMadeActive": "{name} is active again",
+  "@memberMadeActive": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "actionUndo": "Undo",
+  "dashStudentsIn": "Students in",
+  "dashTeachersIn": "Teachers in",
+  "dashOthersIn": "Others in",
+  "dashNotMarkedYet": "Not marked yet",
+  "dashInOf": "{present} of {total}",
+  "@dashInOf": {
+    "placeholders": {
+      "present": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "navStudents": "Students",
+  "navTeachers": "Teachers",
+  "navOthers": "Others",
+  "syncTable_staff_attendance": "Other staff attendance",
+  "attTitleStudents": "Student attendance",
+  "attTitleTeachers": "Teacher attendance",
+  "attTitleOthers": "Staff attendance",
+  "attTabAll": "All {count}",
+  "@attTabAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attTabMark": "{label} {count}",
+  "@attTabMark": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attMeaningTeachers": "Present means checked in with location and face. Absent means no check-in on this day.",
+  "attMeaningStudents": "Present, absent and late are marked by the class teacher. A class shows Not marked until it is done.",
+  "attMeaningOthers": "You mark staff attendance yourself. Not marked means this day has not been done yet.",
+  "attFilterClass": "Class",
+  "attFilterRole": "Role",
+  "attMarkStaff": "Mark attendance",
+  "attStaffMarkTitle": "Mark staff attendance",
+  "attTeachersCheckedIn": "{present} of {total} teachers have checked in",
+  "@attTeachersCheckedIn": {
+    "placeholders": {
+      "present": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "syncTable_fee_structure": "Fee setup",
+  "proofAddPhoto": "Add photo",
+  "proofTakePhoto": "Take photo",
+  "proofFromGallery": "Choose from gallery",
+  "proofRemove": "Remove",
+  "proofSignHere": "Sign here",
+  "proofClear": "Clear",
+  "proofView": "View proof",
+  "proofNone": "No proof added",
+  "proofPhotoTitle": "Photo proof",
+  "proofSignatureTitle": "Signature",
+  "proofSignedTag": "Signed",
+  "proofPhotoTag": "Photo",
+  "proofMissing": "The file is not on this phone any more.",
+  "feeHeadAcademic": "Academic fee",
+  "feeHeadDress": "Dress",
+  "feeHeadBooks": "Books",
+  "feeHeadVan": "Van",
+  "feeHeadPayment": "Payment",
+  "payModeCash": "Cash",
+  "payModeUpi": "UPI",
+  "payModeCheque": "Cheque",
+  "payModeBank": "Bank",
+  "feeDueLast": "Due {due} · Last date {last}",
+  "@feeDueLast": {
+    "placeholders": {
+      "due": {
+        "type": "String"
+      },
+      "last": {
+        "type": "String"
+      }
+    }
+  },
+  "feeNoPaymentYet": "No payment yet",
+  "feeChangeDates": "Change dates",
+  "feeDatesNote": "Own dates: {note}",
+  "@feeDatesNote": {
+    "placeholders": {
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "recordPaymentTitle": "Record payment",
+  "fieldPaidOn": "Paid on",
+  "fieldHowPaid": "How paid",
+  "fieldReferenceUpi": "UPI transaction id",
+  "fieldReferenceCheque": "Cheque number",
+  "fieldReferenceBank": "Bank reference (UTR)",
+  "fieldReferenceCash": "Receipt book no. (optional)",
+  "fieldProofPhoto": "Proof (photo or screenshot)",
+  "errorReferenceRequired": "Enter the reference.",
+  "errorProofRequired": "Add a photo as proof for this kind of payment.",
+  "messagePaymentSavedReceipt": "Payment saved. Receipt {no}",
+  "@messagePaymentSavedReceipt": {
+    "placeholders": {
+      "no": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentProofYes": "Proof added",
+  "paymentProofNo": "No proof",
+  "feeAccountNotFound": "This fee is no longer there.",
+  "feeLedgerPaymentsTitle": "Payments",
+  "fieldReason": "Reason",
+  "feeSetupTitle": "Fee setup",
+  "feeSetupDue": "Due date",
+  "feeSetupLast": "Last date",
+  "feeSetupAmount": "Amount",
+  "feeSetupApplies": "These apply to all students of {name}.",
+  "@feeSetupApplies": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "feeSetupNotSet": "Not set up yet",
+  "feeSetupEdit": "Edit",
+  "feeSetupSetUp": "Set up",
+  "feeSetupGive": "Give to students",
+  "feeSetupGiven": "{count} students now have this fee",
+  "@feeSetupGiven": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "feeSetupNoneToGive": "Everyone already has this fee",
+  "feeSetupMeaning": "Due date is the day the fee becomes payable. After the last date it shows as overdue. A student who needs different dates is changed from their own fee screen.",
+  "feeSetupVanNote": "Only for students who travel by van.",
+  "feeSetupNoClasses": "Add classes first.",
+  "syncTable_accessory_items": "Dress and book lists",
+  "syncTable_accessory_issues": "Dress and books given",
+  "fieldVan": "Van (if the student travels by van)",
+  "fieldNoVan": "No van",
+  "accKindDress": "Dress",
+  "accKindBooks": "Books",
+  "accSummaryDone": "{done} of {total} given",
+  "@accSummaryDone": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "accSummaryNot": "{count} not given",
+  "@accSummaryNot": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "accSetDress": "Dress set",
+  "accSetBooks": "Book list",
+  "accSetEmpty": "Not set up yet. Tap Edit set.",
+  "accEditSet": "Edit set",
+  "accSetHintDress": "One piece per line, for example: Shirt",
+  "accSetHintBooks": "One book per line",
+  "accSizesButton": "Dress sizes {done}/{total}",
+  "@accSizesButton": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "accSizeLabel": "Size {size}",
+  "@accSizeLabel": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "accSizeNotNoted": "Size not noted",
+  "accNoteSize": "Note size",
+  "accIssue": "Issue",
+  "accGive": "Give",
+  "accGivenOf": "{done} of {total} given",
+  "@accGivenOf": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "accComplete": "Complete",
+  "accIssuedTag": "Issued",
+  "accSizesTitle": "Dress sizes",
+  "accSizesNoted": "{done} of {total} noted",
+  "@accSizesNoted": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "accSizesOrder": "Order summary",
+  "accSizesNotNoted": "Not noted ×{count}",
+  "@accSizesNotNoted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "accSizesField": "Size",
+  "accSizesSave": "Save sizes",
+  "accSizesSaved": "Sizes saved",
+  "accIssueTitleDress": "Issue dress",
+  "accIssueTitleBooks": "Give books",
+  "accItemsGiven": "Items given",
+  "accSets": "Sets",
+  "accReceivedBy": "Received by",
+  "accSignTitle": "Receiver's signature",
+  "accPhotoOptional": "Photo (optional)",
+  "accIssuedBy": "Issued by {name}",
+  "@accIssuedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "accIssueAndSave": "Issue and save receipt",
+  "accIssuedSaved": "Saved. Receipt {no}",
+  "@accIssuedSaved": {
+    "placeholders": {
+      "no": {
+        "type": "String"
+      }
+    }
+  },
+  "accProblemNoItems": "Tick at least one item.",
+  "accProblemReceiver": "Enter who received it.",
+  "accProblemSignature": "The receiver must sign.",
+  "accProblemSize": "Enter the size.",
+  "accNoItemsSetup": "Set up this class's list first (Edit set).",
+  "accLogEmpty": "Nothing has been given yet.",
+  "accLogViewSignature": "View signature",
+  "accLogViewPhoto": "View photo",
+  "accLogReceived": "Received by {name} · {date}",
+  "@accLogReceived": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "accLogGiveRest": "Give remaining",
+  "accNotGivenYet": "Not given yet: {items}",
+  "@accNotGivenYet": {
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "profileAccessories": "Accessories",
+  "accNoClasses": "Add classes first.",
+  "approvalsSearchHint": "Search by name, class or title",
+  "approvalsTabWaiting": "Waiting {count}",
+  "@approvalsTabWaiting": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "approvalsTabAnswered": "Answered {count}",
+  "@approvalsTabAnswered": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "approvalsChipCount": "{label} {count}",
+  "@approvalsChipCount": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldVanNumber": "Van number",
+  "hintVanNumber": "For example UP32 AB 1234",
+  "dashWaitingTitle": "{count} waiting for you",
+  "@dashWaitingTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashWaitingNone": "Nothing is waiting for you",
+  "dashWaitingOpen": "Open",
+  "dashSectionPeople": "People",
+  "homeTileTiming": "School timing",
+  "homeTileAssembly": "Assembly",
+  "homeTilePeriods": "Period schedule",
+  "homeTileCalendar": "Calendar",
+  "homeTileSettings": "Settings",
+  "homeGreetingLine": "{date} · {greeting}",
+  "@homeGreetingLine": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "greeting": {
+        "type": "String"
+      }
+    }
+  },
+  "syncTable_school_timings": "Class timings",
+  "syncTable_bell_slots": "Period timings",
+  "syncTable_assembly_duty": "Assembly duty",
+  "syncTable_timetable_entries": "Class timetable",
+  "timingTitle": "School timing",
+  "timingStarts": "School starts",
+  "timingEnds": "School ends",
+  "timingNotSet": "Not set",
+  "timingWorkingDays": "Working days",
+  "timingClassRules": "Different timing for some classes",
+  "timingAddAnother": "+ Add another timing",
+  "timingSeasonal": "Seasonal timing",
+  "timingSeasonalHint": "Summer timing from a date, winter timing from a date.",
+  "timingAdd": "+ Add",
+  "timingNote": "Shown on Home, in the period schedule and at the teacher's check-in. Whether a late check-in is flagged after the start time is not decided.",
+  "timingRuleTitle": "Timing",
+  "timingRuleClasses": "For these classes (none picked means every class)",
+  "timingRuleFrom": "Starts from",
+  "timingRuleFromNone": "Every day",
+  "timingRuleRemove": "Remove",
+  "timingRuleFromDate": "{range} from {date}",
+  "@timingRuleFromDate": {
+    "placeholders": {
+      "range": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "assemblyTitle": "School assembly",
+  "assemblyTime": "Time",
+  "assemblyPlace": "Place",
+  "assemblyDays": "Days",
+  "assemblyOrder": "Running order",
+  "assemblyOrderHint": "One item per line, for example: Prayer",
+  "assemblyDutyTitle": "Who is on duty",
+  "assemblyInCharge": "In charge: {name}",
+  "@assemblyInCharge": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assemblyDutyClass": "Class",
+  "assemblyDutyTeacher": "Teacher in charge",
+  "assemblyDutyClear": "Clear",
+  "periodsTitle": "Period timings",
+  "periodsAdd": "+ Period",
+  "periodsHint": "The bell schedule for the whole school. Classes fill in subjects next.",
+  "periodsAssembly": "Assembly",
+  "periodsFixed": "Fixed",
+  "periodN": "Period {n}",
+  "@periodN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "periodBreakTag": "Break",
+  "periodEdit": "Edit",
+  "periodKindPeriod": "Period",
+  "periodKindBreak": "Break",
+  "periodLabel": "Name (for a break, e.g. Lunch)",
+  "periodMinutes": "{minutes} min",
+  "@periodMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "periodsTimetableButton": "Class timetable",
+  "periodRemove": "Remove",
+  "periodTimeRange": "{start} – {end}",
+  "@periodTimeRange": {
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      }
+    }
+  },
+  "periodEndBeforeStart": "The end must be after the start.",
+  "timetableTitle": "Timetable",
+  "timetableCopy": "Copy to…",
+  "timetableChange": "Change",
+  "timetableNotSet": "Not set",
+  "timetableClear": "Clear",
+  "timetableConflict": "{teacher} is already teaching {className} in {slot} on {day}. Choose another teacher or period.",
+  "@timetableConflict": {
+    "placeholders": {
+      "teacher": {
+        "type": "String"
+      },
+      "className": {
+        "type": "String"
+      },
+      "slot": {
+        "type": "String"
+      },
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "timetableNoOptions": "No teacher is allotted to this class yet. Allot subjects from the teacher's Subjects.",
+  "timetableCopied": "{copied} periods copied, {skipped} left out (teacher busy)",
+  "@timetableCopied": {
+    "placeholders": {
+      "copied": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "timetableCopyTo": "Copy {day} to",
+  "@timetableCopyTo": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "timetableNoSlots": "Set the period timings first.",
+  "timetablePickTitle": "{slot} · {day}",
+  "@timetablePickTitle": {
+    "placeholders": {
+      "slot": {
+        "type": "String"
+      },
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "actionDone": "Done",
+  "categoryTagExam": "Exam",
+  "categoryTagSubject": "Subject",
+  "categoryTagBill": "Bill",
+  "approvalsSubtitle": "{waiting} waiting · {total} total",
+  "@approvalsSubtitle": {
+    "placeholders": {
+      "waiting": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "approvalAllow": "Allow",
+  "approvalDecline": "Decline",
+  "approvalTabWaiting": "Waiting",
+  "approvalTabApproved": "Approved",
+  "approvalTabRejected": "Rejected",
+  "aadhaarScanCardTitle": "Scan Aadhaar card",
+  "aadhaarScanCardHint": "Fills name, birth date, gender, address",
+  "saveStudent": "Save student",
+  "saveTeacher": "Save teacher",
+  "saveStaff": "Save staff",
+  "actionAssignFee": "+ Assign fee",
+  "profileTileFeesDue": "{amount} due",
+  "@profileTileFeesDue": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "profileTileFeesClear": "All paid",
+  "profileTileAvg": "Avg {percent}%",
+  "@profileTileAvg": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "profileTileAttendance": "{percent}% this term",
+  "@profileTileAttendance": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "profileTileNone": "Nothing yet",
+  "profileGuardianLine": "Guardian: {name} · {phone}",
+  "@profileGuardianLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "syncTable_staff_bills": "Fuel bills",
+  "syncTable_staff_settlements": "Staff payments",
+  "categoryStaffBill": "Bills",
+  "approvalBillLine": "{name} · {detail} · {date}",
+  "@approvalBillLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "detail": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "billsTitle": "Bills",
+  "billsAdd": "+ Bill",
+  "billsTabAll": "All",
+  "billsTabPending": "Pending",
+  "billsTabApproved": "Approved",
+  "billsTabPaid": "Paid",
+  "billRowTitle": "{kind} · {amount}",
+  "@billRowTitle": {
+    "placeholders": {
+      "kind": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "billRowSub": "{date} · {litres} L · {proof}",
+  "@billRowSub": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "litres": {
+        "type": "String"
+      },
+      "proof": {
+        "type": "String"
+      }
+    }
+  },
+  "billRowSubNoLitres": "{date} · {proof}",
+  "@billRowSubNoLitres": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "proof": {
+        "type": "String"
+      }
+    }
+  },
+  "billPhasePending": "Pending approval",
+  "billPhaseApproved": "Approved",
+  "billPhaseRejected": "Rejected",
+  "billPhasePaid": "Paid",
+  "billPhotoYes": "photo",
+  "billPhotoNo": "no photo",
+  "billsRule": "Only an approved bill can be paid. Pending and rejected bills are locked.",
+  "billsEmpty": "No bills yet.",
+  "fuelPetrol": "Petrol",
+  "fuelDiesel": "Diesel",
+  "addBillTitle": "Add bill",
+  "fieldBillDate": "Date",
+  "fieldLitres": "Litres",
+  "fieldBillAmount": "Amount",
+  "fieldBillPhoto": "Photo of the bill",
+  "fieldBillNote": "Note (optional)",
+  "billSendForApproval": "Send for approval",
+  "billSent": "Bill sent for approval",
+  "errBillAmount": "Enter the amount.",
+  "errBillPhoto": "Add a photo of the bill.",
+  "billChooseStaff": "Whose bill is it?",
+  "staffPaymentTitle": "Payment",
+  "staffPayableNow": "Payable now (approved bills)",
+  "staffEligible": "Eligible · approved",
+  "staffSettle": "Settle {amount}",
+  "@staffSettle": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "staffNotEligible": "Not eligible yet",
+  "staffLockedWaiting": "Waiting for your approval",
+  "staffLocked": "Locked",
+  "staffGoApprovals": "Approvals",
+  "staffPayHistory": "Payment history",
+  "staffNothingPayable": "Nothing is ready to pay.",
+  "staffPayableLine": "{amount} payable",
+  "@staffPayableLine": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "staffBillsWaiting": "{count} awaiting approval",
+  "@staffBillsWaiting": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "staffNoBillsYet": "No bills yet",
+  "settleTitle": "Settle payment",
+  "settleAmountPaid": "Amount paid",
+  "settleProof": "Proof of settlement",
+  "settlePaidBy": "Paid by {name}",
+  "@settlePaidBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "settleConfirm": "Confirm and save voucher",
+  "settleSaved": "Paid. Voucher {no}",
+  "@settleSaved": {
+    "placeholders": {
+      "no": {
+        "type": "String"
+      }
+    }
+  },
+  "settleNothing": "Choose at least one bill.",
+  "settleNotApproved": "Some of these bills are no longer approved.",
+  "settlementsTitle": "Payment history",
+  "settlementsEmpty": "No payments yet.",
+  "settlementLine": "{mode} · {date}",
+  "@settlementLine": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "settlementRef": "Ref {ref}",
+  "@settlementRef": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "settlementBills": "{count, plural, =1{For 1 bill} other{For {count} bills}}",
+  "@settlementBills": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settlementViewProof": "View proof",
+  "staffRoleLine": "Phone {phone}",
+  "@staffRoleLine": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "staffTilePayment": "Payment",
+  "staffTileBills": "Bills",
+  "teacherSubjectsListTitle": "Subjects",
+  "teacherSubjectsLine": "{count, plural, =0{No subjects yet} =1{1 subject} other{{count} subjects}}",
+  "@teacherSubjectsLine": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "navMyClass": "My class",
+  "navExams": "Exams",
+  "teacherTodayPeriods": "Today's periods",
+  "teacherNoPeriods": "No periods set for today.",
+  "teacherAddQuestion": "+ Question",
+  "teacherAssemblyDuty": "Assembly duty: {day}",
+  "@teacherAssemblyDuty": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "teacherAssemblyDutyLine": "{className} · {time}",
+  "@teacherAssemblyDutyLine": {
+    "placeholders": {
+      "className": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "teacherMarkNow": "Mark now",
+  "teacherClassNotMarked": "{className} attendance not marked",
+  "@teacherClassNotMarked": {
+    "placeholders": {
+      "className": {
+        "type": "String"
+      }
+    }
+  },
+  "teacherClassStudents": "{count} students",
+  "@teacherClassStudents": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "teacherClassMarked": "{className} attendance done",
+  "@teacherClassMarked": {
+    "placeholders": {
+      "className": {
+        "type": "String"
+      }
+    }
+  },
+  "teacherClassPresentOf": "{present} of {total} present",
+  "@teacherClassPresentOf": {
+    "placeholders": {
+      "present": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "myClassTitle": "My class · {name}",
+  "@myClassTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "myClassNone": "No class is given to you yet. Ask the Principal.",
+  "myClassMark": "Mark attendance",
+  "myClassView": "View today's attendance",
+  "syncTable_question_units": "Question bank units",
+  "bankTitle": "My question bank",
+  "bankAddQuestion": "+ Question",
+  "bankSummary": "{count} questions in {units} units",
+  "@bankSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "units": {
+        "type": "int"
+      }
+    }
+  },
+  "bankUnitEmpty": "No questions yet",
+  "bankNoScopes": "You have no subject yet. Ask the Principal to give you one.",
+  "bankNoUnits": "No units yet. Add a unit, then its questions.",
+  "bankAddTitle": "Add questions",
+  "bankAddPhoto": "Take a photo of the questions",
+  "bankAddPhotoHint": "From your book, worksheet or board.",
+  "bankFastest": "Fastest",
+  "bankAddGallery": "Choose a photo from the phone",
+  "bankAddGalleryHint": "A picture you already took.",
+  "bankAddType": "Type one question",
+  "bankAddTypeHint": "Write it yourself.",
+  "bankClassSubject": "Class · Subject",
+  "bankUnitLabel": "Unit",
+  "bankNewUnit": "+ New unit",
+  "bankNewUnitTitle": "New unit",
+  "bankNewUnitHint": "e.g. Unit 2 · Verbs",
+  "bankAddOneTitle": "Add question",
+  "bankSaveAnother": "Save and add another",
+  "bankSaved": "Question saved",
+  "bankDeleted": "Question deleted",
+  "bankPickUnit": "Choose a unit first.",
+  "photoTitle": "Photo questions",
+  "photoStep": "Step {n} of 4",
+  "@photoStep": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "photoWhereGo": "Where should these go?",
+  "photoTips": "Tips for a clear photo",
+  "photoTip1": "Good light, no shadow",
+  "photoTip2": "Page flat, all four corners in view",
+  "photoTip3": "One page at a time",
+  "photoPages": "Pages taken: {count}",
+  "@photoPages": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "photoPageN": "Page {n}",
+  "@photoPageN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "photoAddPage": "Add another page",
+  "photoRead": "Read questions",
+  "photoReading": "Reading the photos…",
+  "photoNothing": "No questions could be read. Try a clearer photo.",
+  "photoFound": "{count} questions found in {pages} pages · {name}",
+  "@photoFound": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "pages": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "photoCheckEach": "Check each one. Tap a question to fix it.",
+  "photoFilterAll": "All {count}",
+  "@photoFilterAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "photoFilterNeed": "Need answer {count}",
+  "@photoFilterNeed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "photoFilterCheck": "Check {count}",
+  "@photoFilterCheck": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "flagReady": "Ready",
+  "flagAnswerMissing": "Answer missing",
+  "flagCheckPairs": "Check pairs",
+  "flagLeftOut": "Left out",
+  "photoHeadingNote": "Looks like a heading, not a question",
+  "photoSaveTo": "Save to {name}",
+  "@photoSaveTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "photoSaveN": "Save {count}",
+  "@photoSaveN": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "photoFixTitle": "Fix question",
+  "photoFixOf": "{n} of {total}",
+  "@photoFixOf": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "photoPrevious": "Previous",
+  "photoNext": "Next",
+  "photoSavedTitle": "Saved",
+  "photoSavedCount": "{count} questions added",
+  "@photoSavedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "photoBefore": "{name} before",
+  "@photoBefore": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "photoNow": "{name} now",
+  "@photoNow": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "photoTakeAnother": "Take another photo",
+  "photoMakePaper": "Make a paper from my bank",
+  "kindWeekly": "Weekly test",
+  "kindMidMonthly": "Mid-monthly test",
+  "kindUnitTest": "Unit test",
+  "kindHalfYearly": "Half-yearly exam",
+  "kindYearlyFinal": "Yearly final exam",
+  "makeTitle": "Make paper",
+  "makeStep": "Step {n} of 5",
+  "@makeStep": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "makeExamType": "Exam type",
+  "makeTotalMarks": "Total marks",
+  "makeTime": "Time (minutes)",
+  "makeDate": "Exam date",
+  "makeNextUnits": "Next: pick units",
+  "makePickUnits": "Which units does this test cover?",
+  "makeUnitCount": "{count} questions",
+  "@makeUnitCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "makeNoQuestions": "No questions in your bank",
+  "makeUnitsSummary": "{units} units · {count} questions to choose from",
+  "@makeUnitsSummary": {
+    "placeholders": {
+      "units": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "makeNextTypes": "Next: question types",
+  "makePlanned": "{planned} of {total} marks planned",
+  "@makePlanned": {
+    "placeholders": {
+      "planned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "makeTypesHave": "Types you have in these units",
+  "makeAvailable": "{count} available",
+  "@makeAvailable": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "makeTakeFrom": "Take from:",
+  "makeQuestions": "Questions",
+  "makeMarksEach": "Marks each",
+  "makeNotUsed": "not used",
+  "makeShort": "Ask for {want} and the bank has only {have}.",
+  "@makeShort": {
+    "placeholders": {
+      "want": {
+        "type": "int"
+      },
+      "have": {
+        "type": "int"
+      }
+    }
+  },
+  "makeMakeSet": "Make the set",
+  "makeReviewTitle": "Review set",
+  "makeMarksOf": "{have} / {want} marks",
+  "@makeMarksOf": {
+    "placeholders": {
+      "have": {
+        "type": "int"
+      },
+      "want": {
+        "type": "int"
+      }
+    }
+  },
+  "makeReplace": "Replace",
+  "makeNewSet": "Make a new set",
+  "makeNext": "Next",
+  "makeReplaceTitle": "Replace question",
+  "makeReplacing": "Replacing",
+  "makeOtherOfType": "Other questions of this type from your bank",
+  "makeUse": "Use",
+  "makeReplaceHint": "Questions already in this paper are hidden. Marks stay as planned.",
+  "makeNoOthers": "No other questions of this type.",
+  "makeSendTitle": "Send for approval",
+  "makeSummaryLine": "{name} · {marks} marks · {minutes} min",
+  "@makeSummaryLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "marks": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "makeMadeFrom": "Made from my question bank · {count} questions replaced by hand",
+  "@makeMadeFrom": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "makeSaveDraft": "Save draft",
+  "makeSend": "Send to Principal",
+  "makeMismatch": "The set has {have} marks but the paper needs {want}.",
+  "@makeMismatch": {
+    "placeholders": {
+      "have": {
+        "type": "int"
+      },
+      "want": {
+        "type": "int"
+      }
+    }
+  },
+  "makeSent": "Sent to the Principal.",
+  "makeDraftSaved": "Saved as a draft.",
+  "makeNeedTotal": "Enter total marks and time first.",
+  "makeNeedUnits": "Tick at least one unit that has questions.",
+  "makeNeedTypes": "Choose how many questions of at least one type.",
+  "newPaperTitle": "New paper",
+  "newPaperFromBank": "Make from my question bank",
+  "newPaperFromBankHint": "Pick units and types. A set is made for you.",
+  "newPaperWrite": "Write questions myself",
+  "newPaperWriteHint": "Type, scan or pick one by one.",
+  "tabSent": "Sent",
+  "tabApproved": "Approved",
+  "examsNewPaper": "+ New paper",
+  "examsMyBank": "My question bank",
+  "profileCheckInHistory": "Check-in history",
+  "profileCalendarHolidays": "Calendar and holidays",
+  "loginNewSchool": "New school? Set up as Principal",
+  "loginRestoreSchool": "School already registered? Restore it",
+  "loginOr": "or",
+  "resetTitle": "Start a new school?",
+  "resetBody": "This phone still holds the data of an earlier school. Starting a new school erases it from this phone. Nothing in the cloud is touched.",
+  "resetConfirm": "Erase and start new",
+  "monTitle": "Data monitor",
+  "monCheck": "Check",
+  "monAgainst": "Against",
+  "monSrcCloud": "Cloud",
+  "monSrcFile": "File",
+  "monSrcDb": "Local DB",
+  "monRows": "{count} rows",
+  "@monRows": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "monAsOf": "as of {time}",
+  "@monAsOf": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "monCheckCloud": "Check cloud",
+  "monCheckCloudHint": "Reads a count for each table from the cloud.",
+  "monNotRead": "Not read yet",
+  "monProblemMissing": "No data file yet",
+  "monProblemNotSignedIn": "Not signed in to the cloud",
+  "monProblemOffline": "Cannot reach the cloud",
+  "monProblemOther": "Could not be read",
+  "monTable": "Table",
+  "monAllMatch": "All tables match",
+  "monSomeDiffer": "{count} tables differ",
+  "@monSomeDiffer": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "monOnlyIn": "Only in {name}",
+  "@monOnlyIn": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "monChanged": "Different values",
+  "monSame": "{count} rows are the same",
+  "@monSame": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "monMatches": "Both match completely.",
+  "monShowing": "Showing the first {count}",
+  "@monShowing": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "monReading": "Reading…",
+  "monFileWritten": "Data file written {time}",
+  "@monFileWritten": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "monFileFailed": "Data file could not be written",
+  "monCompareWith": "Compared with {name}",
+  "monCheckNow": "Check now",
+  "monPhone": "Phone",
+  "monCloudCost": "Reads a count of each table from the cloud.",
+  "monMatchLine": "{name} has the same rows as {other}",
+  "@monMatchLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "other": {
+        "type": "String"
+      }
+    }
+  },
+  "monDiffLine": "{count} tables differ from {other}",
+  "@monDiffLine": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "other": {
+        "type": "String"
+      }
+    }
+  },
+  "monShowDifferences": "Differences ({count})",
+  "@monShowDifferences": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "monShowAll": "All rows ({count})",
+  "@monShowAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "monStatusSame": "Same",
+  "monStatusDifferent": "Different",
+  "monEmptyValue": "(empty)",
+  "monCountsLine": "Same {same} · Only {a} {onlyA} · Only {b} {onlyB} · Different {diff}",
+  "@monCountsLine": {
+    "placeholders": {
+      "same": {
+        "type": "int"
+      },
+      "a": {
+        "type": "String"
+      },
+      "onlyA": {
+        "type": "int"
+      },
+      "b": {
+        "type": "String"
+      },
+      "onlyB": {
+        "type": "int"
+      },
+      "diff": {
+        "type": "int"
+      }
+    }
+  },
+  "@monCompareWith": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "monSource": "Source",
+  "monReadBoth": "Read {a} and {b} again",
+  "@monReadBoth": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      }
+    }
+  },
+  "monRefreshLabel": "Refresh: {a} + {b}",
+  "@monRefreshLabel": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      }
+    }
+  },
+  "monRefreshHint": "Refresh reads only the two places chosen above.",
+  "monExternalWritten": "Copy in Downloads/ShikshaSetu written {time}",
+  "@monExternalWritten": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "monExternalFailed": "Copy in Downloads/ShikshaSetu could not be written",
+  "genderMaleShort": "M",
+  "genderFemaleShort": "F",
+  "genderOtherShort": "Other",
+  "backupAutoLast": "Automatic copy: {time}",
+  "@backupAutoLast": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "backupAutoNone": "Automatic copy not made yet",
+  "backupAutoFailed": "Automatic copy could not be written",
+  "actionBackupShareZip": "Share backup",
+  "backupShareHint": "Send the latest data to Drive, WhatsApp or email.",
+  "restoreHint": "Pick shiksha_setu_latest from Downloads/ShikshaSetu.",
+  "rpTitle": "Check before restoring",
+  "rpBackupFrom": "Backup made {time}",
+  "@rpBackupFrom": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "rpNoChange": "The backup has exactly the same data as the app. Nothing would change.",
+  "rpWillChange": "Restoring will add {added}, change {changed} and remove {removed} rows.",
+  "@rpWillChange": {
+    "placeholders": {
+      "added": {
+        "type": "int"
+      },
+      "changed": {
+        "type": "int"
+      },
+      "removed": {
+        "type": "int"
+      }
+    }
+  },
+  "rpLoseWarning": "{removed} rows are in the app but not in this backup. They would be lost.",
+  "@rpLoseWarning": {
+    "placeholders": {
+      "removed": {
+        "type": "int"
+      }
+    }
+  },
+  "rpLegend": "Now = the app today. Backup = the file you picked.",
+  "rpNow": "Now",
+  "rpBackup": "Backup",
+  "rpAdd": "+{count} added",
+  "@rpAdd": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rpRemove": "−{count} lost",
+  "@rpRemove": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rpChange": "~{count} changed",
+  "@rpChange": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rpRestoreButton": "Restore this backup",
+  "rpRestoreLosing": "Restore anyway",
+  "rpNothingToRestore": "Nothing to restore",
+  "actionBackupDownload": "Download",
+  "messageBackupDownloaded": "Backup saved",
+  "rpNewerBanner": "The app has newer changes (last changed {app}) than this backup (made {backup}). Restoring would override them with older data.",
+  "@rpNewerBanner": {
+    "placeholders": {
+      "app": {
+        "type": "String"
+      },
+      "backup": {
+        "type": "String"
+      }
+    }
+  },
+  "rpRestoreOverriding": "Restore anyway",
+  "rpOverrideTitle": "Override your data?",
+  "rpOverrideBody": "This will replace {changed} rows in the app with the backup's version and remove {removed} rows that are not in the backup.\n\nYour current data is kept first as Downloads/ShikshaSetu/shiksha_setu_before_restore.json (it replaces the one from an earlier restore).",
+  "@rpOverrideBody": {
+    "placeholders": {
+      "changed": {
+        "type": "int"
+      },
+      "removed": {
+        "type": "int"
+      }
+    }
+  },
+  "rpOverrideConfirm": "Override and restore",
+  "rhTitle": "Last restore",
+  "rhLine": "Restored {time} from the backup of {backup}",
+  "@rhLine": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "backup": {
+        "type": "String"
+      }
+    }
+  },
+  "rhCounts": "{added} added · {changed} replaced · {removed} lost",
+  "@rhCounts": {
+    "placeholders": {
+      "added": {
+        "type": "int"
+      },
+      "changed": {
+        "type": "int"
+      },
+      "removed": {
+        "type": "int"
+      }
+    }
+  },
+  "rhSaved": "Your earlier data: Downloads/ShikshaSetu/shiksha_setu_before_restore.json",
+  "rhNotSaved": "Your earlier data could not be copied to Downloads",
+  "rhForced": "The app had newer changes than this backup",
+  "rpOldTitle": "This is an old backup",
+  "rpOldBody": "The app already has newer data than this backup.\n\nStill override it with the older data? {changed} rows will be replaced by their older version and {removed} rows will be removed.\n\nYour current data is kept first as Downloads/ShikshaSetu/shiksha_setu_before_restore.json (it replaces the one from an earlier restore).",
+  "@rpOldBody": {
+    "placeholders": {
+      "changed": {
+        "type": "int"
+      },
+      "removed": {
+        "type": "int"
+      }
+    }
+  },
+  "homeSchoolPlans": "School plans",
+  "homeSchoolPlansHint": "Timing, assembly, periods, calendar and holidays",
+  "safePillSafe": "Safe {time}",
+  "@safePillSafe": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "safePillSaving": "Saving…",
+  "safePillFailed": "Not saved",
+  "safePillOff": "Cloud off",
+  "needsYouTitle": "Needs you · {count}",
+  "@needsYouTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "needsYouNone": "All caught up",
+  "needsYouNoneHint": "Nothing is waiting for you.",
+  "homeTodayInSchool": "Today in school",
+  "quickNotice": "Notice",
+  "homePlansMore": "+{count} more",
+  "@homePlansMore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planTimingHint": "When school starts and ends",
+  "planAssemblyHint": "Time, place and who is on duty",
+  "planPeriodsHint": "Bell schedule and class timetables",
+  "planCalendarHint": "School days and holidays",
+  "planHolidaysHint": "Add or change holidays",
+  "quickNoticeHint": "Post an announcement for everyone",
+  "wsAsk": "What do you need?",
+  "wsAddStudentHint": "Click to add a new student",
+  "wsAddTeacherHint": "Click to add a new teacher",
+  "wsAddStaffHint": "Click to add a driver, helper or other staff",
+  "wsListStudents": "All students",
+  "wsListTeachers": "All teachers",
+  "wsListStaff": "All staff",
+  "wsListHint": "{count} registered · search, see and edit",
+  "@wsListHint": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "wsFeesHint": "Set fees, collect payments, see dues",
+  "wsAccessoriesHint": "Dress and books given to students",
+  "wsPerformanceHint": "Marks, results and how classes are doing",
+  "wsStudentAttendanceHint": "Who came today, by class",
+  "wsClassesHint": "Classes, sections and class teachers",
+  "wsTeacherPaymentHint": "Pay teachers and see payments",
+  "wsQuestionBankHint": "Questions kept for papers",
+  "wsExamPapersHint": "Papers made and sent for approval",
+  "wsTeacherAttendanceHint": "Check-ins and who is in school",
+  "wsSubjectsHint": "Who teaches which subject",
+  "wsStaffAttendanceHint": "Who came today",
+  "wsStaffPaymentHint": "Pay staff and settle approved bills",
+  "wsBillsHint": "Petrol and diesel bills for approval",
+  "accAddTitle": "Add",
+  "accAddHint": "Add a dress piece or a book to a class",
+  "accManageTitle": "See, edit, delete",
+  "accManageHint": "The dress and book list of each class",
+  "accGiveTitle": "Give to students",
+  "accGiveHint": "Hand over dress or books, class by class",
+  "accSizesHint": "Note each student's size",
+  "accRecordsTitle": "Records",
+  "accRecordsHint": "Who got what, with receipts",
+  "accItemName": "Name of the item",
+  "accItemAdded": "Added",
+  "accItemRemoved": "Removed",
+  "accEditItem": "Edit item",
+  "accDeleteItemTitle": "Delete this item?",
+  "accNothingHere": "Nothing here yet.",
+  "accNoRecords": "Nothing has been given yet.",
+  "accPickClass": "Choose a class",
+  "actionSignInWithGoogle": "Sign in with Google",
+  "errorNotRegistered": "This Google account is not registered with the school. Ask the Principal to add you.",
+  "registerSubtitle": "Register as the Principal. You will set up the school next.",
+  "loginRegister": "New here? Register",
+  "schoolSetupTitle": "Name your school",
+  "schoolSetupSubtitle": "This name is shown across the app. You can add teachers later.",
+  "loginAdminNote": "Accounts are created by your school's administrator. If you can't sign in, please contact your Principal.",
+  "srvOffline": "Can't reach the school's server. Check your internet and try again.",
+  "srvInvalidCredentials": "Wrong email or password, or this account is switched off.",
+  "srvSessionExpired": "Your session ended. Please sign in again.",
+  "srvForbidden": "You are not allowed to do this.",
+  "srvNotFound": "This could not be found. It may have been removed.",
+  "srvInvalid": "Please check what you entered.",
+  "srvRejected": "This was not allowed.",
+  "srvTooManyRequests": "Too many tries. Please wait a little and try again.",
+  "srvUnavailable": "Something went wrong on the server. Please try again.",
+  "actionRetry": "Try again",
+  "comingSoon": "This part is being connected to the school's server.",
+  "navStaff": "Staff",
+  "navRequests": "Requests",
+  "navPayments": "Payments",
+  "navAnalytics": "Graphs",
+  "navSchool": "School",
+  "navNotices": "Notices",
+  "navFuelBills": "Fuel bills",
+  "navVicePrincipal": "Vice Principal",
+  "navMore": "More",
+  "roleLabelVicePrincipal": "Vice Principal",
+  "roleLabelStaff": "Staff",
+  "profileChangeName": "Change name",
+  "schoolTitle": "School",
+  "schoolNameNotSet": "School name not set",
+  "schoolSeasonInUse": "Timing in use",
+  "seasonSummer": "Summer",
+  "seasonWinter": "Winter",
+  "schoolTimingOf": "{season} timing",
+  "@schoolTimingOf": {
+    "placeholders": {
+      "season": {
+        "type": "String"
+      }
+    }
+  },
+  "schoolHours": "{opens} to {closes}",
+  "@schoolHours": {
+    "placeholders": {
+      "opens": {
+        "type": "String"
+      },
+      "closes": {
+        "type": "String"
+      }
+    }
+  },
+  "schoolTimingNotSet": "Not set yet",
+  "schoolPeriodCount": "{count, plural, =0{No periods} =1{1 period} other{{count} periods}}",
+  "@schoolPeriodCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "schoolInUse": "In use",
+  "schoolHolidays": "Holidays",
+  "fieldOpens": "School opens",
+  "fieldCloses": "School closes",
+  "fieldStarts": "Starts",
+  "fieldEnds": "Ends",
+  "schoolPeriods": "Periods",
+  "schoolAddPeriod": "Add period",
+  "schoolNoPeriods": "No periods yet.",
+  "schoolPeriodName": "Period {n} name (optional)",
+  "@schoolPeriodName": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "holidayEdit": "Change holiday",
+  "fieldHolidayName": "Holiday name",
+  "fieldFirstDay": "First day",
+  "fieldLastDay": "Last day",
+  "holidaysEmpty": "No holidays from this month on.",
+  "noticePost": "Post a notice",
+  "noticeKindNotice": "Notice",
+  "noticeAnnouncement": "Announcement",
+  "noticeWithdraw": "Take down",
+  "noticeWithdrawTitle": "Take this notice down?",
+  "noticeWithdrawBody": "Everyone will stop seeing it.",
+  "stuTitle": "Students",
+  "stuTabStudents": "Students",
+  "stuTabClasses": "Classes",
+  "stuSearch": "Search by name",
+  "stuAllClasses": "All classes",
+  "stuAdd": "Add student",
+  "stuEdit": "Edit student",
+  "stuRemove": "Remove student",
+  "stuRestore": "Restore student",
+  "stuRemoveAsk": "Remove {name}? Their records and fees stay.",
+  "@stuRemoveAsk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "stuRemoved": "Removed",
+  "stuEmpty": "No students found.",
+  "stuRoll": "Roll {roll}",
+  "@stuRoll": {
+    "placeholders": {
+      "roll": {
+        "type": "String"
+      }
+    }
+  },
+  "stuRollField": "Roll number (leave empty for the next one)",
+  "stuGuardianField": "Guardian name",
+  "stuUsesVan": "Uses the school van",
+  "stuVanYes": "Uses the van",
+  "stuVanNo": "Does not use the van",
+  "stuClassesEmpty": "No classes yet. Tap \"Add class\" to create one.",
+  "stuClassLevel": "Level",
+  "stuClassSection": "Section (leave empty if there is only one)",
+  "stuClassRemoveAsk": "Remove {name}?",
+  "@stuClassRemoveAsk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "stuLevelNursery": "Nursery",
+  "stuLevelLkg": "LKG",
+  "stuLevelUkg": "UKG",
+  "feeTab": "Fees",
+  "feeSetupTab": "Fee setup",
+  "itemsTab": "Dress & books",
+  "feeOnlyDue": "Only with dues",
+  "feeAccountsEmpty": "No fee accounts found.",
+  "feeBalanceOf": "Balance {amount}",
+  "@feeBalanceOf": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "feeDue": "Due",
+  "feePaid": "Paid",
+  "feeBalance": "Balance",
+  "feeNotSet": "Not set",
+  "feeSetAmount": "Set amount",
+  "feeReceive": "Receive payment",
+  "feeHeadTuition": "Tuition",
+  "feeReceipt": "Receipt {no}",
+  "@feeReceipt": {
+    "placeholders": {
+      "no": {
+        "type": "String"
+      }
+    }
+  },
+  "feeNote": "Note (optional)",
+  "feePayments": "Payments",
+  "feeNoPayments": "No payments yet.",
+  "feeSell": "Sell dress or books",
+  "feeNoClasses": "Add a class first.",
+  "itemAdd": "Add item",
+  "itemEdit": "Edit item",
+  "itemName": "Item name",
+  "itemPrice": "Price",
+  "itemClass": "Class",
+  "itemAllClasses": "All classes",
+  "itemKind": "Kind",
+  "itemKindDress": "Dress",
+  "itemKindBooks": "Books",
+  "itemsEmpty": "Nothing for sale yet. Tap \"Add item\".",
+  "itemQuantity": "Quantity",
+  "itemSellAction": "Sell",
+  "itemsForSale": "Nothing is for sale for this class.",
+  "memTeachers": "Teachers",
+  "memStaff": "Staff",
+  "memVicePrincipals": "Vice Principals",
+  "memTeacherAdd": "Add teacher",
+  "memStaffAdd": "Add staff member",
+  "memVpAdd": "Appoint Vice Principal",
+  "memTeacherEdit": "Edit teacher",
+  "memStaffEdit": "Edit staff member",
+  "memVpEdit": "Edit Vice Principal",
+  "memTeachersEmpty": "No teachers found.",
+  "memStaffEmpty": "No staff found.",
+  "memVpEmpty": "No Vice Principal yet.",
+  "memJobTitle": "Job title (e.g. Van driver)",
+  "memShowRemoved": "Include removed",
+  "memRemove": "Remove",
+  "memRestore": "Restore",
+  "memRemoveAsk": "Remove {name}? They can no longer sign in.",
+  "@memRemoveAsk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "memResetPassword": "Set a new password",
+  "memPasswordChanged": "Password changed",
+  "memEmailHint": "They sign in with this email",
+  "navLessons": "My lessons",
+  "tchAllotments": "Classes",
+  "tchLessonBoard": "Daily lessons",
+  "tchAllot": "Allot a class",
+  "tchAllotmentsEmpty": "No class is allotted yet.",
+  "tchTeacher": "Teacher",
+  "tchSubject": "Subject",
+  "tchRemoveAllotmentAsk": "Take {subject} of {name} back from this teacher?",
+  "@tchRemoveAllotmentAsk": {
+    "placeholders": {
+      "subject": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "tchRecorded": "Recorded",
+  "tchPending": "Not recorded yet",
+  "tchBoardEmpty": "No class is allotted, so there is nothing to record.",
+  "tchRecordLesson": "Record today's lesson",
+  "tchEditLesson": "Change the lesson",
+  "tchTopic": "What was taught",
+  "tchLessonsEmpty": "No lessons recorded yet.",
+  "tchMyClasses": "My classes",
+  "tchRecentLessons": "Recent lessons",
+  "tchClassSubject": "{name} · {subject}",
+  "@tchClassSubject": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "subject": {
+        "type": "String"
+      }
+    }
+  },
+  "tchDayPick": "Day",
+  "fltVans": "Vans",
+  "fltFuelBills": "Fuel bills",
+  "fltVanAdd": "Add van",
+  "fltVanEdit": "Edit van",
+  "fltVanName": "Van name or number",
+  "fltDriver": "Driver",
+  "fltNoDriver": "No driver",
+  "fltVansEmpty": "No vans yet.",
+  "fltBillsEmpty": "No fuel bills.",
+  "fltBillAdd": "Add fuel bill",
+  "fltFuelType": "Fuel",
+  "fltPetrol": "Petrol",
+  "fltDiesel": "Diesel",
+  "fltLitres": "Litres",
+  "fltRate": "Rate per litre",
+  "fltOdometer": "Odometer (km)",
+  "fltBilledOn": "Bill date",
+  "fltVan": "Van",
+  "fltStatusPending": "Pending",
+  "fltStatusApproved": "Approved",
+  "fltStatusRejected": "Rejected",
+  "fltAllStatuses": "All",
+  "fltWithdraw": "Withdraw",
+  "fltApprove": "Approve",
+  "fltReject": "Reject",
+  "fltRejectReason": "Reason",
+  "fltMileage": "{km} km · {kpl} km/l",
+  "@fltMileage": {
+    "placeholders": {
+      "km": {
+        "type": "String"
+      },
+      "kpl": {
+        "type": "String"
+      }
+    }
+  },
+  "fltBillLine": "{litres} L at {rate}",
+  "@fltBillLine": {
+    "placeholders": {
+      "litres": {
+        "type": "String"
+      },
+      "rate": {
+        "type": "String"
+      }
+    }
+  },
+  "fltSubmittedBy": "By {name}",
+  "@fltSubmittedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "fltRejectedWhy": "Rejected: {reason}",
+  "@fltRejectedWhy": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "fltNoVanForDriver": "You have not been given a van yet.",
+  "attStudentsTab": "Students",
+  "attReportTab": "Report",
+  "attMineTab": "My attendance",
+  "attPeopleTab": "Teachers & staff",
+  "attPresent": "Present",
+  "attLate": "Late",
+  "attAbsent": "Absent",
+  "attLeave": "On leave",
+  "attHoliday": "Holiday",
+  "attNotInYet": "Not in yet",
+  "attMarkAll": "Mark all present",
+  "attSave": "Save attendance",
+  "attSaved": "Attendance saved",
+  "attPickClass": "Choose a class",
+  "attRosterEmpty": "No students in this class.",
+  "attCheckIn": "Check in",
+  "attCheckOut": "Check out",
+  "attCheckedInAt": "In {time}",
+  "@attCheckedInAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "attCheckedOutAt": "Out {time}",
+  "@attCheckedOutAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "attMineEmpty": "No attendance recorded yet.",
+  "attBoardEmpty": "No one to show.",
+  "attHolidayToday": "This day is a holiday.",
+  "attAllRoles": "Everyone",
+  "attRoleTeachers": "Teachers",
+  "attRoleStaff": "Staff",
+  "attCorrect": "Correct the times",
+  "attCheckInTime": "Check-in time",
+  "attCheckOutTime": "Check-out time (optional)",
+  "attTally": "{present} present · {late} late · {absent} absent",
+  "@attTally": {
+    "placeholders": {
+      "present": {
+        "type": "int"
+      },
+      "late": {
+        "type": "int"
+      },
+      "absent": {
+        "type": "int"
+      }
+    }
+  },
+  "attRange": "Period",
+  "attReportNeedsRange": "Choose a period to see the report.",
+  "attDay": "Day",
+  "reqTitle": "Requests",
+  "reqEmpty": "No requests.",
+  "reqRaiseLeave": "Ask for leave",
+  "reqRaiseMeeting": "Ask for a meeting",
+  "reqKindLeave": "Leave",
+  "reqKindMeeting": "Meeting",
+  "reqAllKinds": "All",
+  "reqStatusPending": "Pending",
+  "reqStatusApproved": "Approved",
+  "reqStatusRejected": "Rejected",
+  "reqStatusWithdrawn": "Withdrawn",
+  "reqFrom": "From",
+  "reqTo": "To",
+  "reqReason": "Reason",
+  "reqSubject": "Subject",
+  "reqDetails": "Details (optional)",
+  "reqPreferredOn": "Preferred day (optional)",
+  "reqSend": "Send",
+  "reqWithdraw": "Withdraw",
+  "reqApprove": "Approve",
+  "reqReject": "Reject",
+  "reqRejectReason": "Reason for rejecting",
+  "reqMeetingOn": "Meeting day",
+  "reqMeetingAt": "Meeting time",
+  "reqBy": "From {name}",
+  "@reqBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "reqDecidedBy": "{name} on {date}",
+  "@reqDecidedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "reqMeetingFixed": "Meeting on {date} at {time}",
+  "@reqMeetingFixed": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "reqNote": "Note: {note}",
+  "@reqNote": {
+    "placeholders": {
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "exmTitle": "Exams",
+  "exmTabExams": "Exams",
+  "exmTabBank": "Question bank",
+  "exmSchedule": "Schedule exam",
+  "exmEdit": "Change exam",
+  "exmEmpty": "No exams found.",
+  "exmType": "Kind of exam",
+  "exmTypeUnitTest": "Unit test",
+  "exmTypeMidTerm": "Mid-term",
+  "exmTypeAnnual": "Annual",
+  "exmSubject": "Subject",
+  "exmHeldOn": "Exam day",
+  "exmMaxMarks": "Total marks",
+  "exmAwaiting": "Papers awaiting approval",
+  "exmRemoveAsk": "Remove this exam?",
+  "exmTeacher": "Teacher: {name}",
+  "@exmTeacher": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "exmMarksOf": "{marks} of {max}",
+  "@exmMarksOf": {
+    "placeholders": {
+      "marks": {
+        "type": "int"
+      },
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "exmEnterMarks": "Enter marks",
+  "exmMarksSave": "Save marks",
+  "exmAbsent": "Absent",
+  "exmMarksField": "Marks",
+  "exmMarksTooHigh": "More than the total marks",
+  "exmResults": "Results",
+  "exmResultsStats": "{entered} entered · {absent} absent",
+  "@exmResultsStats": {
+    "placeholders": {
+      "entered": {
+        "type": "String"
+      },
+      "absent": {
+        "type": "int"
+      }
+    }
+  },
+  "exmAverage": "Average {value}%",
+  "@exmAverage": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "exmHighLow": "Highest {high} · Lowest {low}",
+  "@exmHighLow": {
+    "placeholders": {
+      "high": {
+        "type": "String"
+      },
+      "low": {
+        "type": "String"
+      }
+    }
+  },
+  "exmNotEntered": "Not entered",
+  "exmPaper": "Question paper",
+  "exmPaperNone": "No paper yet.",
+  "exmPaperCompose": "Choose questions",
+  "exmPaperSend": "Send for approval",
+  "exmPaperApprove": "Approve paper",
+  "exmPaperReject": "Send back",
+  "exmPaperStatusDraft": "Draft",
+  "exmPaperStatusSent": "Waiting for approval",
+  "exmPaperStatusApproved": "Approved",
+  "exmPaperStatusRejected": "Sent back",
+  "exmPaperTotal": "Total {marks} marks",
+  "@exmPaperTotal": {
+    "placeholders": {
+      "marks": {
+        "type": "int"
+      }
+    }
+  },
+  "exmPaperNote": "Note: {note}",
+  "@exmPaperNote": {
+    "placeholders": {
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "exmPaperBankEmpty": "No questions yet for this class and subject. Add them in the question bank.",
+  "exmPaperUse": "Use {count} questions",
+  "@exmPaperUse": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "exmReason": "Reason",
+  "qbUnitAdd": "Add unit",
+  "qbUnitEdit": "Change unit",
+  "qbUnitName": "Unit name",
+  "qbUnitsEmpty": "No units yet.",
+  "qbQuestionAdd": "Add question",
+  "qbQuestionEdit": "Change question",
+  "qbQuestionText": "Question",
+  "qbQuestionMarks": "Marks",
+  "qbQuestionType": "Kind of question",
+  "qbTypeMcq": "Multiple choice",
+  "qbTypeShort": "Short answer",
+  "qbTypeLong": "Long answer",
+  "qbQuestionsEmpty": "No questions in this unit yet.",
+  "qbUnitBy": "{teacher} · {cls} · {subject}",
+  "@qbUnitBy": {
+    "placeholders": {
+      "teacher": {
+        "type": "String"
+      },
+      "cls": {
+        "type": "String"
+      },
+      "subject": {
+        "type": "String"
+      }
+    }
+  },
+  "exmStudentResults": "Exam results",
+  "exmStudentTotal": "Total {obtained} of {outOf} ({pct}%)",
+  "@exmStudentTotal": {
+    "placeholders": {
+      "obtained": {
+        "type": "String"
+      },
+      "outOf": {
+        "type": "String"
+      },
+      "pct": {
+        "type": "String"
+      }
+    }
+  },
+  "exmStudentEmpty": "No exams yet.",
+  "payTitle": "Payments",
+  "payTabTeachers": "Teachers",
+  "payTabStaff": "Staff",
+  "payTabMine": "My account",
+  "payEmpty": "No one to show.",
+  "paySalary": "Salary",
+  "payFuelBill": "Fuel bill",
+  "paySalaryNow": "Salary {amount} a month",
+  "@paySalaryNow": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paySalaryNone": "Salary not set",
+  "paySetSalary": "Set salary",
+  "paySalaryFrom": "From month",
+  "paySalaryHistory": "Salary history",
+  "payFrom": "from {month}",
+  "@payFrom": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "payBalance": "To pay {amount}",
+  "@payBalance": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "payTotals": "Due {due} · Paid {paid}",
+  "@payTotals": {
+    "placeholders": {
+      "due": {
+        "type": "String"
+      },
+      "paid": {
+        "type": "String"
+      }
+    }
+  },
+  "payLineDue": "{label}: due {due}, paid {paid}",
+  "@payLineDue": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "due": {
+        "type": "String"
+      },
+      "paid": {
+        "type": "String"
+      }
+    }
+  },
+  "payPay": "Pay",
+  "payMode": "How paid",
+  "payHistory": "Payments made",
+  "payHistoryEmpty": "No payments yet.",
+  "payReceipt": "Receipt {no}",
+  "@payReceipt": {
+    "placeholders": {
+      "no": {
+        "type": "String"
+      }
+    }
+  },
+  "payNothingDue": "Nothing is due.",
+  "payFuelOn": "{van} · {date}",
+  "@payFuelOn": {
+    "placeholders": {
+      "van": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "anaTitle": "Analytics",
+  "anaStudentAttendance": "Student attendance",
+  "anaFees": "Fees",
+  "anaExams": "Exam results",
+  "anaStaffAttendance": "Teacher & staff attendance",
+  "anaPayments": "Payments to staff",
+  "anaFuel": "Fuel",
+  "anaLessons": "Daily lessons",
+  "anaSeriesAttendance": "Attendance %",
+  "anaSeriesFeesCollected": "Fees collected each month",
+  "anaSeriesFeesBalance": "Fees still to come, by class",
+  "anaSeriesExamAverage": "Average % in each exam",
+  "anaSeriesStaffPresent": "Came in",
+  "anaSeriesStaffAbsent": "Absent or on leave",
+  "anaSeriesPaidOut": "Paid out each month",
+  "anaSeriesFuelAmount": "Fuel spent",
+  "anaSeriesFuelMileage": "Kilometres per litre",
+  "anaSeriesLessons": "Lessons recorded %",
+  "anaSumCollected": "Collected",
+  "anaSumBalance": "Still to come",
+  "anaSumOwed": "Still owed to staff",
+  "anaSumPaid": "Paid out",
+  "anaEmpty": "Nothing to draw for this period.",
+  "anaPeriod": "Period",
+  "perTitle": "What this person may do",
+  "perReason": "Why are you giving this?",
+  "perGive": "Allow",
+  "perTakeBackAsk": "Take back “{label}”?",
+  "@perTakeBackAsk": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "perTakeBack": "Take back",
+  "perReasonShown": "Reason: {reason}",
+  "@perReasonShown": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "homeGreeting": "Hello, {name}",
+  "@homeGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeAreas": "Your areas",
+  "homeLatestNotice": "Latest notice",
+  "homeNoNotice": "No notices yet.",
+  "paperScanTitle": "Scan question paper",
+  "paperScanIntro": "Take a photo of every page of the handwritten paper, front and back, in order. Use good light and hold the phone straight above the page. The photos are sent to Google Gemini to be read, so internet is needed.",
+  "paperScanPageN": "Page {n}",
+  "@paperScanPageN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "paperScanNoPages": "No pages added yet",
+  "paperScanRead": "Read pages",
+  "paperScanReviewHint": "Reading handwriting can make mistakes. Check every question, fix the words, and delete anything that is not a question.",
+  "paperScanQuestionN": "Question {n}",
+  "@paperScanQuestionN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "paperScanOptions": "Options (one per line)",
+  "paperScanMarks": "Marks (optional)",
+  "paperScanAddQuestion": "Add question",
+  "paperScanHeaderTitle": "School and paper details",
+  "paperScanExamName": "Exam name (e.g. Unit Test)",
+  "paperScanChooseLogo": "Choose school logo",
+  "paperScanChangeLogo": "Change logo",
+  "paperScanMakePdf": "Make PDF",
+  "paperScanNeedMore": "Enter the school name and keep at least one question to make the PDF.",
+  "paperScanEditQuestions": "Edit questions",
+  "paperScanBuildFailed": "Could not make the PDF. Please try again.",
+  "paperScanKeyTitle": "AI key",
+  "paperScanKeyHint": "Handwriting is read by Google Gemini. Get a free key at aistudio.google.com (Get API key), then paste it here. It stays on this phone.",
+  "paperScanKeyField": "Paste AI key",
+  "paperScanKeySave": "Save key",
+  "paperScanKeySaved": "AI key saved on this phone",
+  "paperScanKeyRemove": "Remove key",
+  "paperScanErrMissingKey": "No AI key yet. Paste your AI key, then read the pages again.",
+  "paperScanErrNoInternet": "No internet. Reading handwriting needs internet. Connect and try again.",
+  "paperScanErrInvalidKey": "The AI key was not accepted. Check it or paste a new one.",
+  "paperScanErrQuota": "The free AI limit is used up for now. Wait a minute (or until tomorrow) and try again.",
+  "paperScanErrTooLarge": "The photos are too big together. Remove some pages and try again.",
+  "paperScanErrBadReply": "The AI sent a reply the app could not use. Please try again.",
+  "paperScanErrNoQuestions": "No questions found in the photos. Use clearer, well-lit photos.",
+  "paperScanErrService": "The AI service gave an error: {detail}",
+  "@paperScanErrService": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "paperScanErrBusy": "The AI service is busy right now (it tried 4 times). Wait a minute and tap Read pages again.",
+  "paperScanErrNoCredit": "The Anthropic account has no credit left. Add credit at console.anthropic.com under Billing, then try again.",
+  "paperScanErrTimeout": "The AI took too long to answer (over 90 seconds). Try again, or add fewer pages at a time."
+}

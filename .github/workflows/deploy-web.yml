@@ -1,0 +1,62 @@
+name: Deploy web
+
+# One site, three copies: / is PROD, /uat/ is UAT, /debug/ is DEBUG.
+# Set these repository variables (Settings > Secrets and variables > Actions > Variables):
+#   API_URL_DEBUG  e.g. http://127.0.0.1:8000/api   (your computer's Django server)
+#   API_URL_UAT    e.g. https://uat-api.example.com/api
+#   API_URL_PROD   e.g. https://api.example.com/api
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.35.7
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter gen-l10n
+      - name: Build the three copies
+        env:
+          REPO: ${{ github.event.repository.name }}
+          API_URL_DEBUG: ${{ vars.API_URL_DEBUG || 'http://127.0.0.1:8000/api' }}
+          API_URL_UAT: ${{ vars.API_URL_UAT }}
+          API_URL_PROD: ${{ vars.API_URL_PROD }}
+        run: |
+          build() { # name, base path, api url
+            flutter build web --release -t lib/main_web.dart \
+              --base-href "$2" \
+              --dart-define=APP_ENV="$1" --dart-define=API_BASE_URL="$3"
+          }
+          mkdir -p site
+          build prod "/$REPO/" "$API_URL_PROD"   && cp -r build/web/. site/
+          build uat "/$REPO/uat/" "$API_URL_UAT" && mkdir -p site/uat && cp -r build/web/. site/uat/
+          build debug "/$REPO/debug/" "$API_URL_DEBUG" && mkdir -p site/debug && cp -r build/web/. site/debug/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

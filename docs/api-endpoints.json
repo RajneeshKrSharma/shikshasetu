@@ -1,0 +1,2740 @@
+[
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "GET",
+    "path": "/api/health/",
+    "who": "public",
+    "title": "Is the server up",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "status": "ok"
+    }
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "POST",
+    "path": "/api/auth/login/",
+    "who": "public",
+    "title": "Sign in with email and password",
+    "status": 200,
+    "hybrid": true,
+    "request": {
+      "email": "asha@school.in",
+      "password": "••••••••"
+    },
+    "response": {
+      "access": "eyJhbGciOi…",
+      "refresh": "eyJhbGciOi…"
+    }
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "POST",
+    "path": "/api/auth/refresh/",
+    "who": "public",
+    "title": "Swap the refresh token for a new access token",
+    "status": 200,
+    "hybrid": true,
+    "request": {
+      "refresh": "eyJhbGciOi…"
+    },
+    "response": {
+      "access": "eyJhbGciOi…",
+      "refresh": "eyJhbGciOi…"
+    }
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "GET",
+    "path": "/api/auth/me/",
+    "who": "any",
+    "title": "The signed-in person",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "email": "asha@school.in",
+      "name": "Asha Sharma",
+      "role": "teacher",
+      "phone": "9876501234",
+      "employee_id": "T-001",
+      "joined_on": "2026-04-01T10:00:00+05:30",
+      "subject": "Maths",
+      "aadhaar_masked": "XXXX XXXX 5678",
+      "aadhaar_reason": "",
+      "dob": "1990-02-02",
+      "gender": "female",
+      "address": "Jaipur",
+      "is_active": true
+    }
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "PATCH",
+    "path": "/api/auth/me/",
+    "who": "any",
+    "title": "Change own name or phone",
+    "status": 200,
+    "hybrid": true,
+    "request": {
+      "phone": "9876501234"
+    },
+    "response": {
+      "id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "email": "asha@school.in",
+      "name": "Asha Sharma",
+      "role": "teacher",
+      "phone": "9876501234",
+      "employee_id": "T-001",
+      "joined_on": "2026-04-01T10:00:00+05:30",
+      "subject": "Maths",
+      "aadhaar_masked": "XXXX XXXX 5678",
+      "aadhaar_reason": "",
+      "dob": "1990-02-02",
+      "gender": "female",
+      "address": "Jaipur",
+      "is_active": true
+    }
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "POST",
+    "path": "/api/auth/change-password/",
+    "who": "any",
+    "title": "Change own password",
+    "status": 204,
+    "hybrid": true,
+    "request": {
+      "current": "••••••••",
+      "new": "••••••••"
+    },
+    "response": null
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "GET",
+    "path": "/api/school/",
+    "who": "any",
+    "title": "The school's name",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "school_name": "Shiksha Public School"
+    }
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "PATCH",
+    "path": "/api/school/",
+    "who": "P",
+    "title": "Name the school",
+    "status": 200,
+    "hybrid": true,
+    "request": {
+      "school_name": "Shiksha Public School"
+    },
+    "response": {
+      "school_name": "Shiksha Public School"
+    }
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "GET",
+    "path": "/api/auth/teachers/",
+    "who": "P",
+    "title": "All teachers",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": [
+      {
+        "id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+        "email": "asha@school.in",
+        "name": "Asha Sharma",
+        "role": "teacher",
+        "phone": "9876501234",
+        "employee_id": "T-001",
+        "joined_on": "2026-04-01T10:00:00+05:30",
+        "subject": "Maths",
+        "aadhaar_masked": "XXXX XXXX 5678",
+        "aadhaar_reason": "",
+        "dob": "1990-02-02",
+        "gender": "female",
+        "address": "Jaipur",
+        "is_active": true
+      }
+    ]
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "POST",
+    "path": "/api/auth/teachers/",
+    "who": "P",
+    "title": "Add a teacher",
+    "status": 201,
+    "hybrid": true,
+    "request": {
+      "email": "asha@school.in",
+      "name": "Asha Sharma",
+      "phone": "9876501234",
+      "password": "••••••••",
+      "subject": "Maths"
+    },
+    "response": {
+      "id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "email": "asha@school.in",
+      "name": "Asha Sharma",
+      "role": "teacher",
+      "phone": "9876501234",
+      "employee_id": "T-001",
+      "joined_on": "2026-04-01T10:00:00+05:30",
+      "subject": "Maths",
+      "aadhaar_masked": "XXXX XXXX 5678",
+      "aadhaar_reason": "",
+      "dob": "1990-02-02",
+      "gender": "female",
+      "address": "Jaipur",
+      "is_active": true
+    }
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "GET",
+    "path": "/api/auth/teachers/{id}/",
+    "who": "P",
+    "title": "One teacher",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "email": "asha@school.in",
+      "name": "Asha Sharma",
+      "role": "teacher",
+      "phone": "9876501234",
+      "employee_id": "T-001",
+      "joined_on": "2026-04-01T10:00:00+05:30",
+      "subject": "Maths",
+      "aadhaar_masked": "XXXX XXXX 5678",
+      "aadhaar_reason": "",
+      "dob": "1990-02-02",
+      "gender": "female",
+      "address": "Jaipur",
+      "is_active": true
+    }
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "PUT",
+    "path": "/api/auth/teachers/{id}/",
+    "who": "P",
+    "title": "Replace a teacher's details",
+    "status": 200,
+    "hybrid": true,
+    "request": {
+      "email": "asha@school.in",
+      "name": "Asha Sharma",
+      "phone": "9876501234"
+    },
+    "response": {
+      "id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "email": "asha@school.in",
+      "name": "Asha Sharma",
+      "role": "teacher",
+      "phone": "9876501234",
+      "employee_id": "T-001",
+      "joined_on": "2026-04-01T10:00:00+05:30",
+      "subject": "Maths",
+      "aadhaar_masked": "XXXX XXXX 5678",
+      "aadhaar_reason": "",
+      "dob": "1990-02-02",
+      "gender": "female",
+      "address": "Jaipur",
+      "is_active": true
+    }
+  },
+  {
+    "module": "Already built",
+    "phase": "Built",
+    "method": "PATCH",
+    "path": "/api/auth/teachers/{id}/",
+    "who": "P",
+    "title": "Change some details, or deactivate",
+    "status": 200,
+    "hybrid": true,
+    "request": {
+      "is_active": false
+    },
+    "response": {
+      "id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "email": "asha@school.in",
+      "name": "Asha Sharma",
+      "role": "teacher",
+      "phone": "9876501234",
+      "employee_id": "T-001",
+      "joined_on": "2026-04-01T10:00:00+05:30",
+      "subject": "Maths",
+      "aadhaar_masked": "XXXX XXXX 5678",
+      "aadhaar_reason": "",
+      "dob": "1990-02-02",
+      "gender": "female",
+      "address": "Jaipur",
+      "is_active": false
+    }
+  },
+  {
+    "module": "Account extras",
+    "phase": "1",
+    "method": "POST",
+    "path": "/api/auth/logout/",
+    "who": "any",
+    "title": "Sign out and retire the refresh token",
+    "status": 204,
+    "hybrid": true,
+    "request": {
+      "refresh": "eyJhbGciOi…"
+    },
+    "response": null
+  },
+  {
+    "module": "Account extras",
+    "phase": "1",
+    "method": "POST",
+    "path": "/api/auth/change-email/",
+    "who": "any",
+    "title": "Change own sign-in email",
+    "status": 200,
+    "hybrid": true,
+    "request": {
+      "password": "••••••••",
+      "new_email": "asha.sharma@school.in"
+    },
+    "response": {
+      "email": "asha.sharma@school.in"
+    }
+  },
+  {
+    "module": "Classes",
+    "phase": "1",
+    "method": "GET",
+    "path": "/api/classes/",
+    "who": "any",
+    "title": "All classes with class teacher and student count",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "name": "5-A",
+        "class_teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+        "class_teacher_name": "Asha Sharma",
+        "students": 38
+      }
+    ]
+  },
+  {
+    "module": "Classes",
+    "phase": "1",
+    "method": "POST",
+    "path": "/api/classes/",
+    "who": "P",
+    "title": "Add a class",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "name": "5-B"
+    },
+    "response": {
+      "name": "5-B",
+      "class_teacher_id": null,
+      "students": 0
+    }
+  },
+  {
+    "module": "Classes",
+    "phase": "1",
+    "method": "PATCH",
+    "path": "/api/classes/{name}/",
+    "who": "P",
+    "title": "Rename a class",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "name": "5-C"
+    },
+    "response": {
+      "name": "5-C",
+      "students": 38
+    }
+  },
+  {
+    "module": "Classes",
+    "phase": "1",
+    "method": "DELETE",
+    "path": "/api/classes/{name}/",
+    "who": "P",
+    "title": "Remove a class and what belongs to it",
+    "status": 204,
+    "hybrid": false,
+    "request": null,
+    "response": null
+  },
+  {
+    "module": "Classes",
+    "phase": "1",
+    "method": "PUT",
+    "path": "/api/classes/{name}/class-teacher/",
+    "who": "P",
+    "title": "Set or clear the class teacher",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0"
+    },
+    "response": {
+      "name": "5-A",
+      "class_teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0"
+    }
+  },
+  {
+    "module": "Teacher subjects and approvals",
+    "phase": "1",
+    "method": "GET",
+    "path": "/api/teaching/",
+    "who": "any",
+    "title": "Who teaches what (a teacher sees their own)",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "c5f7da39-be33-593f-965e-a4611824c0f0",
+        "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+        "class_name": "5-A",
+        "subject": "Maths",
+        "status": "approved",
+        "requested_by": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+        "requested_at": "2026-04-03T09:00:00+05:30",
+        "decided_at": "2026-04-03T10:00:00+05:30"
+      }
+    ]
+  },
+  {
+    "module": "Teacher subjects and approvals",
+    "phase": "1",
+    "method": "POST",
+    "path": "/api/teaching/requests/",
+    "who": "T",
+    "title": "A teacher asks to teach a subject",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "class_name": "5-A",
+      "subject": "Science"
+    },
+    "response": {
+      "id": "e8208e22-1fa7-5e8a-ae53-fc1831df5e0d",
+      "status": "pending",
+      "class_name": "5-A",
+      "subject": "Science"
+    }
+  },
+  {
+    "module": "Teacher subjects and approvals",
+    "phase": "1",
+    "method": "POST",
+    "path": "/api/teaching/",
+    "who": "P",
+    "title": "The Principal allots a subject",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "class_name": "5-B",
+      "subject": "Maths"
+    },
+    "response": {
+      "id": "d1825dca-28df-56b0-81d4-417b68ca6c17",
+      "status": "approved"
+    }
+  },
+  {
+    "module": "Teacher subjects and approvals",
+    "phase": "1",
+    "method": "POST",
+    "path": "/api/teaching/{id}/decision/",
+    "who": "P",
+    "title": "Accept or turn down a request",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "status": "approved"
+    },
+    "response": {
+      "id": "e8208e22-1fa7-5e8a-ae53-fc1831df5e0d",
+      "status": "approved"
+    }
+  },
+  {
+    "module": "Teacher subjects and approvals",
+    "phase": "1",
+    "method": "DELETE",
+    "path": "/api/teaching/{id}/",
+    "who": "P",
+    "title": "Take a subject away",
+    "status": 204,
+    "hybrid": false,
+    "request": null,
+    "response": null
+  },
+  {
+    "module": "Teacher subjects and approvals",
+    "phase": "1",
+    "method": "GET",
+    "path": "/api/approvals/",
+    "who": "P",
+    "title": "Everything waiting for the Principal",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "subjects": [
+        {
+          "id": "e8208e22-1fa7-5e8a-ae53-fc1831df5e0d",
+          "teacher": "Asha Sharma",
+          "class_name": "5-A",
+          "subject": "Science"
+        }
+      ],
+      "papers": [
+        {
+          "id": "30256de6-baff-5854-bc7a-b93ef580781d",
+          "title": "Unit Test 2",
+          "teacher": "Asha Sharma"
+        }
+      ]
+    }
+  },
+  {
+    "module": "Students",
+    "phase": "1",
+    "method": "GET",
+    "path": "/api/students/?class=5-A&active=true",
+    "who": "P/T",
+    "title": "Students, by class",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+        "name": "Aarav Verma",
+        "roll_no": 12,
+        "class_name": "5-A",
+        "guardian": "Sunil Verma",
+        "phone": "9876543210",
+        "aadhaar_masked": "XXXX XXXX 4821",
+        "aadhaar_reason": null,
+        "dob": "2015-06-14",
+        "gender": "male",
+        "address": "12 Lake Road, Jaipur",
+        "registered_on": "2026-04-02",
+        "active": true,
+        "vehicle_number": "RJ14-PA-2231",
+        "dress_size": "M"
+      }
+    ]
+  },
+  {
+    "module": "Students",
+    "phase": "1",
+    "method": "POST",
+    "path": "/api/students/",
+    "who": "P",
+    "title": "Add a student",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "name": "Aarav Verma",
+      "roll_no": 12,
+      "class_name": "5-A",
+      "guardian": "Sunil Verma",
+      "phone": "9876543210",
+      "aadhaar_masked": "XXXX XXXX 4821",
+      "dob": "2015-06-14",
+      "gender": "male",
+      "address": "12 Lake Road, Jaipur",
+      "vehicle_number": "RJ14-PA-2231"
+    },
+    "response": {
+      "id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+      "name": "Aarav Verma",
+      "roll_no": 12,
+      "class_name": "5-A",
+      "guardian": "Sunil Verma",
+      "phone": "9876543210",
+      "aadhaar_masked": "XXXX XXXX 4821",
+      "aadhaar_reason": null,
+      "dob": "2015-06-14",
+      "gender": "male",
+      "address": "12 Lake Road, Jaipur",
+      "registered_on": "2026-04-02",
+      "active": true,
+      "vehicle_number": "RJ14-PA-2231",
+      "dress_size": "M"
+    }
+  },
+  {
+    "module": "Students",
+    "phase": "1",
+    "method": "GET",
+    "path": "/api/students/{id}/",
+    "who": "P/T",
+    "title": "One student",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+      "name": "Aarav Verma",
+      "roll_no": 12,
+      "class_name": "5-A",
+      "guardian": "Sunil Verma",
+      "phone": "9876543210",
+      "aadhaar_masked": "XXXX XXXX 4821",
+      "aadhaar_reason": null,
+      "dob": "2015-06-14",
+      "gender": "male",
+      "address": "12 Lake Road, Jaipur",
+      "registered_on": "2026-04-02",
+      "active": true,
+      "vehicle_number": "RJ14-PA-2231",
+      "dress_size": "M"
+    }
+  },
+  {
+    "module": "Students",
+    "phase": "1",
+    "method": "PATCH",
+    "path": "/api/students/{id}/",
+    "who": "P",
+    "title": "Edit a student, or make them inactive",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "active": false
+    },
+    "response": {
+      "id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+      "name": "Aarav Verma",
+      "roll_no": 12,
+      "class_name": "5-A",
+      "guardian": "Sunil Verma",
+      "phone": "9876543210",
+      "aadhaar_masked": "XXXX XXXX 4821",
+      "aadhaar_reason": null,
+      "dob": "2015-06-14",
+      "gender": "male",
+      "address": "12 Lake Road, Jaipur",
+      "registered_on": "2026-04-02",
+      "active": false,
+      "vehicle_number": "RJ14-PA-2231",
+      "dress_size": "M"
+    }
+  },
+  {
+    "module": "Students",
+    "phase": "1",
+    "method": "DELETE",
+    "path": "/api/students/{id}/",
+    "who": "P",
+    "title": "Delete a student and their records",
+    "status": 204,
+    "hybrid": false,
+    "request": null,
+    "response": null
+  },
+  {
+    "module": "Students",
+    "phase": "1",
+    "method": "GET",
+    "path": "/api/students/vehicle-numbers/",
+    "who": "P",
+    "title": "Vehicle numbers already used",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      "RJ14-PA-2231",
+      "RJ14-PB-1180"
+    ]
+  },
+  {
+    "module": "Students",
+    "phase": "1",
+    "method": "PUT",
+    "path": "/api/students/dress-sizes/",
+    "who": "P",
+    "title": "Save dress sizes for many students at once",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "sizes": {
+        "5d8ec919-5fc0-58dc-b5b3-14d3a7559846": "M",
+        "f0744e7d-1b3e-551d-b3d5-67e225281a40": "L"
+      }
+    },
+    "response": {
+      "updated": 2
+    }
+  },
+  {
+    "module": "Other staff",
+    "phase": "1",
+    "method": "GET",
+    "path": "/api/other-staff/",
+    "who": "P",
+    "title": "Drivers, helpers and so on",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "7b79226c-de4e-5850-bd76-88adfdaae1e3",
+        "name": "Mohan Lal",
+        "role_title": "Driver",
+        "phone": "9812345670",
+        "aadhaar_masked": "XXXX XXXX 7710",
+        "aadhaar_reason": null,
+        "dob": "1984-01-09",
+        "gender": "male",
+        "address": "Ward 4, Jaipur",
+        "registered_on": "2026-04-02",
+        "active": true,
+        "vehicle_number": "RJ14-PA-2231"
+      }
+    ]
+  },
+  {
+    "module": "Other staff",
+    "phase": "1",
+    "method": "POST",
+    "path": "/api/other-staff/",
+    "who": "P",
+    "title": "Add one",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "name": "Mohan Lal",
+      "role_title": "Driver",
+      "phone": "9812345670",
+      "aadhaar_masked": "XXXX XXXX 7710",
+      "dob": "1984-01-09",
+      "gender": "male",
+      "address": "Ward 4, Jaipur",
+      "vehicle_number": "RJ14-PA-2231"
+    },
+    "response": {
+      "id": "7b79226c-de4e-5850-bd76-88adfdaae1e3",
+      "name": "Mohan Lal",
+      "role_title": "Driver",
+      "phone": "9812345670",
+      "aadhaar_masked": "XXXX XXXX 7710",
+      "aadhaar_reason": null,
+      "dob": "1984-01-09",
+      "gender": "male",
+      "address": "Ward 4, Jaipur",
+      "registered_on": "2026-04-02",
+      "active": true,
+      "vehicle_number": "RJ14-PA-2231"
+    }
+  },
+  {
+    "module": "Other staff",
+    "phase": "1",
+    "method": "GET",
+    "path": "/api/other-staff/{id}/",
+    "who": "P",
+    "title": "One person",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "id": "7b79226c-de4e-5850-bd76-88adfdaae1e3",
+      "name": "Mohan Lal",
+      "role_title": "Driver",
+      "phone": "9812345670",
+      "aadhaar_masked": "XXXX XXXX 7710",
+      "aadhaar_reason": null,
+      "dob": "1984-01-09",
+      "gender": "male",
+      "address": "Ward 4, Jaipur",
+      "registered_on": "2026-04-02",
+      "active": true,
+      "vehicle_number": "RJ14-PA-2231"
+    }
+  },
+  {
+    "module": "Other staff",
+    "phase": "1",
+    "method": "PATCH",
+    "path": "/api/other-staff/{id}/",
+    "who": "P",
+    "title": "Edit, or make inactive",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "active": false
+    },
+    "response": {
+      "id": "7b79226c-de4e-5850-bd76-88adfdaae1e3",
+      "name": "Mohan Lal",
+      "role_title": "Driver",
+      "phone": "9812345670",
+      "aadhaar_masked": "XXXX XXXX 7710",
+      "aadhaar_reason": null,
+      "dob": "1984-01-09",
+      "gender": "male",
+      "address": "Ward 4, Jaipur",
+      "registered_on": "2026-04-02",
+      "active": false,
+      "vehicle_number": "RJ14-PA-2231"
+    }
+  },
+  {
+    "module": "Other staff",
+    "phase": "1",
+    "method": "DELETE",
+    "path": "/api/other-staff/{id}/",
+    "who": "P",
+    "title": "Delete",
+    "status": 204,
+    "hybrid": false,
+    "request": null,
+    "response": null
+  },
+  {
+    "module": "People directory and profiles",
+    "phase": "1",
+    "method": "GET",
+    "path": "/api/people/?kind=student",
+    "who": "P",
+    "title": "One list for a group, with a short summary",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": [
+      {
+        "id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+        "kind": "student",
+        "name": "Aarav Verma",
+        "active": true,
+        "summary": "Class 5-A · Roll 12"
+      }
+    ]
+  },
+  {
+    "module": "People directory and profiles",
+    "phase": "1",
+    "method": "GET",
+    "path": "/api/students/{id}/profile/",
+    "who": "P",
+    "title": "A student's whole picture",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "student": {
+        "id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+        "name": "Aarav Verma",
+        "roll_no": 12,
+        "class_name": "5-A",
+        "guardian": "Sunil Verma",
+        "phone": "9876543210",
+        "aadhaar_masked": "XXXX XXXX 4821",
+        "aadhaar_reason": null,
+        "dob": "2015-06-14",
+        "gender": "male",
+        "address": "12 Lake Road, Jaipur",
+        "registered_on": "2026-04-02",
+        "active": true,
+        "vehicle_number": "RJ14-PA-2231",
+        "dress_size": "M"
+      },
+      "attendance": {
+        "present": 92,
+        "absent": 3,
+        "late": 1
+      },
+      "fees": {
+        "total": 24000,
+        "paid": 8000
+      },
+      "marks": [
+        {
+          "paper": "Unit Test 2",
+          "obtained": 41,
+          "out_of": 50
+        }
+      ]
+    }
+  },
+  {
+    "module": "People directory and profiles",
+    "phase": "1",
+    "method": "GET",
+    "path": "/api/auth/teachers/{id}/profile/",
+    "who": "P",
+    "title": "A teacher's whole picture",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "teacher": {
+        "id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+        "email": "asha@school.in",
+        "name": "Asha Sharma",
+        "role": "teacher",
+        "phone": "9876501234",
+        "employee_id": "T-001",
+        "joined_on": "2026-04-01T10:00:00+05:30",
+        "subject": "Maths",
+        "aadhaar_masked": "XXXX XXXX 5678",
+        "aadhaar_reason": "",
+        "dob": "1990-02-02",
+        "gender": "female",
+        "address": "Jaipur",
+        "is_active": true
+      },
+      "subjects": [
+        {
+          "class_name": "5-A",
+          "subject": "Maths"
+        }
+      ],
+      "attendance": {
+        "days_present": 18,
+        "days_absent": 1
+      },
+      "class_teacher_of": "5-A"
+    }
+  },
+  {
+    "module": "School calendar",
+    "phase": "2",
+    "method": "GET",
+    "path": "/api/calendar/days/?from=2026-10-01&to=2026-10-31",
+    "who": "any",
+    "title": "Days of a range with their status",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "day": "2026-10-20",
+        "status": "approved",
+        "kind": "school",
+        "reason": null
+      }
+    ]
+  },
+  {
+    "module": "School calendar",
+    "phase": "2",
+    "method": "PUT",
+    "path": "/api/calendar/days/{date}/",
+    "who": "P",
+    "title": "Set a day as school day or holiday",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "status": "approved",
+      "kind": "holiday",
+      "reason": "Diwali"
+    },
+    "response": {
+      "day": "2026-10-20",
+      "status": "approved",
+      "kind": "holiday",
+      "decided_by": "20ea76bc-a4a1-545e-acf7-a30ac732eec3"
+    }
+  },
+  {
+    "module": "School calendar",
+    "phase": "2",
+    "method": "GET",
+    "path": "/api/calendar/holidays/",
+    "who": "any",
+    "title": "All holidays",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "day": "2026-11-01",
+        "reason": "Diwali"
+      }
+    ]
+  },
+  {
+    "module": "School calendar",
+    "phase": "2",
+    "method": "POST",
+    "path": "/api/calendar/holidays/",
+    "who": "P",
+    "title": "Add holidays for a range",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "from": "2026-11-01",
+      "to": "2026-11-03",
+      "reason": "Diwali break"
+    },
+    "response": {
+      "added": 3,
+      "skipped": 0
+    }
+  },
+  {
+    "module": "School calendar",
+    "phase": "2",
+    "method": "GET",
+    "path": "/api/calendar/days/{date}/history/",
+    "who": "any",
+    "title": "Who changed a day, and why",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "old_status": "pending",
+        "new_status": "approved",
+        "reason": "Diwali",
+        "changed_by": "20ea76bc-a4a1-545e-acf7-a30ac732eec3",
+        "changed_at": "2026-10-10T09:30:00+05:30"
+      }
+    ]
+  },
+  {
+    "module": "Attendance",
+    "phase": "2",
+    "method": "GET",
+    "path": "/api/attendance/teachers/?day=2026-10-20",
+    "who": "P/T",
+    "title": "Teachers' check-ins for a day",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+        "day": "2026-10-20",
+        "check_in": "2026-10-20T08:02:00+05:30",
+        "check_out": null,
+        "in_distance": 34.2,
+        "in_face_score": 0.91
+      }
+    ]
+  },
+  {
+    "module": "Attendance",
+    "phase": "2",
+    "method": "POST",
+    "path": "/api/attendance/teachers/check-in/",
+    "who": "T",
+    "title": "Check in",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "at": "2026-10-20T08:02:00+05:30",
+      "lat": 26.9124,
+      "lon": 75.7873,
+      "distance": 34.2,
+      "selfie_file_id": "db9c29b7-a30b-5588-a372-eff84bbc5e54",
+      "face_score": 0.91
+    },
+    "response": {
+      "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "day": "2026-10-20",
+      "check_in": "2026-10-20T08:02:00+05:30"
+    }
+  },
+  {
+    "module": "Attendance",
+    "phase": "2",
+    "method": "POST",
+    "path": "/api/attendance/teachers/check-out/",
+    "who": "T",
+    "title": "Check out",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "at": "2026-10-20T14:35:00+05:30",
+      "lat": 26.9124,
+      "lon": 75.7873,
+      "distance": 30.0,
+      "selfie_file_id": "972c0edf-45bc-5718-9b4f-a394ae40a16a",
+      "face_score": 0.9
+    },
+    "response": {
+      "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "check_out": "2026-10-20T14:35:00+05:30"
+    }
+  },
+  {
+    "module": "Attendance",
+    "phase": "2",
+    "method": "GET",
+    "path": "/api/attendance/classes/{class}/?day=2026-10-20",
+    "who": "P/T",
+    "title": "A class's marks for a day",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "class_name": "5-A",
+      "day": "2026-10-20",
+      "marks": {
+        "5d8ec919-5fc0-58dc-b5b3-14d3a7559846": "present",
+        "f0744e7d-1b3e-551d-b3d5-67e225281a40": "late"
+      }
+    }
+  },
+  {
+    "module": "Attendance",
+    "phase": "2",
+    "method": "PUT",
+    "path": "/api/attendance/classes/{class}/",
+    "who": "P/T",
+    "title": "Save a class's marks for a day",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "day": "2026-10-20",
+      "marks": {
+        "5d8ec919-5fc0-58dc-b5b3-14d3a7559846": "present",
+        "f0744e7d-1b3e-551d-b3d5-67e225281a40": "late"
+      }
+    },
+    "response": {
+      "saved": 2
+    }
+  },
+  {
+    "module": "Attendance",
+    "phase": "2",
+    "method": "GET",
+    "path": "/api/attendance/other-staff/?day=2026-10-20",
+    "who": "P",
+    "title": "Drivers' and helpers' marks",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "day": "2026-10-20",
+      "marks": {
+        "7b79226c-de4e-5850-bd76-88adfdaae1e3": "present"
+      }
+    }
+  },
+  {
+    "module": "Attendance",
+    "phase": "2",
+    "method": "PUT",
+    "path": "/api/attendance/other-staff/",
+    "who": "P",
+    "title": "Save their marks",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "day": "2026-10-20",
+      "marks": {
+        "7b79226c-de4e-5850-bd76-88adfdaae1e3": "present"
+      }
+    },
+    "response": {
+      "saved": 1
+    }
+  },
+  {
+    "module": "Attendance",
+    "phase": "2",
+    "method": "GET",
+    "path": "/api/attendance/report/?day=2026-10-20",
+    "who": "P",
+    "title": "Everyone's attendance for a day",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": [
+      {
+        "person_id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+        "name": "Aarav Verma",
+        "group": "student",
+        "status": "present"
+      }
+    ]
+  },
+  {
+    "module": "Attendance",
+    "phase": "2",
+    "method": "GET",
+    "path": "/api/attendance/overview/?day=2026-10-20",
+    "who": "P",
+    "title": "Totals for the dashboard",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "students": {
+        "present": 312,
+        "absent": 14,
+        "late": 6
+      },
+      "teachers": {
+        "present": 19,
+        "absent": 1
+      },
+      "other": {
+        "present": 6,
+        "absent": 0
+      }
+    }
+  },
+  {
+    "module": "Notices",
+    "phase": "2",
+    "method": "GET",
+    "path": "/api/notices/",
+    "who": "any",
+    "title": "All notices, newest first",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "689ae395-0e7b-576f-9298-7d57aed66236",
+        "title": "Parent meeting",
+        "body": "Saturday, 10 am.",
+        "posted_by": "20ea76bc-a4a1-545e-acf7-a30ac732eec3",
+        "posted_at": "2026-10-18T12:00:00+05:30"
+      }
+    ]
+  },
+  {
+    "module": "Notices",
+    "phase": "2",
+    "method": "POST",
+    "path": "/api/notices/",
+    "who": "P",
+    "title": "Post a notice",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "title": "Parent meeting",
+      "body": "Saturday, 10 am."
+    },
+    "response": {
+      "id": "689ae395-0e7b-576f-9298-7d57aed66236",
+      "title": "Parent meeting",
+      "posted_at": "2026-10-18T12:00:00+05:30"
+    }
+  },
+  {
+    "module": "School settings",
+    "phase": "2",
+    "method": "GET",
+    "path": "/api/settings/",
+    "who": "any",
+    "title": "School name, place, radius, announcement, logo",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "school_name": "Shiksha Public School",
+      "latitude": 26.9124,
+      "longitude": 75.7873,
+      "radius_m": 150,
+      "announcement": "School closes early on Friday.",
+      "logo_file_id": "f33ddb7d-5ae4-50cb-a1a4-54f89e412628"
+    }
+  },
+  {
+    "module": "School settings",
+    "phase": "2",
+    "method": "PATCH",
+    "path": "/api/settings/school/",
+    "who": "P",
+    "title": "Set the school's place and radius",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "latitude": 26.9124,
+      "longitude": 75.7873,
+      "radius_m": 150
+    },
+    "response": {
+      "latitude": 26.9124,
+      "longitude": 75.7873,
+      "radius_m": 150
+    }
+  },
+  {
+    "module": "School settings",
+    "phase": "2",
+    "method": "PUT",
+    "path": "/api/settings/announcement/",
+    "who": "P",
+    "title": "Set or clear the running announcement",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "text": "School closes early on Friday."
+    },
+    "response": {
+      "announcement": "School closes early on Friday."
+    }
+  },
+  {
+    "module": "School settings",
+    "phase": "2",
+    "method": "PUT",
+    "path": "/api/settings/logo/",
+    "who": "P",
+    "title": "Set or remove the logo",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "file_id": "f33ddb7d-5ae4-50cb-a1a4-54f89e412628"
+    },
+    "response": {
+      "logo_file_id": "f33ddb7d-5ae4-50cb-a1a4-54f89e412628"
+    }
+  },
+  {
+    "module": "Files",
+    "phase": "2",
+    "method": "POST",
+    "path": "/api/files/",
+    "who": "any",
+    "title": "Upload a photo, signature or proof (multipart)",
+    "status": 201,
+    "hybrid": true,
+    "request": {
+      "kind": "signature",
+      "file": "(binary)"
+    },
+    "response": {
+      "id": "a6b76e83-f9d2-5aaf-9efd-096e15885b3e",
+      "kind": "signature",
+      "content_type": "image/png",
+      "size": 18422,
+      "url": "/api/files/a6b76e83-f9d2-5aaf-9efd-096e15885b3e/"
+    }
+  },
+  {
+    "module": "Files",
+    "phase": "2",
+    "method": "GET",
+    "path": "/api/files/{id}/",
+    "who": "any",
+    "title": "Download a file",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": "(binary)"
+  },
+  {
+    "module": "Exams",
+    "phase": "3",
+    "method": "GET",
+    "path": "/api/exams/papers/",
+    "who": "P/T",
+    "title": "Papers (a teacher sees their own)",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "30256de6-baff-5854-bc7a-b93ef580781d",
+        "title": "Unit Test 2",
+        "subject": "Maths",
+        "class_name": "5-A",
+        "exam_date": "2026-11-12",
+        "status": "draft"
+      }
+    ]
+  },
+  {
+    "module": "Exams",
+    "phase": "3",
+    "method": "POST",
+    "path": "/api/exams/papers/",
+    "who": "T",
+    "title": "Create a paper with its questions",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "title": "Unit Test 2",
+      "subject": "Maths",
+      "class_name": "5-A",
+      "exam_date": "2026-11-12",
+      "duration_minutes": 60,
+      "instructions": "Attempt all questions.",
+      "questions": [
+        {
+          "position": 1,
+          "text": "Add 3/4 and 1/8.",
+          "marks": 2,
+          "type": "shortAnswer",
+          "details": null
+        }
+      ]
+    },
+    "response": {
+      "id": "30256de6-baff-5854-bc7a-b93ef580781d",
+      "title": "Unit Test 2",
+      "subject": "Maths",
+      "class_name": "5-A",
+      "exam_date": "2026-11-12",
+      "duration_minutes": 60,
+      "status": "draft",
+      "created_by": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "instructions": "Attempt all questions.",
+      "review_note": null,
+      "submitted_at": null,
+      "exam_type": "unit_test",
+      "questions": [
+        {
+          "position": 1,
+          "text": "Add 3/4 and 1/8.",
+          "marks": 2,
+          "type": "shortAnswer",
+          "details": null
+        }
+      ]
+    }
+  },
+  {
+    "module": "Exams",
+    "phase": "3",
+    "method": "PUT",
+    "path": "/api/exams/papers/{id}/",
+    "who": "T",
+    "title": "Save changes to a draft",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "title": "Unit Test 2 (revised)",
+      "questions": [
+        {
+          "position": 1,
+          "text": "Add 3/4 and 1/8.",
+          "marks": 2,
+          "type": "shortAnswer",
+          "details": null
+        }
+      ]
+    },
+    "response": {
+      "id": "30256de6-baff-5854-bc7a-b93ef580781d",
+      "title": "Unit Test 2",
+      "subject": "Maths",
+      "class_name": "5-A",
+      "exam_date": "2026-11-12",
+      "duration_minutes": 60,
+      "status": "draft",
+      "created_by": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "instructions": "Attempt all questions.",
+      "review_note": null,
+      "submitted_at": null,
+      "exam_type": "unit_test",
+      "questions": [
+        {
+          "position": 1,
+          "text": "Add 3/4 and 1/8.",
+          "marks": 2,
+          "type": "shortAnswer",
+          "details": null
+        }
+      ]
+    }
+  },
+  {
+    "module": "Exams",
+    "phase": "3",
+    "method": "POST",
+    "path": "/api/exams/papers/{id}/status/",
+    "who": "P/T",
+    "title": "Submit, approve, or ask for changes",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "status": "changesRequested",
+      "review_note": "Add a diagram question."
+    },
+    "response": {
+      "id": "30256de6-baff-5854-bc7a-b93ef580781d",
+      "title": "Unit Test 2",
+      "subject": "Maths",
+      "class_name": "5-A",
+      "exam_date": "2026-11-12",
+      "duration_minutes": 60,
+      "status": "changesRequested",
+      "created_by": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "instructions": "Attempt all questions.",
+      "review_note": "Add a diagram question.",
+      "submitted_at": null,
+      "exam_type": "unit_test",
+      "questions": [
+        {
+          "position": 1,
+          "text": "Add 3/4 and 1/8.",
+          "marks": 2,
+          "type": "shortAnswer",
+          "details": null
+        }
+      ]
+    }
+  },
+  {
+    "module": "Exams",
+    "phase": "3",
+    "method": "DELETE",
+    "path": "/api/exams/papers/{id}/",
+    "who": "T",
+    "title": "Delete a draft paper",
+    "status": 204,
+    "hybrid": false,
+    "request": null,
+    "response": null
+  },
+  {
+    "module": "Exams",
+    "phase": "3",
+    "method": "POST",
+    "path": "/api/exams/papers/{id}/conduct/",
+    "who": "P/T",
+    "title": "Mark the exam as held",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "id": "30256de6-baff-5854-bc7a-b93ef580781d",
+      "title": "Unit Test 2",
+      "subject": "Maths",
+      "class_name": "5-A",
+      "exam_date": "2026-11-12",
+      "duration_minutes": 60,
+      "status": "conducted",
+      "created_by": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+      "instructions": "Attempt all questions.",
+      "review_note": null,
+      "submitted_at": null,
+      "exam_type": "unit_test",
+      "questions": [
+        {
+          "position": 1,
+          "text": "Add 3/4 and 1/8.",
+          "marks": 2,
+          "type": "shortAnswer",
+          "details": null
+        }
+      ]
+    }
+  },
+  {
+    "module": "Exams",
+    "phase": "3",
+    "method": "GET",
+    "path": "/api/exams/papers/{id}/marks/",
+    "who": "P/T",
+    "title": "Marks of every student",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "paper_id": "30256de6-baff-5854-bc7a-b93ef580781d",
+      "marks": {
+        "5d8ec919-5fc0-58dc-b5b3-14d3a7559846": 41,
+        "f0744e7d-1b3e-551d-b3d5-67e225281a40": 38
+      }
+    }
+  },
+  {
+    "module": "Exams",
+    "phase": "3",
+    "method": "PUT",
+    "path": "/api/exams/papers/{id}/marks/",
+    "who": "T",
+    "title": "Save marks",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "marks": {
+        "5d8ec919-5fc0-58dc-b5b3-14d3a7559846": 41,
+        "f0744e7d-1b3e-551d-b3d5-67e225281a40": 38
+      }
+    },
+    "response": {
+      "saved": 2
+    }
+  },
+  {
+    "module": "Question bank",
+    "phase": "3",
+    "method": "GET",
+    "path": "/api/question-bank/scopes/",
+    "who": "T",
+    "title": "Class and subject pairs the teacher has started",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "class_name": "5-A",
+        "subject": "Maths"
+      }
+    ]
+  },
+  {
+    "module": "Question bank",
+    "phase": "3",
+    "method": "GET",
+    "path": "/api/question-bank/units/?class=5-A&subject=Maths",
+    "who": "T",
+    "title": "Units of a pair",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "b51eca82-2bdf-5c6c-b39b-161c2b8e8fe7",
+        "name": "Fractions",
+        "position": 1
+      }
+    ]
+  },
+  {
+    "module": "Question bank",
+    "phase": "3",
+    "method": "POST",
+    "path": "/api/question-bank/units/",
+    "who": "T",
+    "title": "Add a unit",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "class_name": "5-A",
+      "subject": "Maths",
+      "name": "Fractions"
+    },
+    "response": {
+      "id": "b51eca82-2bdf-5c6c-b39b-161c2b8e8fe7",
+      "name": "Fractions",
+      "position": 1
+    }
+  },
+  {
+    "module": "Question bank",
+    "phase": "3",
+    "method": "GET",
+    "path": "/api/question-bank/questions/?class=5-A&subject=Maths&unit=b51eca82-2bdf-5c6c-b39b-161c2b8e8fe7",
+    "who": "T",
+    "title": "Questions of a unit",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "e26d9db2-040a-55cd-b838-ae252d43ee78",
+        "type": "shortAnswer",
+        "text": "Add 3/4 and 1/8.",
+        "marks": 2,
+        "unit_id": "b51eca82-2bdf-5c6c-b39b-161c2b8e8fe7"
+      }
+    ]
+  },
+  {
+    "module": "Question bank",
+    "phase": "3",
+    "method": "POST",
+    "path": "/api/question-bank/questions/bulk/",
+    "who": "T",
+    "title": "Save many questions",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "unit_id": "b51eca82-2bdf-5c6c-b39b-161c2b8e8fe7",
+      "questions": [
+        {
+          "type": "shortAnswer",
+          "text": "Add 3/4 and 1/8.",
+          "marks": 2
+        }
+      ]
+    },
+    "response": {
+      "saved": 1
+    }
+  },
+  {
+    "module": "Question bank",
+    "phase": "3",
+    "method": "PATCH",
+    "path": "/api/question-bank/questions/{id}/",
+    "who": "T",
+    "title": "Edit a question",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "marks": 3
+    },
+    "response": {
+      "id": "e26d9db2-040a-55cd-b838-ae252d43ee78",
+      "marks": 3
+    }
+  },
+  {
+    "module": "Question bank",
+    "phase": "3",
+    "method": "DELETE",
+    "path": "/api/question-bank/questions/{id}/",
+    "who": "T",
+    "title": "Delete a question",
+    "status": 204,
+    "hybrid": false,
+    "request": null,
+    "response": null
+  },
+  {
+    "module": "Question bank",
+    "phase": "3",
+    "method": "GET",
+    "path": "/api/master-questions/",
+    "who": "P/T",
+    "title": "The school's shared questions",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "7c755c84-e353-52fa-ab2a-7241bb7a49d4",
+        "type": "mcq",
+        "text": "Which is a prime number?",
+        "subject": "Maths",
+        "class_name": "5-A"
+      }
+    ]
+  },
+  {
+    "module": "Question bank",
+    "phase": "3",
+    "method": "PUT",
+    "path": "/api/master-questions/{id}/",
+    "who": "P/T",
+    "title": "Save a shared question",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "type": "mcq",
+      "text": "Which is a prime number?",
+      "subject": "Maths"
+    },
+    "response": {
+      "id": "7c755c84-e353-52fa-ab2a-7241bb7a49d4"
+    }
+  },
+  {
+    "module": "Question bank",
+    "phase": "3",
+    "method": "DELETE",
+    "path": "/api/master-questions/{id}/",
+    "who": "P",
+    "title": "Delete a shared question",
+    "status": 204,
+    "hybrid": false,
+    "request": null,
+    "response": null
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/fees/accounts/?group=student",
+    "who": "P",
+    "title": "Fee accounts",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "d3604fdd-1356-584e-af10-c68aa13d5d22",
+        "group_type": "student",
+        "person_id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+        "name": "Aarav Verma",
+        "subtitle": "Class 5-A",
+        "total": 24000,
+        "paid": 8000,
+        "due_date": "2026-12-01",
+        "head": "academic",
+        "last_date": "2026-12-15",
+        "date_note": null,
+        "status": "partial"
+      }
+    ]
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/fees/accounts/{id}/",
+    "who": "P",
+    "title": "One account",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "id": "d3604fdd-1356-584e-af10-c68aa13d5d22",
+      "group_type": "student",
+      "person_id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+      "name": "Aarav Verma",
+      "subtitle": "Class 5-A",
+      "total": 24000,
+      "paid": 8000,
+      "due_date": "2026-12-01",
+      "head": "academic",
+      "last_date": "2026-12-15",
+      "date_note": null,
+      "status": "partial"
+    }
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "POST",
+    "path": "/api/fees/accounts/",
+    "who": "P",
+    "title": "Open an account",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "group_type": "student",
+      "person_id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+      "total": 24000,
+      "due_date": "2026-12-01",
+      "head": "academic"
+    },
+    "response": {
+      "id": "d3604fdd-1356-584e-af10-c68aa13d5d22",
+      "group_type": "student",
+      "person_id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+      "name": "Aarav Verma",
+      "subtitle": "Class 5-A",
+      "total": 24000,
+      "paid": 8000,
+      "due_date": "2026-12-01",
+      "head": "academic",
+      "last_date": "2026-12-15",
+      "date_note": null,
+      "status": "partial"
+    }
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "PATCH",
+    "path": "/api/fees/accounts/{id}/dates/",
+    "who": "P",
+    "title": "Change due and last dates",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "due_date": "2026-12-15",
+      "last_date": "2026-12-31",
+      "date_note": "Extended"
+    },
+    "response": {
+      "id": "d3604fdd-1356-584e-af10-c68aa13d5d22",
+      "group_type": "student",
+      "person_id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+      "name": "Aarav Verma",
+      "subtitle": "Class 5-A",
+      "total": 24000,
+      "paid": 8000,
+      "due_date": "2026-12-01",
+      "head": "academic",
+      "last_date": "2026-12-15",
+      "date_note": null,
+      "status": "partial"
+    }
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "POST",
+    "path": "/api/fees/accounts/{id}/payments/",
+    "who": "P",
+    "title": "Record a payment",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "amount": 8000,
+      "mode": "upi",
+      "reference": "UPI-88231",
+      "proof_file_id": "a6b76e83-f9d2-5aaf-9efd-096e15885b3e"
+    },
+    "response": {
+      "id": 41,
+      "account_id": "d3604fdd-1356-584e-af10-c68aa13d5d22",
+      "amount": 8000,
+      "paid_at": "2026-10-05T11:20:00+05:30",
+      "mode": "upi",
+      "reference": "UPI-88231",
+      "proof_file_id": "a6b76e83-f9d2-5aaf-9efd-096e15885b3e"
+    }
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/fees/accounts/{id}/payments/",
+    "who": "P",
+    "title": "Payments of one account",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": 41,
+        "account_id": "d3604fdd-1356-584e-af10-c68aa13d5d22",
+        "amount": 8000,
+        "paid_at": "2026-10-05T11:20:00+05:30",
+        "mode": "upi",
+        "reference": "UPI-88231",
+        "proof_file_id": "a6b76e83-f9d2-5aaf-9efd-096e15885b3e"
+      }
+    ]
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/fees/payments/",
+    "who": "P",
+    "title": "Every payment, newest first",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": 41,
+        "account_id": "d3604fdd-1356-584e-af10-c68aa13d5d22",
+        "amount": 8000,
+        "paid_at": "2026-10-05T11:20:00+05:30",
+        "mode": "upi",
+        "reference": "UPI-88231",
+        "proof_file_id": "a6b76e83-f9d2-5aaf-9efd-096e15885b3e",
+        "name": "Aarav Verma"
+      }
+    ]
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/fees/structure/",
+    "who": "P",
+    "title": "What each class pays",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "class_name": "5-A",
+        "head": "academic",
+        "amount": 24000,
+        "due_date": "2026-12-01",
+        "last_date": "2026-12-15"
+      }
+    ]
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "PUT",
+    "path": "/api/fees/structure/{class}/{head}/",
+    "who": "P",
+    "title": "Set one fee of a class",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "amount": 24000,
+      "due_date": "2026-12-01",
+      "last_date": "2026-12-15"
+    },
+    "response": {
+      "class_name": "5-A",
+      "head": "academic",
+      "amount": 24000
+    }
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "POST",
+    "path": "/api/fees/structure/{class}/{head}/apply/",
+    "who": "P",
+    "title": "Make accounts for the class from this fee",
+    "status": 201,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "accounts_made": 38
+    }
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/fees/people/?group=student",
+    "who": "P",
+    "title": "People who can be given an account",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+        "name": "Aarav Verma",
+        "subtitle": "Class 5-A"
+      }
+    ]
+  },
+  {
+    "module": "Fees",
+    "phase": "4",
+    "method": "POST",
+    "path": "/api/fees/payments/{id}/receipt/",
+    "who": "P",
+    "title": "Give the payment a receipt number",
+    "status": 201,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "receipt_no": "R-2026-0041",
+      "payment_id": 41
+    }
+  },
+  {
+    "module": "Dress and books",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/accessories/classes/{class}/?kind=dress",
+    "who": "P",
+    "title": "What a class is given",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "class_name": "5-A",
+      "kind": "dress",
+      "items": [
+        {
+          "id": "9fbad161-374e-5d23-bc21-35d12fb35e54",
+          "name": "Shirt",
+          "position": 1
+        }
+      ]
+    }
+  },
+  {
+    "module": "Dress and books",
+    "phase": "4",
+    "method": "PUT",
+    "path": "/api/accessories/classes/{class}/items/",
+    "who": "P",
+    "title": "Set what a class is given",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "kind": "dress",
+      "items": [
+        "Shirt",
+        "Trousers",
+        "Tie"
+      ]
+    },
+    "response": {
+      "saved": 3
+    }
+  },
+  {
+    "module": "Dress and books",
+    "phase": "4",
+    "method": "POST",
+    "path": "/api/accessories/issues/",
+    "who": "P",
+    "title": "Hand over dress or books",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "student_id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+      "kind": "dress",
+      "items": [
+        "Shirt",
+        "Tie"
+      ],
+      "size": "M",
+      "quantity": 1,
+      "received_by": "Sunil Verma",
+      "signature_file_id": "a6b76e83-f9d2-5aaf-9efd-096e15885b3e"
+    },
+    "response": {
+      "id": "ecc2b6c5-5637-5618-a0bb-4c1afba4da93",
+      "receipt_no": "D-2026-0113",
+      "issued_at": "2026-10-19T11:00:00+05:30"
+    }
+  },
+  {
+    "module": "Dress and books",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/accessories/records/",
+    "who": "P",
+    "title": "Everything handed over",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "receipt_no": "D-2026-0113",
+        "student": "Aarav Verma",
+        "kind": "dress",
+        "issued_at": "2026-10-19T11:00:00+05:30"
+      }
+    ]
+  },
+  {
+    "module": "Dress and books",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/students/{id}/accessories/",
+    "who": "P",
+    "title": "What one student received",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "receipt_no": "D-2026-0113",
+        "kind": "dress",
+        "items": [
+          "Shirt",
+          "Tie"
+        ]
+      }
+    ]
+  },
+  {
+    "module": "Staff bills and payments",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/bills/?staff=7b79226c-de4e-5850-bd76-88adfdaae1e3",
+    "who": "P",
+    "title": "Bills, optionally of one person",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "58959dbe-1305-59c9-8670-df80433c5e1f",
+        "staff_id": "7b79226c-de4e-5850-bd76-88adfdaae1e3",
+        "kind": "diesel",
+        "bill_date": "2026-10-18",
+        "litres": 22.5,
+        "amount": 2100,
+        "photo_file_id": "19cf172e-9e9f-5cf0-9470-5e506e455ff1",
+        "note": null,
+        "status": "pending",
+        "decided_at": null,
+        "settlement_id": null
+      }
+    ]
+  },
+  {
+    "module": "Staff bills and payments",
+    "phase": "4",
+    "method": "POST",
+    "path": "/api/bills/",
+    "who": "P",
+    "title": "Add a fuel bill",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "staff_id": "7b79226c-de4e-5850-bd76-88adfdaae1e3",
+      "kind": "diesel",
+      "bill_date": "2026-10-18",
+      "litres": 22.5,
+      "amount": 2100,
+      "photo_file_id": "19cf172e-9e9f-5cf0-9470-5e506e455ff1"
+    },
+    "response": {
+      "id": "58959dbe-1305-59c9-8670-df80433c5e1f",
+      "staff_id": "7b79226c-de4e-5850-bd76-88adfdaae1e3",
+      "kind": "diesel",
+      "bill_date": "2026-10-18",
+      "litres": 22.5,
+      "amount": 2100,
+      "photo_file_id": "19cf172e-9e9f-5cf0-9470-5e506e455ff1",
+      "note": null,
+      "status": "pending",
+      "decided_at": null,
+      "settlement_id": null
+    }
+  },
+  {
+    "module": "Staff bills and payments",
+    "phase": "4",
+    "method": "POST",
+    "path": "/api/bills/{id}/decision/",
+    "who": "P",
+    "title": "Approve or reject a bill",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "status": "approved"
+    },
+    "response": {
+      "id": "58959dbe-1305-59c9-8670-df80433c5e1f",
+      "staff_id": "7b79226c-de4e-5850-bd76-88adfdaae1e3",
+      "kind": "diesel",
+      "bill_date": "2026-10-18",
+      "litres": 22.5,
+      "amount": 2100,
+      "photo_file_id": "19cf172e-9e9f-5cf0-9470-5e506e455ff1",
+      "note": null,
+      "status": "approved",
+      "decided_at": "2026-10-19T10:00:00+05:30",
+      "settlement_id": null
+    }
+  },
+  {
+    "module": "Staff bills and payments",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/bills/payables/",
+    "who": "P",
+    "title": "What is owed to each person",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "staff_id": "7b79226c-de4e-5850-bd76-88adfdaae1e3",
+        "name": "Mohan Lal",
+        "approved_total": 6300,
+        "bills": 3
+      }
+    ]
+  },
+  {
+    "module": "Staff bills and payments",
+    "phase": "4",
+    "method": "POST",
+    "path": "/api/bills/settlements/",
+    "who": "P",
+    "title": "Pay a person",
+    "status": 201,
+    "hybrid": false,
+    "request": {
+      "staff_id": "7b79226c-de4e-5850-bd76-88adfdaae1e3",
+      "amount": 6300,
+      "mode": "cash",
+      "proof_file_id": "60f9a145-d498-5a8e-b04d-011d2e09d43a"
+    },
+    "response": {
+      "id": "a7a0b5c0-40fc-5803-a075-3085729beb28",
+      "voucher_no": "V-2026-0027",
+      "amount": 6300,
+      "paid_at": "2026-10-19T12:00:00+05:30"
+    }
+  },
+  {
+    "module": "Staff bills and payments",
+    "phase": "4",
+    "method": "GET",
+    "path": "/api/bills/settlements/?staff=7b79226c-de4e-5850-bd76-88adfdaae1e3",
+    "who": "P",
+    "title": "Payments made",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "voucher_no": "V-2026-0027",
+        "amount": 6300,
+        "mode": "cash"
+      }
+    ]
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "GET",
+    "path": "/api/school-timing/",
+    "who": "any",
+    "title": "School timings and special rules",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "base": {
+        "start_min": 480,
+        "end_min": 840
+      },
+      "rules": [
+        {
+          "id": "3e7729fc-28f8-59ca-9e4a-8a1746342a47",
+          "class_names": [
+            "1-A"
+          ],
+          "start_min": 510,
+          "end_min": 780,
+          "from_date": null
+        }
+      ]
+    }
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "PUT",
+    "path": "/api/school-timing/base/",
+    "who": "P",
+    "title": "Set the school's normal timing",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "start_min": 480,
+      "end_min": 840
+    },
+    "response": {
+      "start_min": 480,
+      "end_min": 840
+    }
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "PUT",
+    "path": "/api/school-timing/rules/{id}/",
+    "who": "P",
+    "title": "Add or change a special timing",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "class_names": [
+        "1-A"
+      ],
+      "start_min": 510,
+      "end_min": 780,
+      "from_date": "2026-11-15"
+    },
+    "response": {
+      "id": "3e7729fc-28f8-59ca-9e4a-8a1746342a47"
+    }
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "DELETE",
+    "path": "/api/school-timing/rules/{id}/",
+    "who": "P",
+    "title": "Remove a special timing",
+    "status": 204,
+    "hybrid": false,
+    "request": null,
+    "response": null
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "GET",
+    "path": "/api/assembly/",
+    "who": "any",
+    "title": "Assembly settings",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": {
+      "start_min": 470,
+      "end_min": 485
+    }
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "PUT",
+    "path": "/api/assembly/",
+    "who": "P",
+    "title": "Save assembly settings",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "start_min": 470,
+      "end_min": 485
+    },
+    "response": {
+      "start_min": 470,
+      "end_min": 485
+    }
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "GET",
+    "path": "/api/assembly/duties/",
+    "who": "any",
+    "title": "Which class leads on each weekday",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "weekday": 1,
+        "class_name": "5-A",
+        "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0"
+      }
+    ]
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "PUT",
+    "path": "/api/assembly/duties/{weekday}/",
+    "who": "P",
+    "title": "Set a weekday's assembly duty",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "class_name": "5-A",
+      "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0"
+    },
+    "response": {
+      "weekday": 1,
+      "class_name": "5-A",
+      "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0"
+    }
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "GET",
+    "path": "/api/bell-slots/",
+    "who": "any",
+    "title": "Periods and breaks, in order",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "id": "d2361c20-4642-567c-aa96-85aa64f96f18",
+        "position": 1,
+        "kind": "period",
+        "label": "Period 1",
+        "start_min": 480,
+        "end_min": 520
+      }
+    ]
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "PUT",
+    "path": "/api/bell-slots/{id}/",
+    "who": "P",
+    "title": "Add or change a period or break",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "position": 1,
+      "kind": "period",
+      "label": "Period 1",
+      "start_min": 480,
+      "end_min": 520
+    },
+    "response": {
+      "id": "d2361c20-4642-567c-aa96-85aa64f96f18",
+      "position": 1,
+      "kind": "period",
+      "label": "Period 1",
+      "start_min": 480,
+      "end_min": 520
+    }
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "DELETE",
+    "path": "/api/bell-slots/{id}/",
+    "who": "P",
+    "title": "Remove a period or break",
+    "status": 204,
+    "hybrid": false,
+    "request": null,
+    "response": null
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "GET",
+    "path": "/api/timetable/classes/{class}/",
+    "who": "any",
+    "title": "A class's whole week",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "weekday": 1,
+        "slot_id": "d2361c20-4642-567c-aa96-85aa64f96f18",
+        "subject": "Maths",
+        "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0"
+      }
+    ]
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "PUT",
+    "path": "/api/timetable/classes/{class}/{weekday}/{slot_id}/",
+    "who": "P",
+    "title": "Set one period",
+    "status": 200,
+    "hybrid": false,
+    "request": {
+      "subject": "Maths",
+      "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0"
+    },
+    "response": {
+      "weekday": 1,
+      "slot_id": "d2361c20-4642-567c-aa96-85aa64f96f18",
+      "subject": "Maths"
+    }
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "DELETE",
+    "path": "/api/timetable/classes/{class}/{weekday}/{slot_id}/",
+    "who": "P",
+    "title": "Clear one period",
+    "status": 204,
+    "hybrid": false,
+    "request": null,
+    "response": null
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "GET",
+    "path": "/api/timetable/teachers/{id}/?weekday=1",
+    "who": "P/T",
+    "title": "A teacher's periods on a weekday",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "slot": "Period 1",
+        "start_min": 480,
+        "end_min": 520,
+        "class_name": "5-A",
+        "subject": "Maths"
+      }
+    ]
+  },
+  {
+    "module": "Timings, bell and timetable",
+    "phase": "5",
+    "method": "GET",
+    "path": "/api/timetable/options/?class=5-A",
+    "who": "P",
+    "title": "Subjects and teachers that can fill a period",
+    "status": 200,
+    "hybrid": false,
+    "request": null,
+    "response": [
+      {
+        "subject": "Maths",
+        "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+        "teacher_name": "Asha Sharma"
+      }
+    ]
+  },
+  {
+    "module": "Analytics",
+    "phase": "5",
+    "method": "GET",
+    "path": "/api/analytics/classes/{class}/?today=2026-10-20",
+    "who": "P",
+    "title": "A class's attendance and marks picture",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "class_name": "5-A",
+      "attendance_rate": 0.94,
+      "average_marks": 71.2,
+      "last_7_days": [
+        0.96,
+        0.93,
+        0.95,
+        0.9,
+        0.94,
+        0.97,
+        0.92
+      ]
+    }
+  },
+  {
+    "module": "Analytics",
+    "phase": "5",
+    "method": "GET",
+    "path": "/api/analytics/teachers/?days=30",
+    "who": "P",
+    "title": "How each teacher is doing",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": [
+      {
+        "teacher_id": "198783eb-e2bf-5776-aaee-961ebef7f6a0",
+        "name": "Asha Sharma",
+        "days_present": 24,
+        "late": 2,
+        "papers_submitted": 3
+      }
+    ]
+  },
+  {
+    "module": "Sync and monitoring",
+    "phase": "6",
+    "method": "GET",
+    "path": "/api/sync/pull/?since=1234",
+    "who": "any",
+    "title": "Everything changed since a point",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "cursor": 1290,
+      "changes": [
+        {
+          "table": "students",
+          "id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846",
+          "deleted": false,
+          "row": {
+            "name": "Aarav Verma"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "module": "Sync and monitoring",
+    "phase": "6",
+    "method": "POST",
+    "path": "/api/sync/push/",
+    "who": "any",
+    "title": "Send what changed on this phone",
+    "status": 200,
+    "hybrid": true,
+    "request": {
+      "changes": [
+        {
+          "table": "student_attendance",
+          "id": "5d8ec919-5fc0-58dc-b5b3-14d3a7559846:2026-10-20",
+          "row": {
+            "status": "present"
+          }
+        }
+      ]
+    },
+    "response": {
+      "cursor": 1291,
+      "accepted": 1,
+      "rejected": []
+    }
+  },
+  {
+    "module": "Sync and monitoring",
+    "phase": "6",
+    "method": "GET",
+    "path": "/api/sync/snapshot/",
+    "who": "any",
+    "title": "Everything this person may see, for a new phone",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "cursor": 1290,
+      "tables": {
+        "classes": [
+          "…"
+        ],
+        "students": [
+          "…"
+        ]
+      }
+    }
+  },
+  {
+    "module": "Sync and monitoring",
+    "phase": "6",
+    "method": "GET",
+    "path": "/api/sync/status/",
+    "who": "any",
+    "title": "Last change on the server",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "cursor": 1290,
+      "changed_at": "2026-10-20T09:00:00+05:30"
+    }
+  },
+  {
+    "module": "Sync and monitoring",
+    "phase": "6",
+    "method": "GET",
+    "path": "/api/sync/counts/",
+    "who": "P",
+    "title": "Rows per table, to compare a phone with the server",
+    "status": 200,
+    "hybrid": true,
+    "request": null,
+    "response": {
+      "classes": 12,
+      "students": 412,
+      "teacher_attendance": 1980
+    }
+  }
+]

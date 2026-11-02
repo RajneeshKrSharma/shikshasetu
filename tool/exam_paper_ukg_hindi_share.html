@@ -1,0 +1,248 @@
+<title>UKG Hindi Half Yearly</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap">
+<style>
+  /* Review report: summary and open items on top, then the paper question by question, each with its status and a feedback button. */
+  :root {
+    --desk: #ffffff;
+    --paper: #ffffff;
+    --ink: #14161a;
+    --muted: #5d6470;
+    --rule: #14161a;
+    --line: #d9dde4;
+    --blank: #8a93a1;
+    --accent: #1f4fd8;
+    --accent-ink: #ffffff;
+    --ok-bg: #dcf3e3; --ok-ink: #14532d;
+    --warn-bg: #fff1c2; --warn-ink: #6b4b00;
+    --note-bg: #f3f5f9;
+    --font-paper: "Noto Serif Devanagari", "Noto Serif", Georgia, serif;
+    --font-ui: "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --desk: #101216; --paper: #1b1e24; --ink: #eceef2; --muted: #9aa2af; --rule: #eceef2; --line: #333842;
+      --blank: #6f7886; --accent: #7aa2ff; --accent-ink: #0d1530;
+      --ok-bg: #173a24; --ok-ink: #a6e8bd; --warn-bg: #4a3a0a; --warn-ink: #ffe29a; --note-bg: #23272f;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --desk: #101216; --paper: #1b1e24; --ink: #eceef2; --muted: #9aa2af; --rule: #eceef2; --line: #333842;
+    --blank: #6f7886; --accent: #7aa2ff; --accent-ink: #0d1530;
+    --ok-bg: #173a24; --ok-ink: #a6e8bd; --warn-bg: #4a3a0a; --warn-ink: #ffe29a; --note-bg: #23272f;
+    color-scheme: dark;
+  }
+  body {
+    background: var(--desk);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    padding-block: 20px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+
+  .report {
+    background: var(--paper); border-radius: 8px; padding: clamp(16px, 4vw, 28px);
+    display: flex; flex-direction: column; gap: 14px;
+    border: 1px solid var(--line);
+  }
+  .report h1 { margin: 0; font-size: clamp(20px, 5vw, 26px); line-height: 1.25; text-wrap: balance; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px 16px; margin: 0; }
+  .facts div { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .facts dt { font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .facts dd { margin: 0; font-weight: 600; font-size: 15px; }
+  .tally { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; white-space: nowrap;
+  }
+  .chip.ok { background: var(--ok-bg); color: var(--ok-ink); }
+  .chip.warn { background: var(--warn-bg); color: var(--warn-ink); }
+  .report h2 { margin: 0; font-size: 15px; }
+  .report ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 4px; font-size: 14px; line-height: 1.6; }
+  .how { background: var(--note-bg); border-radius: 6px; padding: 10px 14px; font-size: 14px; line-height: 1.6; }
+
+  .sheet {
+    background: var(--paper); border-radius: 4px; padding: clamp(18px, 5vw, 40px);
+    border: 1px solid var(--line); font-family: var(--font-paper);
+  }
+  .school { text-align: center; }
+  .school span { display: inline-block; color: var(--muted); font-size: clamp(16px, 4vw, 20px); border-bottom: 1px dashed var(--blank); padding: 0 24px 2px; }
+  .exam {
+    text-align: center; margin: 10px 0 0; font-size: clamp(16px, 4vw, 19px); font-weight: 600;
+    text-decoration: underline; text-underline-offset: 4px; text-wrap: balance;
+  }
+  .meta {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px;
+    margin-top: 16px; padding: 8px 0; border-block: 2px solid var(--rule);
+    font-weight: 700; font-size: clamp(15px, 3.8vw, 17px);
+  }
+  .meta span { white-space: nowrap; }
+
+  ol.qs { list-style: none; margin: 8px 0 0; padding: 0; }
+  .q {
+    display: grid; grid-template-columns: 3.2em minmax(0, 1fr); gap: 4px 6px;
+    padding-block: 14px; border-bottom: 1px solid var(--line);
+    font-size: clamp(16px, 4vw, 18px); line-height: 1.7;
+  }
+  .q:last-child { border-bottom: 0; }
+  .q .no { font-weight: 700; }
+  .q .body { min-width: 0; }
+  .q .head { font-weight: 600; margin: 0; }
+  .q p { margin: 0; }
+  .lines { display: flex; flex-direction: column; }
+  .blank { display: inline-block; min-width: 3.4em; border-bottom: 1.5px solid var(--blank); margin-inline: 4px; transform: translateY(-2px); }
+  .blank.s { min-width: 1.6em; }
+  .cols { display: grid; grid-template-columns: repeat(2, minmax(0, 12em)); gap: 0 3em; margin-top: 4px; }
+  mark.doubt { background: var(--warn-bg); color: var(--warn-ink); border-radius: 3px; padding: 0 3px; }
+
+  .review {
+    grid-column: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
+    margin-top: 6px; font-family: var(--font-ui); font-size: 13px; line-height: 1.5;
+  }
+  .review .why { color: var(--muted); flex: 1 1 220px; min-width: 0; }
+  .fb {
+    font: inherit; font-size: 13px; font-weight: 600; cursor: pointer;
+    padding: 6px 12px; border-radius: 8px; border: 1px solid var(--accent);
+    background: transparent; color: var(--accent);
+  }
+  .fb:hover { background: var(--accent); color: var(--accent-ink); }
+  .fb:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .fb[hidden] { display: none; }
+</style>
+
+<div class="wrap">
+  <section class="report">
+    <h1>UKG Hindi: अर्द्धवार्षिक परीक्षा 2026, समीक्षा रिपोर्ट</h1>
+    <dl class="facts">
+      <div><dt>कक्षा</dt><dd>U.K.G.</dd></div>
+      <div><dt>विषय</dt><dd>हिन्दी</dd></div>
+      <div><dt>FM / Time</dt><dd>50 / 3 hrs</dd></div>
+      <div><dt>स्रोत</dt><dd>हाथ से लिखी कॉपी, 3 पन्ने</dd></div>
+      <div><dt>प्रश्न</dt><dd>8</dd></div>
+      <div><dt>स्थिति</dt><dd>ड्राफ्ट, समीक्षा बाकी</dd></div>
+    </dl>
+    <div class="tally">
+      <span class="chip ok">4 प्रश्न साफ़ पढ़े गए (प्र.1, 2, 3, 5)</span>
+      <span class="chip warn">4 प्रश्न जाँच चाहिए (प्र.4, 6, 7, 8)</span>
+    </div>
+    <h2>खुली बातें</h2>
+    <ul>
+      <li>विद्यालय का नाम कॉपी में नहीं था, इसलिए खाली है।</li>
+      <li>प्रश्नों के अंक (marks) कॉपी में नहीं थे, इसलिए नहीं भरे गए।</li>
+      <li>प्र.4 और प्र.8 के कुछ शब्द साफ़ नहीं पढ़े गए, उन्हें पूरा नहीं किया गया है।</li>
+    </ul>
+    <p class="how"><strong>सुझाव कैसे दें:</strong> जिस प्रश्न पर सुझाव देना हो, उसके नीचे &ldquo;इस प्रश्न पर सुझाव दें&rdquo; दबाएँ और सही शब्द या बदलाव लिखें। सभी सुझाव इसी पन्ने की टिप्पणियों में जमा होते हैं। पीले रंग के शब्द वे हैं जो कॉपी में साफ़ नहीं थे।</p>
+  </section>
+
+  <main class="sheet">
+    <div class="school"><span>विद्यालय का नाम</span></div>
+    <p class="exam">अर्द्धवार्षिक परीक्षा सन् 2026 &ndash; कक्षा U.K.G.</p>
+    <div class="meta">
+      <span>FM : 50</span>
+      <span>Time : 3 hrs</span>
+      <span>विषय : हिन्दी</span>
+    </div>
+
+    <ol class="qs">
+      <li class="q" id="q1" data-comment-target data-label="प्र.1">
+        <span class="no">प्र.1</span>
+        <div class="body"><p>तीन अक्षर के 10 शब्द लिखिए।</p></div>
+        <div class="review"><span class="chip ok">साफ़</span><span class="why">कॉपी में &ldquo;लिखिए&rdquo; सुधारा हुआ था।</span><button class="fb" type="button" hidden>इस प्रश्न पर सुझाव दें</button></div>
+      </li>
+
+      <li class="q" id="q2" data-comment-target data-label="प्र.2">
+        <span class="no">प्र.2</span>
+        <div class="body"><p>चार अक्षर के 10 शब्द लिखिए।</p></div>
+        <div class="review"><span class="chip ok">साफ़</span><span class="why"></span><button class="fb" type="button" hidden>इस प्रश्न पर सुझाव दें</button></div>
+      </li>
+
+      <li class="q" id="q3" data-comment-target data-label="प्र.3">
+        <span class="no">प्र.3</span>
+        <div class="body"><p>आ की मात्रा वाले 6 शब्द लिखिए।</p></div>
+        <div class="review"><span class="chip ok">साफ़</span><span class="why"></span><button class="fb" type="button" hidden>इस प्रश्न पर सुझाव दें</button></div>
+      </li>
+
+      <li class="q" id="q4" data-comment-target data-label="प्र.4">
+        <span class="no">प्र.4</span>
+        <div class="body">
+          <p class="head">खाली स्थान भरिए &mdash;</p>
+          <div class="lines">
+            <div><mark class="doubt">आ</mark><span class="blank"></span></div>
+            <div><mark class="doubt">घा</mark><span class="blank"></span></div>
+            <div><mark class="doubt">अ</mark><span class="blank"></span><mark class="doubt">ा</mark><span class="blank"></span></div>
+            <div><mark class="doubt">दम</mark><span class="blank"></span></div>
+          </div>
+        </div>
+        <div class="review"><span class="chip warn">जाँच चाहिए</span><span class="why">अक्षर साफ़ नहीं पढ़े गए। कॉपी में दूसरा खाली स्थान दूर लिखा था, इसलिए अगली पंक्ति में रखा है।</span><button class="fb" type="button" hidden>इस प्रश्न पर सुझाव दें</button></div>
+      </li>
+
+      <li class="q" id="q5" data-comment-target data-label="प्र.5">
+        <span class="no">प्र.5</span>
+        <div class="body">
+          <p class="head">सुलेख लिखिए &mdash;</p>
+          <div class="lines">
+            <div>चाचा का आदर कर।</div>
+            <div>विशाल सितार बजा।</div>
+            <div>जाकर किशमिश ला।</div>
+          </div>
+        </div>
+        <div class="review"><span class="chip ok">साफ़</span><span class="why">तीसरा वाक्य &ldquo;जाकर किशमिश ला।&rdquo; पढ़ा गया है।</span><button class="fb" type="button" hidden>इस प्रश्न पर सुझाव दें</button></div>
+      </li>
+
+      <li class="q" id="q6" data-comment-target data-label="प्र.6">
+        <span class="no">प्र.6</span>
+        <div class="body">
+          <p class="head">शब्दों को पहचान कर सही शब्द मिलाइए &mdash;</p>
+          <div class="cols">
+            <div>गुलाब</div><div>छतरी</div>
+            <div>पपीता</div><div>चिड़िया</div>
+            <div>तकिया</div><div>मुकुट</div>
+            <div>मुकुट</div><div>तकिया</div>
+            <div>चिड़िया</div><div>पपीता</div>
+            <div>छतरी</div><div>गुलाब</div>
+          </div>
+        </div>
+        <div class="review"><span class="chip warn">जाँच चाहिए</span><span class="why">मूल कॉपी में शायद चित्र थे। यहाँ केवल शब्द हैं। पहली पंक्ति में &ldquo;सही&rdquo; कटा हुआ था।</span><button class="fb" type="button" hidden>इस प्रश्न पर सुझाव दें</button></div>
+      </li>
+
+      <li class="q" id="q7" data-comment-target data-label="प्र.7">
+        <span class="no">प्र.7</span>
+        <div class="body"><p>सुमन अब मधुर गीत सुना।</p></div>
+        <div class="review"><span class="chip warn">जाँच चाहिए</span><span class="why">इस वाक्य के ऊपर कोई निर्देश नहीं था। यह सुलेख जैसा लगता है।</span><button class="fb" type="button" hidden>इस प्रश्न पर सुझाव दें</button></div>
+      </li>
+
+      <li class="q" id="q8" data-comment-target data-label="प्र.8">
+        <span class="no">प्र.8</span>
+        <div class="body">
+          <p class="head">वर्णों पर ई की मात्रा लगाकर सही शब्द बनाइए &mdash;</p>
+          <div class="cols">
+            <div>इमल</div><div><mark class="doubt">चल</mark></div>
+            <div>घड</div><div>पप<span class="blank s"></span>ता</div>
+            <div>छतर</div><div><mark class="doubt">द<span class="blank s"></span>पक</mark></div>
+            <div>कम<span class="blank s"></span>ज</div><div>ख<span class="blank s"></span>रा</div>
+          </div>
+        </div>
+        <div class="review"><span class="chip warn">जाँच चाहिए</span><span class="why">कुछ शब्द अधूरे हैं और उन्हें पूरा नहीं किया गया है।</span><button class="fb" type="button" hidden>इस प्रश्न पर सुझाव दें</button></div>
+      </li>
+    </ol>
+  </main>
+</div>
+
+<script>
+(function () {
+  var buttons = document.querySelectorAll(".fb");
+  claude.use("comments").then(function (comments) {
+    if (!comments) return;
+    buttons.forEach(function (b) {
+      b.hidden = false;
+      b.addEventListener("click", function () {
+        var q = b.closest(".q");
+        comments.openComposer({ element: q }).catch(function () { b.hidden = true; });
+      });
+    });
+  }).catch(function () {});
+})();
+</script>
