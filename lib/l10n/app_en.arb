@@ -4321,9 +4321,6 @@
   "homeAreas": "Your areas",
   "homeLatestNotice": "Latest notice",
   "homeNoNotice": "No notices yet.",
-  "paperScanTitle": "Scan question paper",
-  "paperScanIntro": "Take a photo of every page of the handwritten paper, front and back, in order. Use good light and hold the phone straight above the page. The photos are sent to Google Gemini to be read, so internet is needed.",
-  "paperScanPageN": "Page {n}",
   "@paperScanPageN": {
     "placeholders": {
       "n": {
@@ -4331,10 +4328,6 @@
       }
     }
   },
-  "paperScanNoPages": "No pages added yet",
-  "paperScanRead": "Read pages",
-  "paperScanReviewHint": "Reading handwriting can make mistakes. Check every question, fix the words, and delete anything that is not a question.",
-  "paperScanQuestionN": "Question {n}",
   "@paperScanQuestionN": {
     "placeholders": {
       "n": {
@@ -4342,39 +4335,11 @@
       }
     }
   },
-  "paperScanOptions": "Options (one per line)",
-  "paperScanMarks": "Marks (optional)",
-  "paperScanAddQuestion": "Add question",
-  "paperScanHeaderTitle": "School and paper details",
-  "paperScanExamName": "Exam name (e.g. Unit Test)",
-  "paperScanChooseLogo": "Choose school logo",
-  "paperScanChangeLogo": "Change logo",
-  "paperScanMakePdf": "Make PDF",
-  "paperScanNeedMore": "Enter the school name and keep at least one question to make the PDF.",
-  "paperScanEditQuestions": "Edit questions",
-  "paperScanBuildFailed": "Could not make the PDF. Please try again.",
-  "paperScanKeyTitle": "AI key",
-  "paperScanKeyHint": "Handwriting is read by Google Gemini. Get a free key at aistudio.google.com (Get API key), then paste it here. It stays on this phone.",
-  "paperScanKeyField": "Paste AI key",
-  "paperScanKeySave": "Save key",
-  "paperScanKeySaved": "AI key saved on this phone",
-  "paperScanKeyRemove": "Remove key",
-  "paperScanErrMissingKey": "No AI key yet. Paste your AI key, then read the pages again.",
-  "paperScanErrNoInternet": "No internet. Reading handwriting needs internet. Connect and try again.",
-  "paperScanErrInvalidKey": "The AI key was not accepted. Check it or paste a new one.",
-  "paperScanErrQuota": "The free AI limit is used up for now. Wait a minute (or until tomorrow) and try again.",
-  "paperScanErrTooLarge": "The photos are too big together. Remove some pages and try again.",
-  "paperScanErrBadReply": "The AI sent a reply the app could not use. Please try again.",
-  "paperScanErrNoQuestions": "No questions found in the photos. Use clearer, well-lit photos.",
-  "paperScanErrService": "The AI service gave an error: {detail}",
   "@paperScanErrService": {
     "placeholders": {
       "detail": {
         "type": "String"
       }
     }
-  },
-  "paperScanErrBusy": "The AI service is busy right now (it tried 4 times). Wait a minute and tap Read pages again.",
-  "paperScanErrNoCredit": "The Anthropic account has no credit left. Add credit at console.anthropic.com under Billing, then try again.",
-  "paperScanErrTimeout": "The AI took too long to answer (over 90 seconds). Try again, or add fewer pages at a time."
+  }
 }

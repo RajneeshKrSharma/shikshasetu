@@ -31,8 +31,6 @@ jobs:
           cache: true
       - run: flutter pub get
       - run: flutter gen-l10n
-      - name: Create empty secrets file (the real one is git-ignored)
-        run: echo "const geminiApiKey = '';" > lib/secrets.dart
       - name: Build the three copies
         env:
           REPO: ${{ github.event.repository.name }}

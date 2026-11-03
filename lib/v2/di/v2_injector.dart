@@ -7,7 +7,6 @@ import 'modules/fees_module.dart';
 import 'modules/fleet_module.dart';
 import 'modules/members_module.dart';
 import 'modules/notices_module.dart';
-import 'modules/paper_scan_module.dart';
 import 'modules/payments_module.dart';
 import 'modules/permissions_module.dart';
 import 'modules/requests_module.dart';
@@ -39,5 +38,4 @@ Future<void> configureV2Dependencies() async {
   registerPayments(sl);
   registerAnalytics(sl);
   registerPermissions(sl);
-  registerPaperScan(sl);
 }

@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 
 /// Where the school's server is, and the keys the app needs to talk to it.
 /// Set at build time:
-/// `--dart-define=API_BASE_URL=https://you.pythonanywhere.com/api`
+/// `--dart-define=API_BASE_URL=https://your-app.up.railway.app/api`
 class ApiConfig {
   const ApiConfig();
 
