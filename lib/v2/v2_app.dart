@@ -6,6 +6,7 @@ import '../core/theme/app_theme.dart';
 import '../features/settings/presentation/bloc/locale_cubit.dart';
 import '../l10n/generated/app_localizations.dart';
 import 'core/server/app_env.dart';
+import 'core/widgets/beta_banner.dart';
 import 'di/v2_injector.dart';
 import 'features/session/presentation/bloc/session_bloc.dart';
 import 'features/session/presentation/screen/login_screen.dart';
@@ -37,13 +38,16 @@ class ShikshaSetuV2App extends StatelessWidget {
           GlobalWidgetsLocalizations.delegate,
           GlobalCupertinoLocalizations.delegate,
         ],
-        builder: (context, child) => AppEnv.current.showsBanner
-            ? Banner(
-                message: AppEnv.current.name.toUpperCase(),
-                location: BannerLocation.topEnd,
-                child: child!,
-              )
-            : child!,
+        builder: (context, child) {
+          final screen = BetaBanner(child: child!);
+          return AppEnv.current.showsBanner
+              ? Banner(
+                  message: AppEnv.current.name.toUpperCase(),
+                  location: BannerLocation.topEnd,
+                  child: screen,
+                )
+              : screen;
+        },
         home: const _SessionGate(),
       ),
     ),

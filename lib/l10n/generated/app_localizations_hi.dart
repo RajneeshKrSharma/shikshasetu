@@ -6700,4 +6700,8 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get homeNoNotice => 'अभी कोई सूचना नहीं।';
+
+  @override
+  String get betaNotice =>
+      'बीटा संस्करण: ऐप को बेहतर बनाते समय आपको बदलाव या त्रुटियाँ दिख सकती हैं।';
 }

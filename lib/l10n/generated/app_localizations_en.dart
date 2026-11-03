@@ -6790,4 +6790,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homeNoNotice => 'No notices yet.';
+
+  @override
+  String get betaNotice =>
+      'Beta version: you may see changes or errors while we improve the app.';
 }
