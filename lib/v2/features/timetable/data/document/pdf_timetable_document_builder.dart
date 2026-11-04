@@ -30,7 +30,7 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
   pw.Widget _half(pw.Widget copy) => pw.Expanded(
     child: pw.FittedBox(
       fit: pw.BoxFit.scaleDown,
-      alignment: pw.Alignment.topCenter,
+      alignment: pw.Alignment.center,
       child: pw.SizedBox(
         width: PdfPageFormat.a4.width - 2 * _margin,
         child: copy,
@@ -119,23 +119,22 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
             pw.SizedBox(width: 12),
             pw.Expanded(
               child: pw.Column(
-                crossAxisAlignment: pw.CrossAxisAlignment.start,
+                crossAxisAlignment: pw.CrossAxisAlignment.center,
                 children: [
                   pw.Text(
                     sheet.schoolName.toUpperCase(),
+                    textAlign: pw.TextAlign.center,
                     style: pw.TextStyle(
-                      fontSize: 18,
+                      fontSize: 20,
                       fontWeight: pw.FontWeight.bold,
-                      color: ink,
+                      color: PdfColor.fromInt(0xFF2E3192),
                     ),
                   ),
                   pw.SizedBox(height: 4),
                   pw.Text(
                     _letterhead.address,
-                    style: const pw.TextStyle(
-                      fontSize: 11,
-                      color: PdfColors.grey700,
-                    ),
+                    textAlign: pw.TextAlign.center,
+                    style: const pw.TextStyle(fontSize: 11, color: ink),
                   ),
                 ],
               ),
