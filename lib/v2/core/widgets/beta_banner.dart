@@ -4,9 +4,8 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_dimens.dart';
 import '../../../core/utils/context_ext.dart';
 
-/// Puts a bold "this is a beta" strip above every screen of [child]. It uses
-/// the app's own brand color so it reads as part of the app, with a bright
-/// BETA pill to catch the eye.
+/// Puts a bold red "this is a beta" strip above every screen of [child], with
+/// a white BETA pill to catch the eye.
 class BetaBanner extends StatelessWidget {
   const BetaBanner({super.key, required this.child});
 
@@ -14,11 +13,10 @@ class BetaBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final onBrand = context.brand.onPrimary;
     return Column(
       children: [
         Material(
-          color: context.brand.primary,
+          color: AppColors.absent,
           child: SafeArea(
             bottom: false,
             child: Padding(
@@ -35,13 +33,13 @@ class BetaBanner extends StatelessWidget {
                       vertical: AppSpacing.xs / 2,
                     ),
                     decoration: BoxDecoration(
-                      color: AppColors.late,
+                      color: AppColors.background,
                       borderRadius: AppRadius.pillAll,
                     ),
                     child: Text(
                       context.l10n.betaBadge,
                       style: context.text.labelMedium?.copyWith(
-                        color: AppColors.textPrimary,
+                        color: AppColors.absent,
                         fontWeight: FontWeight.w800,
                         letterSpacing: 1,
                       ),
@@ -53,7 +51,7 @@ class BetaBanner extends StatelessWidget {
                       context.l10n.betaNotice,
                       textAlign: TextAlign.center,
                       style: context.text.labelLarge?.copyWith(
-                        color: onBrand,
+                        color: AppColors.background,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
