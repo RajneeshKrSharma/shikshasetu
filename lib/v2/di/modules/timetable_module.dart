@@ -23,6 +23,7 @@ void registerTimetable(GetIt sl) {
       () => PdfTimetableDocumentBuilder(
         const PrintLetterhead(
           logoAsset: 'assets/images/school_logo.jpg',
+          schoolName: 'R.D. Higher Secondary School',
           address: 'Nikasi, Nagra-Ballia (U.P.)',
         ),
       ),

@@ -122,7 +122,10 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
                 crossAxisAlignment: pw.CrossAxisAlignment.center,
                 children: [
                   pw.Text(
-                    sheet.schoolName.toUpperCase(),
+                    (sheet.schoolName.trim().isEmpty
+                            ? _letterhead.schoolName
+                            : sheet.schoolName)
+                        .toUpperCase(),
                     textAlign: pw.TextAlign.center,
                     style: pw.TextStyle(
                       fontSize: 20,
@@ -159,7 +162,8 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
           mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
           children: [
             pw.Text(
-              '${sheet.examLabel} ${sheet.academicYear}',
+              '${sheet.examLabel} ${labels.examWord}'
+              '${sheet.academicYear.isEmpty ? '' : ' · ${labels.sessionWord} ${sheet.academicYear}'}',
               style: pw.TextStyle(fontSize: 12, fontWeight: pw.FontWeight.bold),
             ),
             pw.Text(

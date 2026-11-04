@@ -14,14 +14,21 @@ class TimetableSheetDay extends Equatable {
 /// What heads every printed sheet: the school's logo and address. The school's
 /// name comes from the server; these two are fixed by the school.
 class PrintLetterhead extends Equatable {
-  const PrintLetterhead({required this.logoAsset, required this.address});
+  const PrintLetterhead({
+    required this.logoAsset,
+    required this.schoolName,
+    required this.address,
+  });
 
   /// Path of the logo image bundled with the app.
   final String logoAsset;
+
+  /// Printed when the school's saved name is blank.
+  final String schoolName;
   final String address;
 
   @override
-  List<Object?> get props => [logoAsset, address];
+  List<Object?> get props => [logoAsset, schoolName, address];
 }
 
 /// A class's saved timetable for one exam, ready to be printed.
@@ -63,6 +70,8 @@ class TimetablePrintLabels extends Equatable {
     required this.dateColumn,
     required this.dayColumn,
     required this.subjectColumn,
+    required this.examWord,
+    required this.sessionWord,
   });
 
   final String localeCode;
@@ -74,6 +83,12 @@ class TimetablePrintLabels extends Equatable {
   final String dayColumn;
   final String subjectColumn;
 
+  /// "Examination", added after the exam's name: "Half Yearly Examination".
+  final String examWord;
+
+  /// "Session", printed before the year: "Session 26-27".
+  final String sessionWord;
+
   @override
   List<Object?> get props => [
     localeCode,
@@ -82,5 +97,7 @@ class TimetablePrintLabels extends Equatable {
     dateColumn,
     dayColumn,
     subjectColumn,
+    examWord,
+    sessionWord,
   ];
 }

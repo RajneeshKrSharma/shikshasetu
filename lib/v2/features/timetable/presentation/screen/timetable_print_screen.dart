@@ -35,6 +35,8 @@ class TimetablePrintScreen extends StatelessWidget {
         dateColumn: l.ttbDate,
         dayColumn: l.ttbColDay,
         subjectColumn: l.ttbColSubject,
+        examWord: l.ttbExamWord,
+        sessionWord: l.ttbSession,
       ),
     );
     return BlocProvider(

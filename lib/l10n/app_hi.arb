@@ -2202,5 +2202,7 @@
   "ttbClassWord": "कक्षा",
   "ttbColDay": "दिन",
   "ttbColSubject": "विषय",
-  "ttbPrintHeading": "समय सारणी"
+  "ttbPrintHeading": "समय सारणी",
+  "ttbExamWord": "परीक्षा",
+  "ttbSession": "सत्र"
 }

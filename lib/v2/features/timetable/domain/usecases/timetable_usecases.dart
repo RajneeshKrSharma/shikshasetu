@@ -127,10 +127,10 @@ class BuildTimetablePdf implements UseCase<Uint8List, BuildTimetablePdfParams> {
   bool _sameDay(DateTime a, DateTime b) =>
       a.year == b.year && a.month == b.month && a.day == b.day;
 
-  /// The school year starts in April: November 2026 falls in "2026-27".
+  /// The school year starts in April: November 2026 falls in "26-27".
   String _academicYear(DateTime day) {
     final start = day.month >= 4 ? day.year : day.year - 1;
-    final end = ((start + 1) % 100).toString().padLeft(2, '0');
-    return '$start-$end';
+    String two(int y) => (y % 100).toString().padLeft(2, '0');
+    return '${two(start)}-${two(start + 1)}';
   }
 }

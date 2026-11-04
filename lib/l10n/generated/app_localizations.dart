@@ -12037,6 +12037,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Time Table'**
   String get ttbPrintHeading;
+
+  /// No description provided for @ttbExamWord.
+  ///
+  /// In en, this message translates to:
+  /// **'Examination'**
+  String get ttbExamWord;
+
+  /// No description provided for @ttbSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Session'**
+  String get ttbSession;
 }
 
 class _AppLocalizationsDelegate

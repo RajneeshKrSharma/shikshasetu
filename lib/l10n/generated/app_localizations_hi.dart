@@ -6815,4 +6815,10 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get ttbPrintHeading => 'समय सारणी';
+
+  @override
+  String get ttbExamWord => 'परीक्षा';
+
+  @override
+  String get ttbSession => 'सत्र';
 }

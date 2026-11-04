@@ -6905,4 +6905,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ttbPrintHeading => 'Time Table';
+
+  @override
+  String get ttbExamWord => 'Examination';
+
+  @override
+  String get ttbSession => 'Session';
 }

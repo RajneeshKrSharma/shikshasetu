@@ -4379,5 +4379,7 @@
   "ttbClassWord": "Class",
   "ttbColDay": "Day",
   "ttbColSubject": "Subject",
-  "ttbPrintHeading": "Time Table"
+  "ttbPrintHeading": "Time Table",
+  "ttbExamWord": "Examination",
+  "ttbSession": "Session"
 }
