@@ -105,3 +105,31 @@ class FeatureGrid extends StatelessWidget {
     );
   }
 }
+
+/// Tiles that keep a steady size on every screen: the number of columns grows
+/// with the width (phone → tablet → desktop) instead of the tiles stretching.
+/// Tile height follows the text scale so large text is never clipped.
+class AdaptiveFeatureGrid extends StatelessWidget {
+  const AdaptiveFeatureGrid({super.key, required this.tiles});
+
+  final List<Widget> tiles;
+
+  /// Widest a tile may grow before another column is added.
+  static const double maxTileWidth = 150;
+
+  @override
+  Widget build(BuildContext context) {
+    final scale = MediaQuery.textScalerOf(context).scale(1).clamp(1.0, 1.6);
+    return GridView(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+        maxCrossAxisExtent: maxTileWidth,
+        mainAxisExtent: FeatureGrid.tileHeight * scale,
+        mainAxisSpacing: AppSpacing.sm,
+        crossAxisSpacing: AppSpacing.sm,
+      ),
+      children: tiles,
+    );
+  }
+}

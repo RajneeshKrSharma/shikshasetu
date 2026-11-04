@@ -43,13 +43,8 @@ class HomeScreen extends StatelessWidget {
             Text(account.role.label(l), style: context.text.bodyMedium),
             const SizedBox(height: AppSpacing.lg),
             SectionTitle(l.homeAreas),
-            GridView.count(
-              crossAxisCount: MediaQuery.sizeOf(context).width > 600 ? 5 : 3,
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              mainAxisSpacing: AppSpacing.sm,
-              crossAxisSpacing: AppSpacing.sm,
-              children: [
+            AdaptiveFeatureGrid(
+              tiles: [
                 for (final s in areas)
                   FeatureTile(
                     icon: s.icon,
