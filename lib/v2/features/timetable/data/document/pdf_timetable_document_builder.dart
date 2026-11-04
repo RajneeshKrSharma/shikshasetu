@@ -24,6 +24,8 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
   final Future<ByteData> Function(String) _loadAsset;
 
   static const _margin = 28.0;
+  static const _blue = PdfColor.fromInt(0xFF2E3192);
+  static const _blueTint = PdfColor.fromInt(0xFFE8EAF6);
 
   /// One copy fills one half of the page; if it were ever taller it shrinks
   /// to fit instead of running over the cut line.
@@ -93,7 +95,7 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
     final dateFormat = DateFormat('dd MMM yyyy', locale);
     final dayFormat = DateFormat('EEEE', locale);
     const ink = PdfColors.grey900;
-    final line = pw.BorderSide(color: PdfColors.grey700, width: 0.8);
+    final blueLine = pw.BorderSide(color: _blue, width: 1);
 
     pw.Widget cell(String text, {bool head = false, pw.TextAlign? align}) =>
         pw.Padding(
@@ -102,9 +104,9 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
             text,
             textAlign: align,
             style: pw.TextStyle(
-              fontSize: head ? 10 : 12,
+              fontSize: head ? 11 : 12,
               fontWeight: head ? pw.FontWeight.bold : pw.FontWeight.normal,
-              color: head ? PdfColors.grey700 : ink,
+              color: head ? _blue : ink,
             ),
           ),
         );
@@ -130,7 +132,7 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
                     style: pw.TextStyle(
                       fontSize: 20,
                       fontWeight: pw.FontWeight.bold,
-                      color: PdfColor.fromInt(0xFF2E3192),
+                      color: _blue,
                     ),
                   ),
                   pw.SizedBox(height: 4),
@@ -145,7 +147,7 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
           ],
         ),
         pw.SizedBox(height: 6),
-        pw.Container(height: 1.2, color: PdfColors.grey800),
+        pw.Container(height: 1.6, color: _blue),
         pw.SizedBox(height: 8),
         pw.Center(
           child: pw.Text(
@@ -154,7 +156,15 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
               fontSize: 15,
               fontWeight: pw.FontWeight.bold,
               letterSpacing: 1.5,
+              color: _blue,
             ),
+          ),
+        ),
+        pw.SizedBox(height: 3),
+        pw.Center(
+          child: pw.Text(
+            '${sheet.examLabel} ${labels.examWord}',
+            style: pw.TextStyle(fontSize: 13, fontWeight: pw.FontWeight.bold),
           ),
         ),
         pw.SizedBox(height: 8),
@@ -162,12 +172,11 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
           mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
           children: [
             pw.Text(
-              '${sheet.examLabel} ${labels.examWord}'
-              '${sheet.academicYear.isEmpty ? '' : ' · ${labels.sessionWord} ${sheet.academicYear}'}',
+              '${labels.sessionWord} : ${sheet.academicYear.replaceAll('-', ' - ')}',
               style: pw.TextStyle(fontSize: 12, fontWeight: pw.FontWeight.bold),
             ),
             pw.Text(
-              '${labels.classWord} ${sheet.className}',
+              '${labels.classWord} : ${sheet.className}',
               style: pw.TextStyle(fontSize: 12, fontWeight: pw.FontWeight.bold),
             ),
           ],
@@ -175,8 +184,8 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
         pw.SizedBox(height: 8),
         pw.Table(
           border: pw.TableBorder(
-            top: line,
-            bottom: line,
+            top: blueLine,
+            bottom: blueLine,
             horizontalInside: pw.BorderSide(
               color: PdfColors.grey400,
               width: 0.5,
@@ -189,7 +198,7 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
           },
           children: [
             pw.TableRow(
-              decoration: const pw.BoxDecoration(color: PdfColors.grey200),
+              decoration: const pw.BoxDecoration(color: _blueTint),
               children: [
                 cell(labels.dateColumn, head: true),
                 cell(labels.dayColumn, head: true),
