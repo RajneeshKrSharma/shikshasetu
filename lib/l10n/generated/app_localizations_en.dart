@@ -6794,4 +6794,7 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get betaNotice =>
       'Beta version: you may see changes or errors while we improve the app.';
+
+  @override
+  String get betaBadge => 'BETA';
 }

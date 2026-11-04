@@ -11815,6 +11815,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Beta version: you may see changes or errors while we improve the app.'**
   String get betaNotice;
+
+  /// No description provided for @betaBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'BETA'**
+  String get betaBadge;
 }
 
 class _AppLocalizationsDelegate
