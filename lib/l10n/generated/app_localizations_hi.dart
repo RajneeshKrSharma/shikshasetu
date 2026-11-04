@@ -6707,4 +6707,92 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get betaBadge => 'बीटा';
+
+  @override
+  String get navExamTimetable => 'परीक्षा समय-सारणी';
+
+  @override
+  String get ttbSettings => 'समय-सारणी की सेटिंग';
+
+  @override
+  String get ttbPickClass => 'समय-सारणी बनाने के लिए कक्षा चुनें।';
+
+  @override
+  String get ttbNoSubjects =>
+      'इस कक्षा के किसी विषय में अभी शिक्षक नहीं है। पहले शिक्षक जोड़ें।';
+
+  @override
+  String get ttbSkipHint => 'किसी विषय को छोड़ना हो तो उसकी तारीख खाली रखें।';
+
+  @override
+  String get ttbDate => 'तारीख';
+
+  @override
+  String get ttbStart => 'शुरू होने का समय';
+
+  @override
+  String get ttbMarks => 'अंक';
+
+  @override
+  String get ttbDuration => 'मिनट';
+
+  @override
+  String get ttbSave => 'समय-सारणी सहेजें';
+
+  @override
+  String get ttbSaved => 'समय-सारणी सहेज ली गई।';
+
+  @override
+  String get ttbNote => 'कृपया ध्यान दें';
+
+  @override
+  String get ttbSavedHeading => 'सहेजी हुई समय-सारणी';
+
+  @override
+  String get ttbNoneSaved => 'इस कक्षा के लिए अभी कुछ तय नहीं है।';
+
+  @override
+  String get ttbSetMarks => 'सामान्य अंक';
+
+  @override
+  String get ttbSetDuration => 'सामान्य अवधि (मिनट)';
+
+  @override
+  String get ttbSetStart => 'सामान्य शुरू होने का समय';
+
+  @override
+  String get ttbSetShowTime => 'शुरू होने का समय और अवधि दिखाएँ';
+
+  @override
+  String get ttbSetSameDay => 'एक दिन में दो पेपर';
+
+  @override
+  String get ttbRuleAllow => 'अनुमति दें';
+
+  @override
+  String get ttbRuleWarn => 'चेतावनी दें';
+
+  @override
+  String get ttbRuleBlock => 'रोकें';
+
+  @override
+  String get ttbSetGap => 'दो पेपर के बीच खाली दिन';
+
+  @override
+  String get ttbSetOffDays => 'साप्ताहिक छुट्टी';
+
+  @override
+  String get ttbSetOffDates => 'छुट्टी की तारीखें';
+
+  @override
+  String get ttbAddDate => 'तारीख जोड़ें';
+
+  @override
+  String get ttbSetNames => 'परीक्षा के नाम';
+
+  @override
+  String get ttbSettingsSaved => 'सेटिंग सहेज ली गई।';
+
+  @override
+  String get ttbHoliday => 'छुट्टी';
 }

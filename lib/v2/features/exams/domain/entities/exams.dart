@@ -67,6 +67,8 @@ class Exam extends Equatable {
     required this.teacherId,
     required this.teacherName,
     required this.paperStatus,
+    this.startsAtMinutes,
+    this.durationMinutes,
   });
 
   final String id;
@@ -80,6 +82,10 @@ class Exam extends Equatable {
   final String teacherName;
   final PaperStatus? paperStatus;
 
+  /// When the paper starts, as minutes since midnight; null when not set.
+  final int? startsAtMinutes;
+  final int? durationMinutes;
+
   @override
   List<Object?> get props => [
     id,
@@ -92,6 +98,8 @@ class Exam extends Equatable {
     teacherId,
     teacherName,
     paperStatus,
+    startsAtMinutes,
+    durationMinutes,
   ];
 }
 

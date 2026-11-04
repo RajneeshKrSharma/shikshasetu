@@ -15,6 +15,8 @@ class ExamModels {
     teacherId: j.stringOrNull('teacher_id'),
     teacherName: j.string('teacher_name'),
     paperStatus: PaperStatus.fromCode(j.stringOrNull('paper_status')),
+    startsAtMinutes: j.minuteOrNull('starts_at'),
+    durationMinutes: j.integerOrNull('duration_minutes'),
   );
 
   static ExamResults results(Json j) => ExamResults(

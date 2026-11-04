@@ -47,6 +47,7 @@ class ManagerNavigation extends NavigationPolicy {
     AppSection.attendance,
     AppSection.requests,
     AppSection.exams,
+    AppSection.examTimetable,
     AppSection.payments,
     AppSection.analytics,
     AppSection.lessons,

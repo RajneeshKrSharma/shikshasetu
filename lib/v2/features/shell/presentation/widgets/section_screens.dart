@@ -14,6 +14,7 @@ import '../../../session/domain/navigation/app_section.dart';
 import '../../../session/presentation/screen/profile_screen.dart';
 import '../../../students/presentation/screen/students_screen.dart';
 import '../../../teaching/presentation/screen/my_lessons_screen.dart';
+import '../../../timetable/presentation/screen/exam_timetable_screen.dart';
 import '../../../teaching/presentation/screen/teachers_screen.dart';
 import '../screen/home_screen.dart';
 
@@ -30,6 +31,7 @@ class SectionScreens {
     AppSection.attendance => const AttendanceScreen(),
     AppSection.requests => const RequestsScreen(),
     AppSection.exams => const ExamsScreen(),
+    AppSection.examTimetable => const ExamTimetableScreen(),
     AppSection.payments => const PaymentsScreen(),
     AppSection.analytics => const AnalyticsScreen(),
     AppSection.home => const HomeScreen(),

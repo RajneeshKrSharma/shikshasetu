@@ -6797,4 +6797,92 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get betaBadge => 'BETA';
+
+  @override
+  String get navExamTimetable => 'Exam Timetable';
+
+  @override
+  String get ttbSettings => 'Timetable settings';
+
+  @override
+  String get ttbPickClass => 'Choose a class to make its timetable.';
+
+  @override
+  String get ttbNoSubjects =>
+      'No subject of this class has a teacher yet. Allot teachers first.';
+
+  @override
+  String get ttbSkipHint => 'Leave a subject without a date to skip it.';
+
+  @override
+  String get ttbDate => 'Date';
+
+  @override
+  String get ttbStart => 'Start time';
+
+  @override
+  String get ttbMarks => 'Marks';
+
+  @override
+  String get ttbDuration => 'Minutes';
+
+  @override
+  String get ttbSave => 'Save timetable';
+
+  @override
+  String get ttbSaved => 'Timetable saved.';
+
+  @override
+  String get ttbNote => 'Please note';
+
+  @override
+  String get ttbSavedHeading => 'Saved timetable';
+
+  @override
+  String get ttbNoneSaved => 'Nothing is scheduled yet for this class.';
+
+  @override
+  String get ttbSetMarks => 'Default marks';
+
+  @override
+  String get ttbSetDuration => 'Default duration (minutes)';
+
+  @override
+  String get ttbSetStart => 'Default start time';
+
+  @override
+  String get ttbSetShowTime => 'Show start time and duration';
+
+  @override
+  String get ttbSetSameDay => 'Two papers on one day';
+
+  @override
+  String get ttbRuleAllow => 'Allow';
+
+  @override
+  String get ttbRuleWarn => 'Warn';
+
+  @override
+  String get ttbRuleBlock => 'Block';
+
+  @override
+  String get ttbSetGap => 'Free days needed between papers';
+
+  @override
+  String get ttbSetOffDays => 'Weekly holidays';
+
+  @override
+  String get ttbSetOffDates => 'Holiday dates';
+
+  @override
+  String get ttbAddDate => 'Add a date';
+
+  @override
+  String get ttbSetNames => 'Exam names';
+
+  @override
+  String get ttbSettingsSaved => 'Settings saved.';
+
+  @override
+  String get ttbHoliday => 'Holiday';
 }

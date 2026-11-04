@@ -15,6 +15,7 @@ import 'modules/server_module.dart';
 import 'modules/session_module.dart';
 import 'modules/teaching_module.dart';
 import 'modules/students_module.dart';
+import 'modules/timetable_module.dart';
 
 /// The service locator of the server-backed app. Everything is registered
 /// against its contract, so tests can swap in fakes.
@@ -35,6 +36,7 @@ Future<void> configureV2Dependencies() async {
   registerAttendance(sl);
   registerRequests(sl);
   registerExams(sl);
+  registerTimetable(sl);
   registerPayments(sl);
   registerAnalytics(sl);
   registerPermissions(sl);

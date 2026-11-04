@@ -11821,6 +11821,180 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'BETA'**
   String get betaBadge;
+
+  /// No description provided for @navExamTimetable.
+  ///
+  /// In en, this message translates to:
+  /// **'Exam Timetable'**
+  String get navExamTimetable;
+
+  /// No description provided for @ttbSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Timetable settings'**
+  String get ttbSettings;
+
+  /// No description provided for @ttbPickClass.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a class to make its timetable.'**
+  String get ttbPickClass;
+
+  /// No description provided for @ttbNoSubjects.
+  ///
+  /// In en, this message translates to:
+  /// **'No subject of this class has a teacher yet. Allot teachers first.'**
+  String get ttbNoSubjects;
+
+  /// No description provided for @ttbSkipHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave a subject without a date to skip it.'**
+  String get ttbSkipHint;
+
+  /// No description provided for @ttbDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get ttbDate;
+
+  /// No description provided for @ttbStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Start time'**
+  String get ttbStart;
+
+  /// No description provided for @ttbMarks.
+  ///
+  /// In en, this message translates to:
+  /// **'Marks'**
+  String get ttbMarks;
+
+  /// No description provided for @ttbDuration.
+  ///
+  /// In en, this message translates to:
+  /// **'Minutes'**
+  String get ttbDuration;
+
+  /// No description provided for @ttbSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save timetable'**
+  String get ttbSave;
+
+  /// No description provided for @ttbSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Timetable saved.'**
+  String get ttbSaved;
+
+  /// No description provided for @ttbNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Please note'**
+  String get ttbNote;
+
+  /// No description provided for @ttbSavedHeading.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved timetable'**
+  String get ttbSavedHeading;
+
+  /// No description provided for @ttbNoneSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing is scheduled yet for this class.'**
+  String get ttbNoneSaved;
+
+  /// No description provided for @ttbSetMarks.
+  ///
+  /// In en, this message translates to:
+  /// **'Default marks'**
+  String get ttbSetMarks;
+
+  /// No description provided for @ttbSetDuration.
+  ///
+  /// In en, this message translates to:
+  /// **'Default duration (minutes)'**
+  String get ttbSetDuration;
+
+  /// No description provided for @ttbSetStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Default start time'**
+  String get ttbSetStart;
+
+  /// No description provided for @ttbSetShowTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Show start time and duration'**
+  String get ttbSetShowTime;
+
+  /// No description provided for @ttbSetSameDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Two papers on one day'**
+  String get ttbSetSameDay;
+
+  /// No description provided for @ttbRuleAllow.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow'**
+  String get ttbRuleAllow;
+
+  /// No description provided for @ttbRuleWarn.
+  ///
+  /// In en, this message translates to:
+  /// **'Warn'**
+  String get ttbRuleWarn;
+
+  /// No description provided for @ttbRuleBlock.
+  ///
+  /// In en, this message translates to:
+  /// **'Block'**
+  String get ttbRuleBlock;
+
+  /// No description provided for @ttbSetGap.
+  ///
+  /// In en, this message translates to:
+  /// **'Free days needed between papers'**
+  String get ttbSetGap;
+
+  /// No description provided for @ttbSetOffDays.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly holidays'**
+  String get ttbSetOffDays;
+
+  /// No description provided for @ttbSetOffDates.
+  ///
+  /// In en, this message translates to:
+  /// **'Holiday dates'**
+  String get ttbSetOffDates;
+
+  /// No description provided for @ttbAddDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a date'**
+  String get ttbAddDate;
+
+  /// No description provided for @ttbSetNames.
+  ///
+  /// In en, this message translates to:
+  /// **'Exam names'**
+  String get ttbSetNames;
+
+  /// No description provided for @ttbSettingsSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings saved.'**
+  String get ttbSettingsSaved;
+
+  /// No description provided for @ttbHoliday.
+  ///
+  /// In en, this message translates to:
+  /// **'Holiday'**
+  String get ttbHoliday;
 }
 
 class _AppLocalizationsDelegate

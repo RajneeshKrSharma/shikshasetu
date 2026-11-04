@@ -32,6 +32,7 @@ enum AppSection {
     Permission.manageQuestionBank,
     Permission.viewResults,
   }),
+  examTimetable({Permission.scheduleExams}),
   payments({
     Permission.manageTeacherPayments,
     Permission.manageStaffPayments,
