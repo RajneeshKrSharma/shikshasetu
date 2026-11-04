@@ -4347,7 +4347,7 @@
   "navExamTimetable": "Exam Timetable",
   "ttbSettings": "Timetable settings",
   "ttbPickClass": "Choose a class to make its timetable.",
-  "ttbNoSubjects": "No subject of this class has a teacher yet. Allot teachers first.",
+  "ttbNoSubjects": "No subject yet for this class. Add one below.",
   "ttbSkipHint": "Leave a subject without a date to skip it.",
   "ttbDate": "Date",
   "ttbStart": "Start time",
@@ -4372,5 +4372,6 @@
   "ttbAddDate": "Add a date",
   "ttbSetNames": "Exam names",
   "ttbSettingsSaved": "Settings saved.",
-  "ttbHoliday": "Holiday"
+  "ttbHoliday": "Holiday",
+  "ttbAddSubject": "Add a subject"
 }

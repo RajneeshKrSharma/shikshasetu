@@ -10,6 +10,7 @@ import '../../../../core/widgets/failure_toast.dart';
 import '../../../../di/v2_injector.dart';
 import '../../domain/entities/timetable.dart';
 import '../bloc/timetable_bloc.dart';
+import '../widgets/add_subject_field.dart';
 import '../widgets/saved_timetable.dart';
 import '../widgets/timetable_row_card.dart';
 import 'timetable_settings_screen.dart';
@@ -132,41 +133,42 @@ class _Body extends StatelessWidget {
           const Center(child: CircularProgressIndicator())
         else ...[
           if (state.rows.isEmpty)
-            InfoBanner(message: l.ttbNoSubjects, kind: BannerKind.warning)
-          else ...[
+            Text(l.ttbNoSubjects)
+          else
             Text(l.ttbSkipHint, style: context.text.bodySmall),
-            const SizedBox(height: AppSpacing.sm),
-            for (var i = 0; i < state.rows.length; i++)
-              Padding(
-                padding: const EdgeInsets.only(bottom: AppSpacing.sm),
-                child: TimetableRowCard(
-                  key: ValueKey('${state.classId}-${state.rows[i].subject}'),
-                  index: i,
-                  row: state.rows[i],
-                  settings: settings,
-                ),
+          const SizedBox(height: AppSpacing.sm),
+          for (var i = 0; i < state.rows.length; i++)
+            Padding(
+              padding: const EdgeInsets.only(bottom: AppSpacing.sm),
+              child: TimetableRowCard(
+                key: ValueKey('${state.classId}-${state.rows[i].subject}'),
+                index: i,
+                row: state.rows[i],
+                settings: settings,
               ),
-            if (state.warnings.isNotEmpty)
-              InfoBanner(
-                title: l.ttbNote,
-                message: state.warnings.join('\n'),
-                kind: BannerKind.warning,
-              ),
-            const SizedBox(height: AppSpacing.sm),
-            FilledButton.icon(
-              onPressed: state.canSave
-                  ? () => bloc.add(const TimetableSubmitted())
-                  : null,
-              icon: state.busy
-                  ? const SizedBox(
-                      width: 18,
-                      height: 18,
-                      child: CircularProgressIndicator(strokeWidth: 2),
-                    )
-                  : const Icon(Icons.event_available_outlined),
-              label: Text(l.ttbSave),
             ),
-          ],
+          const AddSubjectField(),
+          const SizedBox(height: AppSpacing.md),
+          if (state.warnings.isNotEmpty)
+            InfoBanner(
+              title: l.ttbNote,
+              message: state.warnings.join('\n'),
+              kind: BannerKind.warning,
+            ),
+          const SizedBox(height: AppSpacing.sm),
+          FilledButton.icon(
+            onPressed: state.canSave
+                ? () => bloc.add(const TimetableSubmitted())
+                : null,
+            icon: state.busy
+                ? const SizedBox(
+                    width: 18,
+                    height: 18,
+                    child: CircularProgressIndicator(strokeWidth: 2),
+                  )
+                : const Icon(Icons.event_available_outlined),
+            label: Text(l.ttbSave),
+          ),
           const SizedBox(height: AppSpacing.xl),
           SectionTitle(
             '${l.ttbSavedHeading} · ${settings.labelOf(state.type)}',

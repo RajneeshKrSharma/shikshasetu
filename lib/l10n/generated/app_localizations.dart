@@ -11843,7 +11843,7 @@ abstract class AppLocalizations {
   /// No description provided for @ttbNoSubjects.
   ///
   /// In en, this message translates to:
-  /// **'No subject of this class has a teacher yet. Allot teachers first.'**
+  /// **'No subject yet for this class. Add one below.'**
   String get ttbNoSubjects;
 
   /// No description provided for @ttbSkipHint.
@@ -11995,6 +11995,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Holiday'**
   String get ttbHoliday;
+
+  /// No description provided for @ttbAddSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a subject'**
+  String get ttbAddSubject;
 }
 
 class _AppLocalizationsDelegate

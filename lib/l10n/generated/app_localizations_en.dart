@@ -6808,8 +6808,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get ttbPickClass => 'Choose a class to make its timetable.';
 
   @override
-  String get ttbNoSubjects =>
-      'No subject of this class has a teacher yet. Allot teachers first.';
+  String get ttbNoSubjects => 'No subject yet for this class. Add one below.';
 
   @override
   String get ttbSkipHint => 'Leave a subject without a date to skip it.';
@@ -6885,4 +6884,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ttbHoliday => 'Holiday';
+
+  @override
+  String get ttbAddSubject => 'Add a subject';
 }

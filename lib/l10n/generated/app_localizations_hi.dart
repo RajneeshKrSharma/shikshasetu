@@ -6718,8 +6718,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get ttbPickClass => 'समय-सारणी बनाने के लिए कक्षा चुनें।';
 
   @override
-  String get ttbNoSubjects =>
-      'इस कक्षा के किसी विषय में अभी शिक्षक नहीं है। पहले शिक्षक जोड़ें।';
+  String get ttbNoSubjects => 'इस कक्षा का अभी कोई विषय नहीं है। नीचे जोड़ें।';
 
   @override
   String get ttbSkipHint => 'किसी विषय को छोड़ना हो तो उसकी तारीख खाली रखें।';
@@ -6795,4 +6794,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get ttbHoliday => 'छुट्टी';
+
+  @override
+  String get ttbAddSubject => 'विषय जोड़ें';
 }

@@ -1,5 +1,5 @@
 import '../../../../../core/usecase/usecase.dart';
-import '../../../teaching/domain/repository/teaching_repository.dart';
+import '../../../exams/domain/repository/exams_repository.dart';
 import '../entities/timetable.dart';
 import '../repository/timetable_repository.dart';
 
@@ -23,18 +23,22 @@ class SaveTimetableSettings
       _repository.saveSettings(settings);
 }
 
-/// The subjects of a class that have a teacher: only those can have a paper.
+/// The subjects a class already has an exam for. The Principal types any
+/// other; the timetable does not depend on teachers.
 class GetClassSubjects implements UseCase<List<TimetableRow>, String> {
-  const GetClassSubjects(this._teaching);
+  const GetClassSubjects(this._exams);
 
-  final TeachingRepository _teaching;
+  final ExamsRepository _exams;
 
   @override
   Future<List<TimetableRow>> call(String classId) async {
     final seen = <String>{};
+    final names = [
+      for (final e in await _exams.exams(classId: classId)) e.subject,
+    ];
     return [
-      for (final a in await _teaching.allotments(classId: classId))
-        if (seen.add(a.subject.toLowerCase())) TimetableRow(subject: a.subject),
+      for (final n in names)
+        if (seen.add(n.trim().toLowerCase())) TimetableRow(subject: n.trim()),
     ];
   }
 }

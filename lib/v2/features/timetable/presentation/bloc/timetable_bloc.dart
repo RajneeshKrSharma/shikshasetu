@@ -50,6 +50,15 @@ final class TimetableRowChanged extends TimetableEvent {
   List<Object?> get props => [index, row];
 }
 
+final class TimetableSubjectAdded extends TimetableEvent {
+  const TimetableSubjectAdded(this.name);
+
+  final String name;
+
+  @override
+  List<Object?> get props => [name];
+}
+
 final class TimetableSubmitted extends TimetableEvent {
   const TimetableSubmitted();
 }
@@ -179,6 +188,7 @@ class TimetableBloc extends Bloc<TimetableEvent, TimetableState> {
       (e, emit) => emit(state.copyWith(type: e.type, warnings: const [])),
     );
     on<TimetableRowChanged>(_onRowChanged);
+    on<TimetableSubjectAdded>(_onSubjectAdded);
     on<TimetableSubmitted>(_onSubmitted);
     on<TimetableSettingsChanged>(
       (e, emit) => emit(state.copyWith(settings: e.settings)),
@@ -240,6 +250,23 @@ class TimetableBloc extends Bloc<TimetableEvent, TimetableState> {
     if (e.index < 0 || e.index >= rows.length) return;
     rows[e.index] = e.row;
     emit(state.copyWith(rows: rows));
+  }
+
+  void _onSubjectAdded(TimetableSubjectAdded e, Emitter<TimetableState> emit) {
+    final name = e.name.trim();
+    if (name.isEmpty) return;
+    final exists = state.rows.any(
+      (r) => r.subject.toLowerCase() == name.toLowerCase(),
+    );
+    if (exists) return;
+    emit(
+      state.copyWith(
+        rows: [
+          ...state.rows,
+          TimetableRow(subject: name),
+        ],
+      ),
+    );
   }
 
   Future<void> _onSubmitted(
