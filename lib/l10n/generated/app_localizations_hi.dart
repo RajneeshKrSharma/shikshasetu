@@ -6797,4 +6797,19 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get ttbAddSubject => 'विषय जोड़ें';
+
+  @override
+  String get ttbPrint => 'टाइम टेबल प्रिंट करें';
+
+  @override
+  String get ttbPrintTitle => 'प्रिंट पूर्वावलोकन';
+
+  @override
+  String get ttbClassWord => 'कक्षा';
+
+  @override
+  String get ttbColDay => 'दिन';
+
+  @override
+  String get ttbColSubject => 'विषय';
 }

@@ -116,6 +116,9 @@ class TimetableState extends Equatable {
   /// Goes up by one each time a timetable is saved, so the screen can say so.
   final int savedCount;
 
+  /// A class is chosen and this exam has papers saved to print.
+  bool get canPrint => classId != null && savedOfType.isNotEmpty;
+
   bool get canSave => !busy && rows.any((r) => r.isScheduled);
 
   /// The saved papers of the chosen exam, soonest first.

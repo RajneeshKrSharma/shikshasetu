@@ -12001,6 +12001,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add a subject'**
   String get ttbAddSubject;
+
+  /// No description provided for @ttbPrint.
+  ///
+  /// In en, this message translates to:
+  /// **'Print timetable'**
+  String get ttbPrint;
+
+  /// No description provided for @ttbPrintTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Print preview'**
+  String get ttbPrintTitle;
+
+  /// No description provided for @ttbClassWord.
+  ///
+  /// In en, this message translates to:
+  /// **'Class'**
+  String get ttbClassWord;
+
+  /// No description provided for @ttbColDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Day'**
+  String get ttbColDay;
+
+  /// No description provided for @ttbColSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject'**
+  String get ttbColSubject;
 }
 
 class _AppLocalizationsDelegate

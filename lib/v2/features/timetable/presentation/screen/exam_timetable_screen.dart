@@ -13,6 +13,7 @@ import '../bloc/timetable_bloc.dart';
 import '../widgets/add_subject_field.dart';
 import '../widgets/saved_timetable.dart';
 import '../widgets/timetable_row_card.dart';
+import 'timetable_print_screen.dart';
 import 'timetable_settings_screen.dart';
 
 /// The Principal makes a class's exam timetable here: pick the class and the
@@ -42,6 +43,23 @@ class _TimetableView extends StatelessWidget {
           appBar: AppBar(
             title: Text(l.navExamTimetable),
             actions: [
+              BlocBuilder<TimetableBloc, TimetableState>(
+                buildWhen: (a, b) => a.exams != b.exams || a.type != b.type,
+                builder: (context, s) => IconButton(
+                  tooltip: l.ttbPrint,
+                  icon: const Icon(Icons.print_outlined),
+                  onPressed: s.canPrint
+                      ? () => Navigator.of(context).push(
+                          MaterialPageRoute<void>(
+                            builder: (_) => TimetablePrintScreen(
+                              classId: s.classId!,
+                              type: s.type,
+                            ),
+                          ),
+                        )
+                      : null,
+                ),
+              ),
               BlocBuilder<TimetableBloc, TimetableState>(
                 buildWhen: (a, b) => a.settings != b.settings,
                 builder: (context, s) => IconButton(

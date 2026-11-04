@@ -2196,5 +2196,10 @@
   "ttbSetNames": "परीक्षा के नाम",
   "ttbSettingsSaved": "सेटिंग सहेज ली गई।",
   "ttbHoliday": "छुट्टी",
-  "ttbAddSubject": "विषय जोड़ें"
+  "ttbAddSubject": "विषय जोड़ें",
+  "ttbPrint": "टाइम टेबल प्रिंट करें",
+  "ttbPrintTitle": "प्रिंट पूर्वावलोकन",
+  "ttbClassWord": "कक्षा",
+  "ttbColDay": "दिन",
+  "ttbColSubject": "विषय"
 }

@@ -6887,4 +6887,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ttbAddSubject => 'Add a subject';
+
+  @override
+  String get ttbPrint => 'Print timetable';
+
+  @override
+  String get ttbPrintTitle => 'Print preview';
+
+  @override
+  String get ttbClassWord => 'Class';
+
+  @override
+  String get ttbColDay => 'Day';
+
+  @override
+  String get ttbColSubject => 'Subject';
 }

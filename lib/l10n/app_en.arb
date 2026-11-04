@@ -4373,5 +4373,10 @@
   "ttbSetNames": "Exam names",
   "ttbSettingsSaved": "Settings saved.",
   "ttbHoliday": "Holiday",
-  "ttbAddSubject": "Add a subject"
+  "ttbAddSubject": "Add a subject",
+  "ttbPrint": "Print timetable",
+  "ttbPrintTitle": "Print preview",
+  "ttbClassWord": "Class",
+  "ttbColDay": "Day",
+  "ttbColSubject": "Subject"
 }
