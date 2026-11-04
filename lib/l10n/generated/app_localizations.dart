@@ -12031,6 +12031,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Subject'**
   String get ttbColSubject;
+
+  /// No description provided for @ttbPrintHeading.
+  ///
+  /// In en, this message translates to:
+  /// **'Time Table'**
+  String get ttbPrintHeading;
 }
 
 class _AppLocalizationsDelegate

@@ -113,6 +113,8 @@ class ExamDraft extends Equatable {
     this.subject = '',
     required this.heldOn,
     required this.maxMarks,
+    this.startsAtMinutes,
+    this.durationMinutes,
   });
 
   final String? id;
@@ -122,8 +124,21 @@ class ExamDraft extends Equatable {
   final DateTime heldOn;
   final int maxMarks;
 
+  /// Changed only when given; an exam keeps what it has otherwise.
+  final int? startsAtMinutes;
+  final int? durationMinutes;
+
   @override
-  List<Object?> get props => [id, type, classId, subject, heldOn, maxMarks];
+  List<Object?> get props => [
+    id,
+    type,
+    classId,
+    subject,
+    heldOn,
+    maxMarks,
+    startsAtMinutes,
+    durationMinutes,
+  ];
 }
 
 class MarkLine extends Equatable {

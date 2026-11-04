@@ -4378,5 +4378,6 @@
   "ttbPrintTitle": "Print preview",
   "ttbClassWord": "Class",
   "ttbColDay": "Day",
-  "ttbColSubject": "Subject"
+  "ttbColSubject": "Subject",
+  "ttbPrintHeading": "Time Table"
 }

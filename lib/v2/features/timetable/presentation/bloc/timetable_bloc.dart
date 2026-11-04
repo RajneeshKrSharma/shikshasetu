@@ -59,6 +59,15 @@ final class TimetableSubjectAdded extends TimetableEvent {
   List<Object?> get props => [name];
 }
 
+final class TimetablePaperEdited extends TimetableEvent {
+  const TimetablePaperEdited(this.draft);
+
+  final ExamDraft draft;
+
+  @override
+  List<Object?> get props => [draft];
+}
+
 final class TimetableSubmitted extends TimetableEvent {
   const TimetableSubmitted();
 }
@@ -178,12 +187,14 @@ class TimetableBloc extends Bloc<TimetableEvent, TimetableState> {
     required GetExams getExams,
     required SaveTimetable saveTimetable,
     required RemoveExam removeExam,
+    required SaveExam saveExam,
   }) : _getSettings = getSettings,
        _getClasses = getClasses,
        _getSubjects = getSubjects,
        _getExams = getExams,
        _save = saveTimetable,
        _remove = removeExam,
+       _saveExam = saveExam,
        super(const TimetableState()) {
     on<TimetableStarted>(_onStarted);
     on<TimetableClassChosen>(_onClassChosen);
@@ -192,6 +203,7 @@ class TimetableBloc extends Bloc<TimetableEvent, TimetableState> {
     );
     on<TimetableRowChanged>(_onRowChanged);
     on<TimetableSubjectAdded>(_onSubjectAdded);
+    on<TimetablePaperEdited>(_onPaperEdited);
     on<TimetableSubmitted>(_onSubmitted);
     on<TimetableSettingsChanged>(
       (e, emit) => emit(state.copyWith(settings: e.settings)),
@@ -205,6 +217,7 @@ class TimetableBloc extends Bloc<TimetableEvent, TimetableState> {
   final GetExams _getExams;
   final SaveTimetable _save;
   final RemoveExam _remove;
+  final SaveExam _saveExam;
 
   Future<void> _onStarted(
     TimetableStarted e,
@@ -286,6 +299,22 @@ class TimetableBloc extends Bloc<TimetableEvent, TimetableState> {
       emit(
         state.copyWith(warnings: warnings, savedCount: state.savedCount + 1),
       );
+      await _reload(emit, classId);
+    } on ServerException catch (error) {
+      emit(state.copyWith(busy: false, failure: ViewFailure.from(error)));
+    }
+  }
+
+  Future<void> _onPaperEdited(
+    TimetablePaperEdited e,
+    Emitter<TimetableState> emit,
+  ) async {
+    final classId = state.classId;
+    if (classId == null) return;
+    emit(state.copyWith(busy: true, clearFailure: true));
+    try {
+      await _saveExam(e.draft);
+      emit(state.copyWith(savedCount: state.savedCount + 1));
       await _reload(emit, classId);
     } on ServerException catch (error) {
       emit(state.copyWith(busy: false, failure: ViewFailure.from(error)));

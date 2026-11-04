@@ -23,6 +23,21 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
 
   final Future<ByteData> Function(String) _loadAsset;
 
+  static const _margin = 28.0;
+
+  /// One copy fills one half of the page; if it were ever taller it shrinks
+  /// to fit instead of running over the cut line.
+  pw.Widget _half(pw.Widget copy) => pw.Expanded(
+    child: pw.FittedBox(
+      fit: pw.BoxFit.scaleDown,
+      alignment: pw.Alignment.topCenter,
+      child: pw.SizedBox(
+        width: PdfPageFormat.a4.width - 2 * _margin,
+        child: copy,
+      ),
+    ),
+  );
+
   @override
   Future<Uint8List> build(
     TimetableSheet sheet,
@@ -51,14 +66,25 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
     doc.addPage(
       pw.Page(
         pageFormat: PdfPageFormat.a4,
-        margin: const pw.EdgeInsets.fromLTRB(40, 40, 40, 40),
-        build: (_) => _page(sheet, labels, logo),
+        margin: const pw.EdgeInsets.all(_margin),
+        build: (_) => pw.Column(
+          children: [
+            _half(_copy(sheet, labels, logo)),
+            pw.Divider(
+              height: 12,
+              thickness: 0.8,
+              color: PdfColors.grey600,
+              borderStyle: pw.BorderStyle.dashed,
+            ),
+            _half(_copy(sheet, labels, logo)),
+          ],
+        ),
       ),
     );
     return doc.save();
   }
 
-  pw.Widget _page(
+  pw.Widget _copy(
     TimetableSheet sheet,
     TimetablePrintLabels labels,
     pw.ImageProvider logo,
@@ -71,12 +97,12 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
 
     pw.Widget cell(String text, {bool head = false, pw.TextAlign? align}) =>
         pw.Padding(
-          padding: const pw.EdgeInsets.symmetric(horizontal: 10, vertical: 9),
+          padding: const pw.EdgeInsets.symmetric(horizontal: 8, vertical: 4),
           child: pw.Text(
             text,
             textAlign: align,
             style: pw.TextStyle(
-              fontSize: head ? 11 : 13,
+              fontSize: head ? 10 : 12,
               fontWeight: head ? pw.FontWeight.bold : pw.FontWeight.normal,
               color: head ? PdfColors.grey700 : ink,
             ),
@@ -89,8 +115,8 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
         pw.Row(
           crossAxisAlignment: pw.CrossAxisAlignment.center,
           children: [
-            pw.SizedBox(width: 72, height: 72, child: pw.Image(logo)),
-            pw.SizedBox(width: 14),
+            pw.SizedBox(width: 60, height: 60, child: pw.Image(logo)),
+            pw.SizedBox(width: 12),
             pw.Expanded(
               child: pw.Column(
                 crossAxisAlignment: pw.CrossAxisAlignment.start,
@@ -98,7 +124,7 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
                   pw.Text(
                     sheet.schoolName.toUpperCase(),
                     style: pw.TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       fontWeight: pw.FontWeight.bold,
                       color: ink,
                     ),
@@ -107,7 +133,7 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
                   pw.Text(
                     _letterhead.address,
                     style: const pw.TextStyle(
-                      fontSize: 12,
+                      fontSize: 11,
                       color: PdfColors.grey700,
                     ),
                   ),
@@ -116,23 +142,34 @@ class PdfTimetableDocumentBuilder implements TimetableDocumentBuilder {
             ),
           ],
         ),
-        pw.SizedBox(height: 10),
+        pw.SizedBox(height: 6),
         pw.Container(height: 1.2, color: PdfColors.grey800),
-        pw.SizedBox(height: 10),
+        pw.SizedBox(height: 8),
+        pw.Center(
+          child: pw.Text(
+            labels.title.toUpperCase(),
+            style: pw.TextStyle(
+              fontSize: 15,
+              fontWeight: pw.FontWeight.bold,
+              letterSpacing: 1.5,
+            ),
+          ),
+        ),
+        pw.SizedBox(height: 8),
         pw.Row(
           mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
           children: [
             pw.Text(
               '${sheet.examLabel} ${sheet.academicYear}',
-              style: pw.TextStyle(fontSize: 15, fontWeight: pw.FontWeight.bold),
+              style: pw.TextStyle(fontSize: 12, fontWeight: pw.FontWeight.bold),
             ),
             pw.Text(
               '${labels.classWord} ${sheet.className}',
-              style: pw.TextStyle(fontSize: 15, fontWeight: pw.FontWeight.bold),
+              style: pw.TextStyle(fontSize: 12, fontWeight: pw.FontWeight.bold),
             ),
           ],
         ),
-        pw.SizedBox(height: 16),
+        pw.SizedBox(height: 8),
         pw.Table(
           border: pw.TableBorder(
             top: line,

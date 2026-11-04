@@ -6902,4 +6902,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ttbColSubject => 'Subject';
+
+  @override
+  String get ttbPrintHeading => 'Time Table';
 }

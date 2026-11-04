@@ -30,6 +30,7 @@ class TimetablePrintScreen extends StatelessWidget {
       type: type,
       labels: TimetablePrintLabels(
         localeCode: Localizations.localeOf(context).languageCode,
+        title: l.ttbPrintHeading,
         classWord: l.ttbClassWord,
         dateColumn: l.ttbDate,
         dayColumn: l.ttbColDay,

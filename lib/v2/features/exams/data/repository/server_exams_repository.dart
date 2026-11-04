@@ -38,6 +38,10 @@ class ServerExamsRepository implements ExamsRepository {
             'exam_type': d.type.code,
             'held_on': WireFormat.day(d.heldOn),
             'max_marks': d.maxMarks,
+            if (d.startsAtMinutes != null)
+              'starts_at': WireFormat.minutes(d.startsAtMinutes!),
+            if (d.durationMinutes != null)
+              'duration_minutes': d.durationMinutes,
           },
         );
 

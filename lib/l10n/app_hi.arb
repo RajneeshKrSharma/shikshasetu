@@ -2201,5 +2201,6 @@
   "ttbPrintTitle": "प्रिंट पूर्वावलोकन",
   "ttbClassWord": "कक्षा",
   "ttbColDay": "दिन",
-  "ttbColSubject": "विषय"
+  "ttbColSubject": "विषय",
+  "ttbPrintHeading": "समय सारणी"
 }

@@ -9,6 +9,7 @@ import '../../../../core/server/json.dart';
 import '../../../exams/domain/entities/exams.dart';
 import '../../domain/entities/timetable.dart';
 import '../bloc/timetable_bloc.dart';
+import 'edit_paper_dialog.dart';
 
 /// The papers already scheduled for the class, soonest first.
 class SavedTimetable extends StatelessWidget {
@@ -63,6 +64,11 @@ class SavedTimetable extends StatelessWidget {
                     ),
                   ),
                   IconButton(
+                    tooltip: l.actionEdit,
+                    icon: const Icon(Icons.edit_outlined),
+                    onPressed: () => _edit(context, e),
+                  ),
+                  IconButton(
                     tooltip: l.actionDelete,
                     icon: const Icon(Icons.delete_outline),
                     onPressed: () => _confirmRemove(context, e),
@@ -82,6 +88,15 @@ class SavedTimetable extends StatelessWidget {
       '${e.durationMinutes} $minutes',
     '$marks ${e.maxMarks}',
   ].join(' · ');
+
+  Future<void> _edit(BuildContext context, Exam e) async {
+    final bloc = context.read<TimetableBloc>();
+    final draft = await showDialog<ExamDraft>(
+      context: context,
+      builder: (_) => EditPaperDialog(exam: e, settings: settings),
+    );
+    if (draft != null) bloc.add(TimetablePaperEdited(draft));
+  }
 
   Future<void> _confirmRemove(BuildContext context, Exam e) async {
     final l = context.l10n;

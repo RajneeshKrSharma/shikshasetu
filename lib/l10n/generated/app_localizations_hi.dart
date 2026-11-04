@@ -6812,4 +6812,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get ttbColSubject => 'विषय';
+
+  @override
+  String get ttbPrintHeading => 'समय सारणी';
 }

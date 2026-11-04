@@ -58,6 +58,7 @@ class TimetableSheet extends Equatable {
 class TimetablePrintLabels extends Equatable {
   const TimetablePrintLabels({
     required this.localeCode,
+    required this.title,
     required this.classWord,
     required this.dateColumn,
     required this.dayColumn,
@@ -65,6 +66,9 @@ class TimetablePrintLabels extends Equatable {
   });
 
   final String localeCode;
+
+  /// The heading under the school's name, such as "Time Table".
+  final String title;
   final String classWord;
   final String dateColumn;
   final String dayColumn;
@@ -73,6 +77,7 @@ class TimetablePrintLabels extends Equatable {
   @override
   List<Object?> get props => [
     localeCode,
+    title,
     classWord,
     dateColumn,
     dayColumn,

@@ -38,6 +38,7 @@ void registerTimetable(GetIt sl) {
         getExams: sl(),
         saveTimetable: sl(),
         removeExam: sl(),
+        saveExam: sl(),
       ),
     )
     ..registerFactoryParam<TimetableSettingsCubit, TimetableSettings, void>(
