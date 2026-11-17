@@ -6911,4 +6911,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ttbSession => 'Session';
+
+  @override
+  String get accessRestrictedLabel =>
+      'Access restricted. This app is currently unavailable.';
 }

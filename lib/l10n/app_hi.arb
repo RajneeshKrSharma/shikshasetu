@@ -2204,5 +2204,6 @@
   "ttbColSubject": "विषय",
   "ttbPrintHeading": "समय सारणी",
   "ttbExamWord": "परीक्षा",
-  "ttbSession": "सत्र"
+  "ttbSession": "सत्र",
+  "accessRestrictedLabel": "पहुँच प्रतिबंधित है। यह ऐप अभी उपलब्ध नहीं है।"
 }

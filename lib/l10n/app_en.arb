@@ -4381,5 +4381,6 @@
   "ttbColSubject": "Subject",
   "ttbPrintHeading": "Time Table",
   "ttbExamWord": "Examination",
-  "ttbSession": "Session"
+  "ttbSession": "Session",
+  "accessRestrictedLabel": "Access restricted. This app is currently unavailable."
 }

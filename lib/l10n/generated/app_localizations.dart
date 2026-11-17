@@ -12049,6 +12049,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Session'**
   String get ttbSession;
+
+  /// No description provided for @accessRestrictedLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Access restricted. This app is currently unavailable.'**
+  String get accessRestrictedLabel;
 }
 
 class _AppLocalizationsDelegate

@@ -6821,4 +6821,8 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get ttbSession => 'सत्र';
+
+  @override
+  String get accessRestrictedLabel =>
+      'पहुँच प्रतिबंधित है। यह ऐप अभी उपलब्ध नहीं है।';
 }

@@ -6,6 +6,7 @@ import '../core/theme/app_theme.dart';
 import '../features/settings/presentation/bloc/locale_cubit.dart';
 import '../l10n/generated/app_localizations.dart';
 import 'core/server/app_env.dart';
+import 'core/widgets/access_lock.dart';
 import 'core/widgets/beta_banner.dart';
 import 'di/v2_injector.dart';
 import 'features/session/presentation/bloc/session_bloc.dart';
@@ -39,7 +40,7 @@ class ShikshaSetuV2App extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         builder: (context, child) {
-          final screen = BetaBanner(child: child!);
+          final screen = AccessLock(child: BetaBanner(child: child!));
           return AppEnv.current.showsBanner
               ? Banner(
                   message: AppEnv.current.name.toUpperCase(),
